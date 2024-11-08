@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/fonts-archive/SeoulHangang/SeoulHangang.css');
 
 /* 미디어월 공통 */
 .media_common_header_wrapper {
@@ -1763,7 +1764,7 @@
   height: 940px !important;
 }
 
-.swiper-slide {
+.media_event_slider .swiper-slide {
   display: flex !important;
   align-items: center;
   flex-direction: column;
@@ -1980,5 +1981,71 @@
 
   .media_event_slider .swiper-pagination-bullet-active {
     background-color: #FFF;
+  }
+}
+
+/* 미디어월 책속 한줄 */
+.media_line_container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/mediaLineBg.svg) no-repeat top center;
+  background-size: cover;
+}
+
+.media_line_slider {
+  height: 360px;
+  margin-top: 377.94px;
+  padding-left: 276px !important;
+}
+
+.media_line_title {
+  font-family: "SeoulHangang CM", sans-serif;
+  font-size: 120px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 150%;
+  overflow: hidden;
+  width: 2160px;
+  letter-spacing: -2.4px;
+  color: #FFF;
+}
+
+.media_line_caption {
+  font-family: "Pretendard", sans-serif;
+  font-size: 60px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+  margin-top: 60px;
+  color: #EFF1F3;
+}
+
+@media (width: 1920px) {
+  .media_line_slider {
+    height: 180px;
+    margin-top: 188.97px;
+    padding-left: 138px !important;
+  }
+
+  .media_line_title {
+    font-family: "SeoulHangang CM", sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    font-style: normal;
+    overflow: hidden;
+    width: 1080px;
+    letter-spacing: -1.2px;
+    color: #FFF;
+  }
+
+  .media_line_caption {
+    font-family: "Pretendard", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    margin-top: 30px;
+    color: #EFF1F3;
   }
 }
