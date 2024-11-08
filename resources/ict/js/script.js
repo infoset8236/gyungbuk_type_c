@@ -168,7 +168,6 @@ $.ajax({
 		const weatherIndex = weathers.indexOf(weatherDescription);
 		const kor = weatherIndex >= 0 ? weatherskor[weatherIndex] : '';
 
-		// 아이콘 코드에서 확장자를 제외한 부분만 사용
 		const iconCode = data.list[0].weather[0].icon.split('@')[0];
 		const iconUrl = `/resources/ict/img/${iconCode}.png`;
 
@@ -177,4 +176,24 @@ $.ajax({
 		$('.media_promotion_temp').text(`${parseFloat(data.list[0].main.temp.toFixed(1))}°`);
 		$('.media_promotion_weather_description').text(kor);
 	},
+});
+
+$(function () {
+	const mediaEventSwiper = new Swiper('.media_event_slider', {
+		speed: 600,
+		loop: true,
+		effect: 'fade',
+		fadeEffect: {
+			crossFade: true,
+		},
+		slidesPerView: 1,
+		autoplay: {
+			delay: 10000,
+			disableOnInteraction: false,
+		},
+		pagination: {
+			el: '.swiper-pagination',
+			type: 'bullets',
+		},
+	});
 });

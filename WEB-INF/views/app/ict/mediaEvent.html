@@ -14,40 +14,37 @@
 		<title>Document</title>
 	</head>
 	<body>
-		<div class="media_promotion_container">
+		<div class="media_event_container">
 			<div class="media_common_header_wrapper">
 				<div class="media_common_header">
-					<div class="media_common_header_kr">홍보동영상</div>
-					<div class="media_common_header_en">PROMOTION</div>
+					<div class="media_common_header_kr">행사안내</div>
+					<div class="media_common_header_en">LIBRARY EVENT</div>
 				</div>
 				<div class="media_common_header">
 					<div class="media_common_header_time"></div>
 					<div class="media_common_header_date"></div>
 				</div>
 			</div>
-			<div class="media_promotion_content_wrapper">
-				<div class="media_promotion_clock_wrapper">
-					<div class="media_promotion_clock_title">INFOSET</div>
-					<div class="media_promotion_clock">
-						<div class="media_promotion_clock_hour"></div>
-						<div class="media_promotion_clock_minute"></div>
-						<div class="media_promotion_clock_second"></div>
+			<!--	 꾸밈 요소		-->
+			<div class="media_event_start_1"></div>
+			<div class="media_event_start_2"></div>
+			<div class="media_event_start_3"></div>
+			<div class="media_event_start_4"></div>
+
+			<div class="media_event_caption">TODAY'S EVENT</div>
+			<!--	 슬라이더 영역		-->
+			<div class="swiper media_event_slider">
+				<div class="swiper-wrapper">
+					<!--			swiper-slide 하나 = 1 페이지			-->
+					<div class="swiper-slide">
+						<div class="media_event_title">박준 시인 특강 : 읽는다고 달라지는 일은 없겠지만</div>
+						<div class="media_event_detail_wrapper">
+							<div class="media_event_detail"><span>시간</span>14:00 ~ 16:00</div>
+							<div class="media_event_detail"><span>장소</span>14:00 ~ 16:00</div>
+						</div>
 					</div>
-					<div class="media_promotion_date">2024년 09월 25일(수)</div>
-					<div class="media_promotion_time">10:08</div>
 				</div>
-				<div class="media_promotion_video_wrapper">
-					<!--		비디오 자동 재생 옵션 필수		-->
-					<video autoplay loop muted playsinline src="/resources/ict/img/promotion.mp4"></video>
-				</div>
-				<!--		날씨 api 연동 완료		-->
-				<div class="media_promotion_weather_wrapper">
-					<div class="media_promotion_weather_title">TODAY'S WEATHER</div>
-					<div class="media_promotion_feels_like"></div>
-					<img alt="" class="media_promotion_weather_icon" src="" />
-					<div class="media_promotion_temp"></div>
-					<div class="media_promotion_weather_description"></div>
-				</div>
+				<div class="swiper-pagination"></div>
 			</div>
 		</div>
 	</body>
