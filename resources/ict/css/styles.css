@@ -995,7 +995,6 @@
   background-size: cover;
 }
 
-
 .media_promotion_clock_hour,
 .media_promotion_clock_minute,
 .media_promotion_clock_second {
@@ -1026,7 +1025,6 @@
   height: 180px;
   transform-origin: bottom;
 }
-
 
 .media_promotion_clock_title {
   font-family: "Pretendard", sans-serif;
@@ -1128,7 +1126,6 @@
   text-align: center;
   text-transform: uppercase;
   color: #FFF;
-
 }
 
 .media_promotion_weather_description {
@@ -1166,7 +1163,6 @@
     background: url(../img/clock.png) no-repeat top center;
     background-size: cover;
   }
-
 
   .media_promotion_clock_hour,
   .media_promotion_clock_minute,
@@ -1313,5 +1309,188 @@
     letter-spacing: -0.96px;
     text-transform: uppercase;
     color: #FFF;
+  }
+}
+
+/* 미디어월 이용안내 시간 */
+.media_information_container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/mediaInformationBg.svg) no-repeat top center;
+  background-size: cover;
+}
+
+.media_information_table_title {
+  font-family: "Pretendard", sans-serif;
+  font-size: 160px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+  margin-top: 152px;
+  margin-bottom: 120px;
+  text-align: center;
+  letter-spacing: -3.2px;
+  color: #191F28;
+}
+
+.media_information_table_header {
+  display: flex;
+  width: 3120px;
+  margin-left: 360px;
+  border-radius: 40px 40px 0 0;
+  background-color: #188FD2;
+}
+
+.media_information_table_header_cell {
+  font-family: "Pretendard", sans-serif;
+  font-size: 68px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+  width: 1040px;
+  padding: 60px;
+  text-align: center;
+  letter-spacing: -1.7px;
+  color: #FFF;
+}
+
+.media_information_table_row {
+  display: flex;
+  width: 3120px;
+  margin-left: 360px;
+  border-bottom: 2px solid transparent;
+  background-color: #FFFFFF;
+}
+
+.media_information_border {
+  border-bottom: 2px solid #B9B9B933;
+}
+
+.media_information_table_row_cell {
+  font-family: "Pretendard", sans-serif;
+  font-size: 72px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: normal;
+  width: 1040px;
+  padding: 60px;
+  text-align: center;
+  letter-spacing: -1.8px;
+  color: #191F28;
+}
+
+.media_information_border_radius {
+  border-radius: 0 0 40px 40px;
+}
+
+.media_information_boat {
+  position: absolute;
+  bottom: 136px;
+  left: 839px;
+  width: 484px;
+  height: 198px;
+  animation: boatMove 3s ease-in-out infinite;
+  background: url(../img/boat.svg) no-repeat top center;
+  background-size: cover;
+}
+
+@keyframes boatMove {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media (width: 1920px) {
+  .media_information_table_title {
+    font-family: "Pretendard", sans-serif;
+    font-size: 80px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    margin-top: 76px;
+    margin-bottom: 60px;
+    text-align: center;
+    letter-spacing: -1.6px;
+    color: #191F28;
+  }
+
+  .media_information_table_header {
+    display: flex;
+    width: 1560px;
+    margin-left: 180px;
+    border-radius: 20px 20px 0 0;
+    background-color: #188FD2;
+  }
+
+  .media_information_table_header_cell {
+    font-family: "Pretendard", sans-serif;
+    font-size: 34px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    width: 520px;
+    padding: 30px;
+    text-align: center;
+    letter-spacing: -0.85px;
+    color: #FFF;
+  }
+
+  .media_information_table_row {
+    display: flex;
+    width: 1560px;
+    margin-left: 180px;
+    border-bottom: 1px solid transparent;
+    background-color: #FFFFFF;
+  }
+
+  .media_information_border {
+    border-bottom: 1px solid #B9B9B933;
+  }
+
+  .media_information_table_row_cell {
+    font-family: "Pretendard", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
+    width: 520px;
+    padding: 30px;
+    text-align: center;
+    letter-spacing: -0.9px;
+    color: #191F28;
+  }
+
+  .media_information_border_radius {
+    border-radius: 0 0 20px 20px;
+  }
+
+  .media_information_boat {
+    position: absolute;
+    bottom: 68px;
+    left: 419.5px;
+    width: 242px;
+    height: 99px;
+    animation: boatMove 3s ease-in-out infinite;
+    background: url(../img/boat.svg) no-repeat top center;
+    background-size: cover;
+  }
+
+  @keyframes boatMove {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(10px);
+    }
+    100% {
+      transform: translateX(0);
+    }
   }
 }
