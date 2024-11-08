@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 80px ;
+  padding: 80px 160px 60px 160px ;
 }
 
 .media_common_header {
@@ -61,7 +61,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 40px;
+    padding: 40px 80px 30px 80px ;
   }
 
   .media_common_header {
@@ -960,5 +960,358 @@
     color: #191F28;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
+  }
+}
+
+/* 미디어월 홍보 동영상 */
+.media_promotion_container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/mediaPromotionBg.svg) no-repeat top center;
+  background-size: cover;
+}
+
+.media_promotion_content_wrapper {
+  display: flex;
+  margin-top: 134px;
+}
+
+.media_promotion_clock_wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 254px;
+  margin-left: 104px;
+}
+
+.media_promotion_clock {
+  position: relative;
+  width: 480px;
+  height: 480px;
+  margin-bottom: 75.94px;
+  border-radius: 50%;
+  background: url(../img/clock.png) no-repeat top center;
+  background-size: cover;
+}
+
+
+.media_promotion_clock_hour,
+.media_promotion_clock_minute,
+.media_promotion_clock_second {
+  position: absolute;
+  background-color: #FFFFFF;
+}
+
+.media_promotion_clock_hour {
+  top: calc(50% - 130px);
+  left: calc(50% - 4px);
+  width: 3px;
+  height: 120px;
+  transform-origin: bottom;
+}
+
+.media_promotion_clock_minute {
+  top: calc(50% - 190px);
+  left: calc(50% - 2px);
+  width: 3px;
+  height: 180px;
+  transform-origin: bottom;
+}
+
+.media_promotion_clock_second {
+  top: calc(50% - 190px);
+  left: calc(50% - 1px);
+  width: 1px;
+  height: 180px;
+  transform-origin: bottom;
+}
+
+
+.media_promotion_clock_title {
+  font-family: "Pretendard", sans-serif;
+  font-size: 34px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 100%;
+  margin-bottom: 155.87px;
+  text-align: center;
+  letter-spacing: 6.12px;
+  text-transform: uppercase;
+  color: #ADB5BD;
+}
+
+.media_promotion_date {
+  font-family: "Pretendard", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 100%;
+  margin-bottom: 9.99px;
+  text-align: center;
+  letter-spacing: -0.84px;
+  text-transform: uppercase;
+  color: #FFF;
+}
+
+.media_promotion_time {
+  font-family: "Century Gothic", sans-serif;
+  font-size: 100px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  color: #FFF;
+}
+
+.media_promotion_video_wrapper {
+  width: 2472px;
+  height: 1390px;
+  margin-right: 165px;
+  margin-left: 100px;
+}
+
+.media_promotion_video_wrapper video {
+  width: 2472px;
+  height: 1390px;
+  object-fit: cover;
+}
+
+.media_promotion_weather_wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 254px;
+}
+
+.media_promotion_weather_title {
+  font-family: "Pretendard", sans-serif;
+  font-size: 34px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 100%;
+  margin-bottom: 96.11px;
+  text-align: center;
+  letter-spacing: 3.74px;
+  text-transform: uppercase;
+  color: #ADB5BD;
+}
+
+.media_promotion_feels_like {
+  font-family: "Pretendard", sans-serif;
+  font-size: 62px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 100%;
+  margin-bottom: 50px;
+  text-align: center;
+  letter-spacing: -1.24px;
+  text-transform: uppercase;
+  color: #FFF;
+}
+
+.media_promotion_weather_icon {
+  width: 340px;
+  height: 340px;
+  margin-bottom: 100px;
+}
+
+.media_promotion_temp {
+  font-family: "Century Gothic", sans-serif;
+  font-size: 140px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 100%;
+  margin-bottom: 40.05px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFF;
+
+}
+
+.media_promotion_weather_description {
+  font-family: "Pretendard", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: -0.96px;
+  text-transform: uppercase;
+  color: #FFF;
+}
+
+@media (width: 1920px) {
+  .media_promotion_content_wrapper {
+    display: flex;
+    margin-top: 67px;
+  }
+
+  .media_promotion_clock_wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 127px;
+    margin-left: 52px;
+  }
+
+  .media_promotion_clock {
+    position: relative;
+    width: 240px;
+    height: 240px;
+    margin-bottom: 37.97px;
+    border-radius: 50%;
+    background: url(../img/clock.png) no-repeat top center;
+    background-size: cover;
+  }
+
+
+  .media_promotion_clock_hour,
+  .media_promotion_clock_minute,
+  .media_promotion_clock_second {
+    position: absolute;
+    background-color: #FFFFFF;
+  }
+
+  .media_promotion_clock_hour {
+    top: calc(50% - 65px);
+    left: calc(50% - 2px);
+    width: 1.5px;
+    height: 60px;
+    transform-origin: bottom;
+  }
+
+  .media_promotion_clock_minute {
+    top: calc(50% - 95px);
+    left: calc(50% - 1px);
+    width: 1.5px;
+    height: 90px;
+    transform-origin: bottom;
+  }
+
+  .media_promotion_clock_second {
+    top: calc(50% - 95px);
+    left: calc(50% - 1px);
+    width: 0.5px;
+    height: 90px;
+    transform-origin: bottom;
+  }
+
+
+  .media_promotion_clock_title {
+    font-family: "Pretendard", sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 100%;
+    margin-bottom: 77.935px;
+    text-align: center;
+    letter-spacing: 6.12px;
+    text-transform: uppercase;
+    color: #ADB5BD;
+  }
+
+  .media_promotion_date {
+    font-family: "Pretendard", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 100%;
+    margin-bottom: 4.995px;
+    text-align: center;
+    letter-spacing: -0.84px;
+    text-transform: uppercase;
+    color: #FFF;
+  }
+
+  .media_promotion_time {
+    font-family: "Century Gothic", sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: 3.5px;
+    text-transform: uppercase;
+    color: #FFF;
+  }
+
+  .media_promotion_video_wrapper {
+    width: 1236px;
+    height: 695px;
+    margin-right: 82.5px;
+    margin-left: 50px;
+  }
+
+  .media_promotion_video_wrapper video {
+    width: 1236px;
+    height: 695px;
+    object-fit: cover;
+  }
+
+  .media_promotion_weather_wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 127px;
+  }
+
+  .media_promotion_weather_title {
+    font-family: "Pretendard", sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 100%;
+    margin-bottom: 48.055px;
+    text-align: center;
+    letter-spacing: 3.74px;
+    text-transform: uppercase;
+    color: #ADB5BD;
+  }
+
+  .media_promotion_feels_like {
+    font-family: "Pretendard", sans-serif;
+    font-size: 31px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 100%;
+    margin-bottom: 25px;
+    text-align: center;
+    letter-spacing: -1.24px;
+    text-transform: uppercase;
+    color: #FFF;
+  }
+
+  .media_promotion_weather_icon {
+    width: 170px;
+    height: 170px;
+    margin-bottom: 50px;
+  }
+
+  .media_promotion_temp {
+    font-family: "Century Gothic", sans-serif;
+    font-size: 70px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 100%;
+    margin-bottom: 20.025px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFF;
+
+  }
+
+  .media_promotion_weather_description {
+    font-family: "Pretendard", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: -0.96px;
+    text-transform: uppercase;
+    color: #FFF;
   }
 }
