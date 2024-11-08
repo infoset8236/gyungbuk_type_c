@@ -112,7 +112,7 @@
   position: relative;
   width: 100%;
   height: 100vh;
-  background: url(../img/mediaWallMainBg.svg) no-repeat top center;
+  background: url(../img/mediaMainBg.svg) no-repeat top center;
   background-size: cover;
 }
 
@@ -165,11 +165,9 @@
 }
 
 .media_main_ticker {
-
   position: fixed;
   bottom: 0;
   left: 0;
-
   background: #000;
 }
 
@@ -201,7 +199,7 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    background: url(../img/mediaWallMainBg.svg) no-repeat top center;
+    background: url(../img/mediaMainBg.svg) no-repeat top center;
     background-size: cover;
   }
 
@@ -283,3 +281,325 @@
     }
   }
 }
+
+/* 미디어월 공지사항 */
+.media_notice_container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/mediaNoticeBg.svg) no-repeat top center;
+  background-size: cover;
+}
+
+.media_notice_content_wrapper {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 139px;
+  margin-left: 513px;
+  gap: 175px;
+}
+
+.media_notice_selected_book {
+  z-index: 999;
+  width: 940px;
+  height: 1330px;
+  animation: fadeAndZoom 10s infinite;
+  border-radius: 24px;
+  object-fit: cover;
+}
+
+.media_notice_content {
+  display: flex;
+  flex-direction: column;
+  gap: 282px;
+}
+
+.media_notice_selected_book_title {
+  font-family: "Pretendard", sans-serif;
+  font-size: 100px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 140%;
+  z-index: 999;
+  overflow: hidden;
+  width: 1400px;
+  animation: fadeAndZoom 10s infinite;
+  white-space: nowrap;
+  letter-spacing: -2.5px;
+  text-overflow: ellipsis;
+  color: #FFF;
+}
+
+.media_notice_selected_book_title span {
+  font-family: "Spoqa Han Sans Neo", sans-serif;
+  font-size: 200px;
+  font-weight: 250;
+  font-style: normal;
+  line-height: 120%;
+  color: #6B7684;
+}
+
+.media_notice_list {
+  display: flex;
+  animation: fadeAndZoom 10s infinite;
+  gap: 80px;
+}
+
+.media_notice_list_item {
+  display: flex;
+  flex-direction: column;
+  gap: 26.37px;
+}
+
+@keyframes fadeAndZoom {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  10%, 90% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+}
+
+.media_notice_list_item div {
+  font-family: "Spoqa Han Sans Neo", sans-serif;
+  font-size: 48px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 120%;
+  color: #ADB5BD;
+}
+
+.media_notice_list_item img {
+  width: 380px;
+  height: 538px;
+  border-radius: 14.663px;
+  object-fit: cover;
+}
+
+.media_notice_start_1,
+.media_notice_start_2,
+.media_notice_start_3,
+.media_notice_start_4 {
+  position: absolute;
+  animation: shooting-star 4s ease-out infinite;
+  border-radius: 50%;
+  background-image: url(../img/star.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.media_notice_start_1 {
+  top: -170px;
+  left: 600px;
+  width: 120px;
+  height: 120px;
+  animation-delay: 1s;
+}
+
+.media_notice_start_2 {
+  top: -300px;
+  left: 2000px;
+  width: 140px;
+  height: 140px;
+  animation-delay: 2s;
+}
+
+.media_notice_start_3 {
+  top: -300px;
+  left: 3200px;
+  width: 142px;
+  height: 142px;
+  animation-delay: 3s;
+}
+
+.media_notice_start_4 {
+  top: 100px;
+  right: -300px;
+  width: 120px;
+  height: 120px;
+  animation-delay: 1s;
+}
+
+@keyframes shooting-star {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+  70% {
+    opacity: 1;
+    transform: translate(-800px, 800px) scale(0.5) rotate(45deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-800px, 800px) scale(0);
+  }
+}
+
+@media (width: 1920px) {
+  .media_notice_container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/mediaNoticeBg.svg) no-repeat top center;
+    background-size: cover;
+  }
+
+  .media_notice_content_wrapper {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 69.5px;
+    margin-left: 256.5px;
+    gap: 87.5px;
+  }
+
+  .media_notice_selected_book {
+    z-index: 999;
+    width: 470px;
+    height: 665px;
+    animation: fadeAndZoom 10s infinite;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+
+  .media_notice_content {
+    display: flex;
+    flex-direction: column;
+    gap: 141px;
+  }
+
+  .media_notice_selected_book_title {
+    font-family: "Pretendard", sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 140%;
+    z-index: 999;
+    overflow: hidden;
+    width: 700px;
+    animation: fadeAndZoom 10s infinite;
+    white-space: nowrap;
+    letter-spacing: -1.25px;
+    text-overflow: ellipsis;
+    color: #FFF;
+  }
+
+  .media_notice_selected_book_title span {
+    font-family: "Spoqa Han Sans Neo", sans-serif;
+    font-size: 100px;
+    font-weight: 250;
+    font-style: normal;
+    line-height: 120%;
+    color: #6B7684;
+  }
+
+  .media_notice_list {
+    display: flex;
+    animation: fadeAndZoom 10s infinite;
+    gap: 40px;
+  }
+
+  .media_notice_list_item {
+    display: flex;
+    flex-direction: column;
+    gap: 13.185px;
+  }
+
+  @keyframes fadeAndZoom {
+    0% {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    10%, 90% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+  }
+
+  .media_notice_list_item div {
+    font-family: "Spoqa Han Sans Neo", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 120%;
+    color: #ADB5BD;
+  }
+
+  .media_notice_list_item img {
+    width: 190px;
+    height: 269px;
+    border-radius: 7.3315px;
+    object-fit: cover;
+  }
+
+  .media_notice_start_1,
+  .media_notice_start_2,
+  .media_notice_start_3,
+  .media_notice_start_4 {
+    position: absolute;
+    animation: shooting-star 4s ease-out infinite;
+    border-radius: 50%;
+    background-image: url(../img/star.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .media_notice_start_1 {
+    top: -85px;
+    left: 300px;
+    width: 60px;
+    height: 60px;
+    animation-delay: 1s;
+  }
+
+  .media_notice_start_2 {
+    top: -150px;
+    left: 1000px;
+    width: 70px;
+    height: 70px;
+    animation-delay: 2s;
+  }
+
+  .media_notice_start_3 {
+    top: -150px;
+    left: 1600px;
+    width: 71px;
+    height: 71px;
+    animation-delay: 3s;
+  }
+
+  .media_notice_start_4 {
+    top: 50px;
+    right: -150px;
+    width: 60px;
+    height: 60px;
+    animation-delay: 1s;
+  }
+
+  @keyframes shooting-star {
+    0% {
+      opacity: 1;
+      transform: translate(0, 0) scale(1);
+    }
+    70% {
+      opacity: 1;
+      transform: translate(-400px, 400px) scale(0.5) rotate(45deg);
+    }
+    100% {
+      opacity: 0;
+      transform: translate(-400px, 400px) scale(0);
+    }
+  }
+}
+
+/* 미디어월 도서 정보 */
+
