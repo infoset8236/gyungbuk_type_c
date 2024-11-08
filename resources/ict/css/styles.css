@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
 /* 미디어월 공통 */
 .media_common_header_wrapper {
   display: flex;
@@ -1492,5 +1494,184 @@
     100% {
       transform: translateX(0);
     }
+  }
+}
+
+/* 미디어월 대출반납일 */
+.media_return_container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/mediaReturnDateBg.svg) no-repeat top center;
+  background-size: cover;
+}
+
+.media_return_content {
+  display: flex;
+  flex-direction: column;
+  width: 1960px;
+  margin-top: 189px;
+  margin-left: 1054px;
+}
+
+.media_return_top {
+  display: flex;
+  height: 500px;
+}
+
+.media_return_bottom {
+  display: flex;
+  height: 500px;
+  margin-top: 205px;
+}
+
+.media_return_number_wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
+  height: 500px;
+}
+
+.media_return_text_wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 500px;
+}
+
+.media_return_number {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 400px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 8px;
+  text-transform: lowercase;
+  color: #FFF;
+}
+
+.media_return_text {
+  font-family: "SeoulNamsan CEB", sans-serif;
+  font-size: 360px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 100%;
+  text-align: center;
+  text-transform: lowercase;
+  color: #FFF;
+}
+
+.media_return_20 {
+  margin-right: 20px;
+}
+
+.media_return_120 {
+  margin-right: 120px;
+}
+
+.media_return_number_divider, .media_return_text_divider {
+  position: absolute;
+  top: 250px;
+  left: 5px;
+  height: 5px;
+  background-color: black;
+}
+
+.media_return_number_divider {
+  width: 315px;
+}
+
+.media_return_text_divider {
+  width: 390px;
+}
+
+@media (width: 1920px) {
+  .media_return_content {
+    display: flex;
+    flex-direction: column;
+    width: 980px;
+    margin-top: 94.5px;
+    margin-left: 527px;
+  }
+
+  .media_return_top {
+    display: flex;
+    height: 250px;
+  }
+
+  .media_return_bottom {
+    display: flex;
+    height: 250px;
+    margin-top: 102.5px;
+  }
+
+  .media_return_number_wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 250px;
+  }
+
+  .media_return_text_wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 250px;
+  }
+
+  .media_return_number {
+    font-family: "Fjalla One", sans-serif;
+    font-size: 200px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: 4px;
+    text-transform: lowercase;
+    color: #FFF;
+  }
+
+  .media_return_text {
+    font-family: "SeoulNamsan CEB", sans-serif;
+    font-size: 180px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 100%;
+    text-align: center;
+    text-transform: lowercase;
+    color: #FFF;
+  }
+
+  .media_return_20 {
+    margin-right: 10px;
+  }
+
+  .media_return_120 {
+    margin-right: 60px;
+  }
+
+  .media_return_number_divider, .media_return_text_divider {
+    position: absolute;
+    top: 125px;
+    left: 2.5px;
+    height: 2.5px;
+    background-color: black;
+  }
+
+  .media_return_number_divider {
+    width: 157.5px;
+  }
+
+  .media_return_text_divider {
+    width: 195px;
   }
 }
