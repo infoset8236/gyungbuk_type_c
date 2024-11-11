@@ -2962,3 +2962,630 @@
     color: #191F28;
   }
 }
+
+/* 키오스크 이용안내 */
+.kiosk_facility_container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/kioskFacilityBg.svg) no-repeat top center;
+  background-size: cover;
+}
+
+.kiosk_facility_map_wrapper {
+  position: relative;
+  width: 1804.465px;
+  height: 1269.953px;
+  margin-top: 96px;
+  margin-left: 178px;
+}
+
+.kiosk_facility_map_wrapper img {
+  width: 1804.465px;
+  height: 1269.953px;
+  object-fit: contain;
+}
+
+.floor_name {
+  font-family: "Pretendard", sans-serif;
+  font-size: 292.627px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: normal;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation: moveUp 0.5s ease-out forwards;
+  text-align: center;
+  color: #191F28;
+}
+
+.kiosk_filtering_list {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 23.05px;
+  margin-right: 230px;
+  gap: 24px;
+}
+
+.kiosk_filtering_btn {
+  font-family: "Pretendard", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 180px;
+  text-align: center;
+  color: #191F28;
+  border-radius: 8px;
+  background: #D9D9D9;
+}
+
+.kiosk_filtering_btn.active {
+  color: #FFF;
+  background: #309BDF;
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.kiosk_facility_swiper {
+  width: 2030px;
+  margin-top: 60px !important;
+  padding-left: 150px !important;
+}
+
+.kiosk_facility_swiper .swiper-slide {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-row-gap: 50px;
+}
+
+.swiper-item {
+  display: flex;
+  flex-direction: column;
+  width: 784px !important;
+  gap: 10px;
+}
+
+.kiosk_facility_title_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.kiosk_facility_title_index {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 100px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 120%;
+  height: 120px;
+  color: #8B95A1;
+}
+
+.kiosk_facility_title_kr {
+  font-family: "Pretendard", sans-serif;
+  font-size: 44px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: normal;
+  margin-bottom: 4px;
+  color: #191F28;
+}
+
+.kiosk_facility_title_en {
+  font-family: "Roboto", sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #6B7684;
+}
+
+.swiper-item img {
+  width: 784px;
+  height: 303px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.kiosk_facility_swiper .swiper-button-next::after,
+.kiosk_facility_swiper .swiper-button-prev::after {
+  display: none;
+}
+
+.kiosk_facility_swiper .swiper-button-next {
+  width: 160px;
+  height: 160px;
+  transform: rotate(180deg);
+  background: url(../img/arrow.svg) no-repeat top center;
+  background-size: cover;
+}
+
+.kiosk_facility_swiper .swiper-button-prev {
+  left: 0;
+  width: 160px;
+  height: 160px;
+  background: url(../img/arrow.svg) no-repeat top center;
+  background-size: cover;
+}
+
+.kiosk_facility_popup {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.70);
+}
+
+.popup_content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 1800px;
+  height: 2478px;
+  margin-top: 440.3px;
+  margin-left: 180.02px;
+  border-radius: 60px;
+  background-color: white;
+}
+
+.kiosk_facility_popup_header {
+  width: 100%;
+  height: 301px;
+  padding: 99.53px 0 60px 100px;
+  border-radius: 60px 60px 0 0;
+  background: #8B95A1;
+}
+
+.kiosk_facility_popup_header_text {
+  display: flex;
+  flex-direction: column;
+  gap: 7.47px;
+}
+
+.kiosk_facility_popup_header_caption {
+  font-family: "Pretendard", sans-serif;
+  font-size: 44px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  margin-left: 10px;
+  color: #FFF;
+}
+
+.kiosk_facility_popup_header_title {
+  font-family: "Pretendard", sans-serif;
+  font-size: 68px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -1.7px;
+  text-transform: uppercase;
+  color: #FFF;
+}
+
+.kiosk_facility_popup_header_img {
+  position: absolute;
+  top: 70px;
+  right: 72.12px;
+  width: 455.392px;
+  height: 320.004px;
+  background: url(../img/popupMap.svg) no-repeat top center;
+  background-size: cover;
+}
+
+.kiosk_facility_popup_img {
+  width: 1500px;
+  height: 935.22px;
+  margin-top: 123px;
+  margin-bottom: 60px;
+  margin-left: 152px;
+  border-radius: 36px;
+  object-fit: cover;
+}
+
+.kiosk_facility_popup_content_list {
+  display: flex;
+  flex-direction: column;
+  width: 1612px;
+  margin-left: 97.98px;
+  padding: 0 28px 0 28px;
+  gap: 20px;
+}
+
+.kiosk_facility_popup_content_list_item {
+  display: flex;
+  gap: 32px;
+}
+
+.kiosk_facility_popup_content_list_item_icon {
+  width: 68px;
+  height: 68px;
+  margin-top: 8px;
+  background: url(../img/check.svg) no-repeat top center;
+  background-size: cover;
+}
+
+.kiosk_facility_popup_content_list_item_text {
+  font-family: "Pretendard", sans-serif;
+  font-size: 60px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 140%;
+  width: 1456px;
+  letter-spacing: -1.5px;
+  color: #191F28;
+}
+
+.kiosk_facility_popup_caption {
+  font-family: "Pretendard", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 140%;
+  width: 1620px;
+  margin-top: 75px;
+  margin-left: 90px;
+  padding: 60px 80px;
+  color: #191F28;
+  border-radius: 36px;
+  background: #EFF1F3;
+}
+
+.kiosk_facility_popup_close {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 198px;
+  border-top: 2px solid #E5E8EB;
+  gap: 19px;
+}
+
+.kiosk_facility_popup_close_icon {
+  width: 76.267px;
+  height: 76.267px;
+  background: url(../img/close.svg) no-repeat top center;
+  background-size: cover;
+}
+
+.kiosk_facility_popup_close_text {
+  font-family: "Pretendard", sans-serif;
+  font-size: 60px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+  text-transform: uppercase;
+  color: #191F28;
+}
+
+@media (width: 1080px) {
+  .kiosk_facility_map_wrapper {
+    position: relative;
+    width: 902.2325px;
+    height: 634.9765px;
+    margin-top: 48px;
+    margin-left: 89px;
+  }
+
+  .kiosk_facility_map_wrapper img {
+    width: 902.2325px;
+    height: 634.9765px;
+    object-fit: contain;
+  }
+
+  .floor_name {
+    font-family: "Pretendard", sans-serif;
+    font-size: 146.3135px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: normal;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: moveUp 0.5s ease-out forwards;
+    text-align: center;
+    color: #191F28;
+  }
+
+  .kiosk_filtering_list {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 11.525px;
+    margin-right: 115px;
+    gap: 12px;
+  }
+
+  .kiosk_filtering_btn {
+    font-family: "Pretendard", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    color: #191F28;
+    border-radius: 4px;
+    background: #D9D9D9;
+  }
+
+  .kiosk_filtering_btn.active {
+    color: #FFF;
+    background: #309BDF;
+  }
+
+  @keyframes moveUp {
+    0% {
+      transform: translateY(10px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .kiosk_facility_swiper {
+    width: 1015px;
+    margin-top: 30px !important;
+    padding-left: 75px !important;
+  }
+
+  .kiosk_facility_swiper .swiper-slide {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 25px;
+  }
+
+  .swiper-item {
+    display: flex;
+    flex-direction: column;
+    width: 392px !important;
+    gap: 5px;
+  }
+
+  .kiosk_facility_title_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .kiosk_facility_title_index {
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 50px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 60%;
+    height: 60px;
+    color: #8B95A1;
+  }
+
+  .kiosk_facility_title_kr {
+    font-family: "Pretendard", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
+    margin-bottom: 2px;
+    color: #191F28;
+  }
+
+  .kiosk_facility_title_en {
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 70%;
+    text-transform: uppercase;
+    color: #6B7684;
+  }
+
+  .swiper-item img {
+    width: 392px;
+    height: 151.5px;
+    border-radius: 4px;
+    object-fit: cover;
+  }
+
+  .kiosk_facility_swiper .swiper-button-next::after,
+  .kiosk_facility_swiper .swiper-button-prev::after {
+    display: none;
+  }
+
+  .kiosk_facility_swiper .swiper-button-next {
+    width: 80px;
+    height: 80px;
+    transform: rotate(180deg);
+    background: url(../img/arrow.svg) no-repeat top center;
+    background-size: cover;
+  }
+
+  .kiosk_facility_swiper .swiper-button-prev {
+    left: 0;
+    width: 80px;
+    height: 80px;
+    background: url(../img/arrow.svg) no-repeat top center;
+    background-size: cover;
+  }
+
+  .kiosk_facility_popup {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.70);
+  }
+
+  .popup_content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    height: 1239px;
+    margin-top: 220.15px;
+    margin-left: 90.01px;
+    border-radius: 30px;
+    background-color: white;
+  }
+
+  .kiosk_facility_popup_header {
+    width: 100%;
+    height: 150.5px;
+    padding: 49.765px 0 30px 50px;
+    border-radius: 30px 30px 0 0;
+    background: #8B95A1;
+  }
+
+  .kiosk_facility_popup_header_text {
+    display: flex;
+    flex-direction: column;
+    gap: 3.735px;
+  }
+
+  .kiosk_facility_popup_header_caption {
+    font-family: "Pretendard", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    margin-left: 5px;
+    color: #FFF;
+  }
+
+  .kiosk_facility_popup_header_title {
+    font-family: "Pretendard", sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -1.7px;
+    text-transform: uppercase;
+    color: #FFF;
+  }
+
+  .kiosk_facility_popup_header_img {
+    position: absolute;
+    top: 35px;
+    right: 36.06px;
+    width: 227.696px;
+    height: 160.002px;
+    background: url(../img/popupMap.svg) no-repeat top center;
+    background-size: cover;
+  }
+
+  .kiosk_facility_popup_img {
+    width: 750px;
+    height: 467.61px;
+    margin-top: 61.5px;
+    margin-bottom: 30px;
+    margin-left: 76px;
+    border-radius: 18px;
+    object-fit: cover;
+  }
+
+  .kiosk_facility_popup_content_list {
+    display: flex;
+    flex-direction: column;
+    width: 806px;
+    margin-left: 48.99px;
+    padding: 0 14px 0 14px;
+    gap: 10px;
+  }
+
+  .kiosk_facility_popup_content_list_item {
+    display: flex;
+    gap: 16px;
+  }
+
+  .kiosk_facility_popup_content_list_item_icon {
+    width: 34px;
+    height: 34px;
+    margin-top: 4px;
+    background: url(../img/check.svg) no-repeat top center;
+    background-size: cover;
+  }
+
+  .kiosk_facility_popup_content_list_item_text {
+    font-family: "Pretendard", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 140%;
+    width: 728px;
+    letter-spacing: -1.5px;
+    color: #191F28;
+  }
+
+  .kiosk_facility_popup_caption {
+    font-family: "Pretendard", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 140%;
+    width: 810px;
+    margin-top: 37.5px;
+    margin-left: 45px;
+    padding: 30px 40px;
+    color: #191F28;
+    border-radius: 18px;
+    background: #EFF1F3;
+  }
+
+  .kiosk_facility_popup_close {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 99px;
+    border-top: 2px solid #E5E8EB;
+    gap: 9.5px;
+  }
+
+  .kiosk_facility_popup_close_icon {
+    width: 38.1335px;
+    height: 38.1335px;
+    background: url(../img/close.svg) no-repeat top center;
+    background-size: cover;
+  }
+
+  .kiosk_facility_popup_close_text {
+    font-family: "Pretendard", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #191F28;
+  }
+}

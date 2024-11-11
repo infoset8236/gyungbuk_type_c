@@ -312,3 +312,48 @@ $(document).ready(function () {
 		$(this).addClass('active');
 	});
 });
+
+$(document).ready(function () {
+	$('.kiosk_filtering_btn:first').addClass('active');
+	$('.kiosk_filtering_btn').on('click', function () {
+		$('.kiosk_filtering_btn').removeClass('active');
+		$(this).addClass('active');
+
+		const floor = $(this).text();
+
+		$('.kiosk_facility_map_wrapper .floor_name').css('animation', 'none');
+		$('.kiosk_facility_map_wrapper img').attr('src', '/resources/ict/img/map' + floor + '.svg');
+
+		setTimeout(function () {
+			$('.kiosk_facility_map_wrapper .floor_name').text(floor).css('animation', 'moveUp 0.5s ease-out forwards');
+		}, 10);
+	});
+});
+
+$(function () {
+	const kioskFacilitySwiper = new Swiper('.kiosk_facility_swiper', {
+		speed: 600,
+		loop: true,
+		slidesPerView: 1,
+		navigation: {
+			nextEl: '.kiosk_facility_swiper .swiper-button-next',
+			prevEl: '.kiosk_facility_swiper .swiper-button-prev',
+		},
+	});
+});
+
+$(document).ready(function () {
+	$('.swiper-item').click(function () {
+		$('.kiosk_facility_popup').fadeIn();
+	});
+
+	$('.kiosk_facility_popup_close').click(function () {
+		$('.kiosk_facility_popup').fadeOut();
+	});
+
+	$('.kiosk_facility_popup').click(function (e) {
+		if ($(e.target).hasClass('kiosk_facility_popup')) {
+			$(this).fadeOut();
+		}
+	});
+});
