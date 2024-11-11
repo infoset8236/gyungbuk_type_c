@@ -1,9 +1,11 @@
 $(document).ready(function () {
 	function updateDateTime() {
 		const now = new Date();
+
 		const hours = String(now.getHours()).padStart(2, '0');
 		const minutes = String(now.getMinutes()).padStart(2, '0');
 		const formattedTime = `${hours}:${minutes}`;
+
 		const year = now.getFullYear();
 		const month = String(now.getMonth() + 1).padStart(2, '0');
 		const date = String(now.getDate()).padStart(2, '0');
@@ -16,6 +18,8 @@ $(document).ready(function () {
 		$('.media_common_header_date').text(formattedDate);
 		$('.media_promotion_date').text(dateString);
 		$('.media_promotion_time').text(formattedTime);
+		$('.kiosk_main_time').text(formattedTime);
+		$('.kiosk_main_date').text(formattedDate + '요일');
 	}
 
 	updateDateTime();

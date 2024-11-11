@@ -2049,3 +2049,191 @@
     color: #EFF1F3;
   }
 }
+
+/* 키오스크 공통 */
+
+/* 키오스크 메인 */
+.kiosk_main_container {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/kioskMainBg.svg) no-repeat top center;
+  background-size: cover;
+}
+
+.kiosk_main_time {
+  font-family: "Spoqa Han Sans Neo", sans-serif;
+  font-size: 136px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: normal;
+  margin-left: 275px;
+  padding-top: 259px;
+  color: #FFF;
+}
+
+.kiosk_main_date {
+  font-family: "Pretendard", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  margin-bottom: 334.48px;
+  margin-left: 276px;
+  color: #FFF;
+}
+
+.kiosk_main_message {
+  font-family: "Pretendard", sans-serif;
+  font-size: 160px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: normal;
+  margin-left: 268px;
+  animation: slideUp 0.8s ease-out forwards;
+  letter-spacing: -4px;
+  color: #191F28;
+}
+
+.kiosk_main_message span {
+  font-family: "Pretendard", sans-serif;
+  font-size: 160px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -4px;
+  color: #191F28;
+}
+
+.kiosk_main_caption {
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 120%;
+  margin-top: 60px;
+  margin-bottom: 1036px;
+  margin-left: 278px;
+  animation: slideUp 0.8s ease-out forwards;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #FFF;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.kiosk_main_arrow {
+  width: 240px;
+  height: 240px;
+  margin-left: 268px;
+  animation: bounceHorizontal 1s ease-in-out infinite;
+  background: url(../img/kioskMainArrow.svg) no-repeat top center;
+  background-size: cover;
+}
+
+@keyframes bounceHorizontal {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+}
+
+@media (width: 1080px) {
+  .kiosk_main_time {
+    font-family: "Spoqa Han Sans Neo", sans-serif;
+    font-size: 68px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: normal;
+    margin-left: 137.5px;
+    padding-top: 129.5px;
+    color: #FFF;
+  }
+
+  .kiosk_main_date {
+    font-family: "Pretendard", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    margin-bottom: 167.24px;
+    margin-left: 138px;
+    color: #FFF;
+  }
+
+  .kiosk_main_message {
+    font-family: "Pretendard", sans-serif;
+    font-size: 80px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: normal;
+    margin-left: 134px;
+    animation: slideUp 0.8s ease-out forwards;
+    letter-spacing: -2px;
+    color: #191F28;
+  }
+
+  .kiosk_main_message span {
+    font-family: "Pretendard", sans-serif;
+    font-size: 80px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -2px;
+    color: #191F28;
+  }
+
+  .kiosk_main_caption {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 60%;
+    margin-top: 30px;
+    margin-bottom: 518px;
+    margin-left: 139px;
+    animation: slideUp 0.8s ease-out forwards;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFF;
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .kiosk_main_arrow {
+    width: 120px;
+    height: 120px;
+    margin-left: 134px;
+    animation: bounceHorizontal 1s ease-in-out infinite;
+    background: url(../img/kioskMainArrow.svg) no-repeat top center;
+    background-size: cover;
+  }
+
+  @keyframes bounceHorizontal {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(20px);
+    }
+  }
+}
