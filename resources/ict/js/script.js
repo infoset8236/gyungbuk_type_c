@@ -334,6 +334,10 @@ $(function () {
 	const kioskFacilitySwiper = new Swiper('.kiosk_facility_swiper', {
 		speed: 600,
 		loop: true,
+		autoplay: {
+			delay: 10000,
+			disableOnInteraction: false,
+		},
 		slidesPerView: 1,
 		navigation: {
 			nextEl: '.kiosk_facility_swiper .swiper-button-next',
@@ -355,5 +359,37 @@ $(document).ready(function () {
 		if ($(e.target).hasClass('kiosk_facility_popup')) {
 			$(this).fadeOut();
 		}
+	});
+});
+
+$(function () {
+	const kioskNoticeSwiper = new Swiper('.kiosk_notice_swiper', {
+		speed: 600,
+		loop: true,
+		slidesPerView: 1,
+		autoplay: {
+			delay: 10000,
+			disableOnInteraction: false,
+		},
+		pagination: {
+			el: '.swiper-pagination',
+			type: 'bullets',
+		},
+	});
+});
+
+$(function () {
+	const kioskNewBookSwiper = new Swiper('.kiosk_new_book_swiper', {
+		speed: 600,
+		loop: true,
+		slidesPerView: 1,
+		// autoplay: {
+		// 	delay: 10000,
+		// 	disableOnInteraction: false,
+		// },
+		pagination: {
+			el: '.swiper-pagination',
+			type: 'bullets',
+		},
 	});
 });
