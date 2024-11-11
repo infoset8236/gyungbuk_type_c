@@ -266,3 +266,49 @@ $(document).ready(function () {
 	updateWiseSaying();
 	setInterval(updateWiseSaying, 10000);
 });
+
+$(function () {
+	const mediaEventSwiper = new Swiper('.media_event_slider', {
+		speed: 600,
+		loop: true,
+		effect: 'fade',
+		fadeEffect: {
+			crossFade: true,
+		},
+		slidesPerView: 1,
+		autoplay: {
+			delay: 10000,
+			disableOnInteraction: false,
+		},
+		pagination: {
+			el: '.swiper-pagination',
+			type: 'bullets',
+		},
+	});
+});
+
+$(function () {
+	const kioskNoticeSwiper = new Swiper('.kiosk_notice_swiper', {
+		speed: 600,
+		loop: true,
+		slidesPerView: 1,
+		autoplay: {
+			delay: 10000,
+			disableOnInteraction: false,
+		},
+		pagination: {
+			el: '.swiper-pagination',
+			type: 'bullets',
+		},
+	});
+});
+
+$(document).ready(function () {
+	const items = $('.kiosk_common_navigation_bar_item');
+	items.first().addClass('active');
+
+	items.click(function () {
+		items.removeClass('active');
+		$(this).addClass('active');
+	});
+});
