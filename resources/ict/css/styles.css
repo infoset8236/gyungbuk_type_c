@@ -3363,7 +3363,7 @@
     grid-row-gap: 25px;
   }
 
-  .swiper-item {
+  .kiosk_facility_swiper .swiper-item {
     display: flex;
     flex-direction: column;
     width: 392px !important;
@@ -3777,6 +3777,269 @@
   }
 
   .kiosk_new_book_swiper .swiper-pagination-bullet-active {
+    background-color: #333D4B;
+  }
+}
+
+/* 키오스크 대출도서 */
+.kiosk_best_book_container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/kioskBestBookBg.svg) no-repeat top center;
+  background-size: cover;
+}
+
+.kiosk_best_book_swiper {
+  width: 2200px;
+  margin-top: 96px;
+  padding-left: 200px !important;
+}
+
+.kiosk_best_book_swiper .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 140px;
+  gap: 128px;
+}
+
+.kiosk_best_book_swiper .swiper-item {
+  position: relative;
+  display: flex;
+  width: 1702.835px !important;
+  padding-left: 68.27px;
+  gap: 60px;
+}
+
+.kiosk_best_book_badge {
+  font-family: "Pretendard", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: normal;
+  position: absolute;
+  top: 124px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 140px;
+  text-align: center;
+  letter-spacing: -1.25px;
+  color: #FFF;
+  border-radius: 50%;
+  background: #E71D36;
+}
+
+.kiosk_best_book_swiper .swiper-item img {
+  width: 285.825px;
+  height: 450px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px 0 rgba(25, 33, 61, 0.20);
+  object-fit: cover;
+}
+
+.kiosk_best_book_title {
+  font-family: "Pretendard", sans-serif;
+  font-size: 68px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: normal;
+  overflow: hidden;
+  width: 1288.399px;
+  margin-top: 20px;
+  margin-bottom: 24px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #191F28;
+}
+
+.kiosk_best_book_writer {
+  font-family: "Pretendard", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+  margin-bottom: 24px;
+  letter-spacing: -1.2px;
+  color: #4E5968;
+}
+
+.kiosk_best_book_year {
+  font-family: "Pretendard", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+  margin-bottom: 48px;
+  letter-spacing: -1.2px
+}
+
+.kiosk_best_book_info {
+  font-family: "Pretendard", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+  color:  #191F28;
+}
+
+.kiosk_best_book_info span {
+  font-family: "Pretendard", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  width: 160px;
+  margin-right: 20px;
+  color: #6B7684;
+}
+
+.kiosk_best_book_swiper .swiper-pagination {
+  display: flex !important;
+  justify-content: center;
+  gap: 40px;
+}
+
+.kiosk_best_book_swiper .swiper-pagination-bullet {
+  width: 24px;
+  height: 24px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  opacity: 1;
+  background-color: #ADB5BD;
+}
+
+.kiosk_best_book_swiper .swiper-pagination-bullet-active {
+  background-color: #333D4B;
+}
+
+@media (width: 1080px) {
+  .kiosk_best_book_swiper {
+    width: 1100px;
+    margin-top: 48px;
+    padding-left: 100px !important;
+  }
+
+  .kiosk_best_book_swiper .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 70px;
+    gap: 64px;
+  }
+
+  .kiosk_best_book_swiper .swiper-item {
+    position: relative;
+    display: flex;
+    width: 851.4175px !important;
+    padding-left: 34.135px;
+    gap: 30px;
+  }
+
+  .kiosk_best_book_badge {
+    font-family: "Pretendard", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal;
+    position: absolute;
+    top: 62px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    letter-spacing: -0.625px;
+    color: #FFF;
+    border-radius: 50%;
+    background: #E71D36;
+  }
+
+  .kiosk_best_book_swiper .swiper-item img {
+    width: 142.9125px;
+    height: 225px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px 0 rgba(25, 33, 61, 0.20);
+    object-fit: cover;
+  }
+
+  .kiosk_best_book_title {
+    font-family: "Pretendard", sans-serif;
+    font-size: 34px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
+    overflow: hidden;
+    width: 644.1995px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #191F28;
+  }
+
+  .kiosk_best_book_writer {
+    font-family: "Pretendard", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    margin-bottom: 12px;
+    letter-spacing: -0.6px;
+    color: #4E5968;
+  }
+
+  .kiosk_best_book_year {
+    font-family: "Pretendard", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    margin-bottom: 24px;
+    letter-spacing: -0.6px;
+  }
+
+  .kiosk_best_book_info {
+    font-family: "Pretendard", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    margin-bottom: 10px;
+    letter-spacing: -0.5px;
+    color: #191F28;
+  }
+
+  .kiosk_best_book_info span {
+    font-family: "Pretendard", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    width: 80px;
+    margin-right: 10px;
+    color: #6B7684;
+  }
+
+  .kiosk_best_book_swiper .swiper-pagination {
+    display: flex !important;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .kiosk_best_book_swiper .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    opacity: 1;
+    background-color: #ADB5BD;
+  }
+
+  .kiosk_best_book_swiper .swiper-pagination-bullet-active {
     background-color: #333D4B;
   }
 }

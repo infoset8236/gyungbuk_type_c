@@ -379,7 +379,7 @@ $(function () {
 });
 
 $(function () {
-	const kioskNewBookSwiper = new Swiper('.kiosk_new_book_swiper', {
+	const kioskNewBookSwiper = new Swiper('.kiosk_best_book_swiper', {
 		speed: 600,
 		loop: true,
 		slidesPerView: 1,
