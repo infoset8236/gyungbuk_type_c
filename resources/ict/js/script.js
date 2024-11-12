@@ -425,3 +425,19 @@ $(document).ready(function () {
 		}
 	});
 });
+
+$(function () {
+	const kioskCourseInformationSwiper = new Swiper('.kiosk_course_information_swiper', {
+		speed: 600,
+		loop: true,
+		slidesPerView: 1,
+		autoplay: {
+			delay: 10000,
+			disableOnInteraction: false,
+		},
+		pagination: {
+			el: '.swiper-pagination',
+			type: 'bullets',
+		},
+	});
+});
