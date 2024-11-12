@@ -441,3 +441,52 @@ $(function () {
 		},
 	});
 });
+
+$(document).ready(function () {
+	$('.kiosk_course_registration_gender_btn').on('click', function () {
+		$('.kiosk_course_registration_gender_btn').removeClass('active');
+		$(this).addClass('active');
+	});
+});
+
+$(document).ready(function () {
+	const currentYear = new Date().getFullYear();
+	const $yearSelect = $('.birth_year');
+	for (let year = 1900; year <= currentYear; year++) {
+		$yearSelect.append(new Option(year, year));
+	}
+
+	const $monthSelect = $('.birth_month');
+	for (let month = 1; month <= 12; month++) {
+		const monthValue = month < 10 ? '0' + month : month;
+		$monthSelect.append(new Option(monthValue, monthValue));
+	}
+
+	const $daySelect = $('.birth_day');
+	for (let day = 1; day <= 31; day++) {
+		const dayValue = day < 10 ? '0' + day : day;
+		$daySelect.append(new Option(dayValue, dayValue));
+	}
+});
+
+$(document).ready(function () {
+	$('#sms-agree').click(function () {
+		$('#sms-agree .kiosk_course_registration_check_radio').removeClass('unchecked').addClass('checked');
+		$('#sms-disagree .kiosk_course_registration_check_radio').removeClass('checked').addClass('unchecked');
+	});
+
+	$('#sms-disagree').click(function () {
+		$('#sms-disagree .kiosk_course_registration_check_radio').removeClass('unchecked').addClass('checked');
+		$('#sms-agree .kiosk_course_registration_check_radio').removeClass('checked').addClass('unchecked');
+	});
+
+	$('#photo-agree').click(function () {
+		$('#photo-agree .kiosk_course_registration_check_radio').removeClass('unchecked').addClass('checked');
+		$('#photo-disagree .kiosk_course_registration_check_radio').removeClass('checked').addClass('unchecked');
+	});
+
+	$('#photo-disagree').click(function () {
+		$('#photo-disagree .kiosk_course_registration_check_radio').removeClass('unchecked').addClass('checked');
+		$('#photo-agree .kiosk_course_registration_check_radio').removeClass('checked').addClass('unchecked');
+	});
+});
