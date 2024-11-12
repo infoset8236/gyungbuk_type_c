@@ -383,13 +383,45 @@ $(function () {
 		speed: 600,
 		loop: true,
 		slidesPerView: 1,
-		// autoplay: {
-		// 	delay: 10000,
-		// 	disableOnInteraction: false,
-		// },
+		autoplay: {
+			delay: 10000,
+			disableOnInteraction: false,
+		},
 		pagination: {
 			el: '.swiper-pagination',
 			type: 'bullets',
 		},
+	});
+});
+
+$(function () {
+	const kioskBookInformationSwiper = new Swiper('.kiosk_book_information_swiper', {
+		speed: 600,
+		loop: true,
+		autoplay: {
+			delay: 10000,
+			disableOnInteraction: false,
+		},
+		slidesPerView: 1,
+		navigation: {
+			nextEl: '.kiosk_book_information_swiper .swiper-button-next',
+			prevEl: '.kiosk_book_information_swiper .swiper-button-prev',
+		},
+	});
+});
+
+$(document).ready(function () {
+	$('.kiosk_book_information_popup_trigger').click(function () {
+		$('.kiosk_book_information_popup').fadeIn();
+	});
+
+	$('.kiosk_book_information_popup_close').click(function () {
+		$('.kiosk_book_information_popup').fadeOut();
+	});
+
+	$('.kiosk_book_information_popup').click(function (e) {
+		if ($(e.target).hasClass('kiosk_book_information_popup')) {
+			$(this).fadeOut();
+		}
 	});
 });

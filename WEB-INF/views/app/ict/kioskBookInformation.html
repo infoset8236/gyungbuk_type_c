@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport" />
+		<meta content="ie=edge" http-equiv="X-UA-Compatible" />
+		<link href="../../../../resources/ict/css/font.css" rel="stylesheet" type="text/css" />
+		<link href="../../../../resources/ict/css/reset.css" rel="stylesheet" type="text/css" />
+		<link href="../../../../resources/ict/css/styles.css" rel="stylesheet" type="text/css" />
+		<link href="../../../../resources/ict/css/swiper-bundle.min.css" rel="stylesheet" type="text/css " />
+		<script src="../../../../resources/ict/plugin/jquery-3.7.1.min.js" type="text/javascript"></script>
+		<script src="../../../../resources/ict/plugin/swiper-bundle.min.js" type="text/javascript"></script>
+		<script src="../../../../resources/ict/js/script.js" type="text/javascript"></script>
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="kiosk_book_information_container">
+			<div class="kiosk_common_header_wrapper">
+				<div class="kiosk_common_header_kr">도서정보</div>
+				<div class="kiosk_common_header_en">BOOK INFORMATION</div>
+			</div>
+			<div class="kiosk_book_information_thumbnail_wrapper">
+				<!--	책 썸네일		-->
+				<img alt="" src="/resources/ict/img/dummy.svg" />
+				<div>대출<br />가능</div>
+			</div>
+			<!--	책 타이틀		-->
+			<div class="kiosk_book_information_thumbnail_title">감정호텔</div>
+			<!--	상세 정보		-->
+			<div class="kiosk_book_information_thumbnail_info">
+				<div class="kiosk_book_information_thumbnail_info_left">
+					<div class="label"><span>저자명</span>마티아스 뇔케</div>
+					<div class="label"><span>출판사</span>퍼스트펭귄</div>
+					<div class="label"><span>발행년</span>2024</div>
+				</div>
+				<div class="kiosk_book_information_thumbnail_info_right">
+					<div class="label"><span>서가위치</span>3F 종합자료실</div>
+					<div class="label"><span>청구기호</span>490-99-밀233ㅁ=2</div>
+					<div class="label"><span>등록번호</span>BZK000908995</div>
+				</div>
+			</div>
+			<!--	팝업 trigger		-->
+			<div class="kiosk_book_information_popup_trigger">소장도서 서가위치보기</div>
+			<!--	팝업		-->
+			<div class="kiosk_book_information_popup" style="display: none">
+				<div class="popup_content">
+					<div class="kiosk_book_information_popup_header">서가위치</div>
+					<!--	이미지 데이터 바인딩 필요		-->
+					<img alt="" class="kiosk_book_information_popup_img" src="/resources/ict/img/facilityDummy.svg" />
+					<div class="kiosk_book_information_popup_action_wrapper">
+						<div class="kiosk_book_information_popup_close">
+							<div class="kiosk_book_information_popup_close_icon"></div>
+							<div class="kiosk_book_information_popup_close_text">닫기</div>
+						</div>
+						<!--	인쇄		-->
+						<div class="kiosk_book_information_popup_print">
+							<div class="kiosk_book_information_popup_print_icon"></div>
+							<div class="kiosk_book_information_popup_print_text">인쇄</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="kiosk_book_information_summary_title">책소개</div>
+			<div class="kiosk_book_information_summary">
+				세상에 변하지 않는 것은 없다. 변하지 않을 것만 같은 '사랑', '믿음', '우정', '소망' 등의 의미도 시간, 관점에 따라 다르게 해석되기 마련이다. 인간은 심리로 반응하기 때문일까. 그럼에도 불구하고
+				변하지 않는 것이 있다면, 그것은 바로 '인간의 변하지 않는 행동양식'이다. 변화는 우리의 주의와 호기심을 항상 끌어당겨 왔다..
+			</div>
+			<div class="swiper kiosk_book_information_swiper">
+				<div class="swiper-wrapper">
+					<!--		2중 for 문 필요 / 	1개의 swiper-slide 안 5개	swiper-item 	-->
+					<div class="swiper-slide">
+						<div class="swiper-item">
+							<img alt="" src="/resources/ict/img/dummy.svg" />
+							<div>결국 해내면 그만이다</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			</div>
+			<!--	 prev btn		-->
+			<div class="kiosk_common_prev_wrapper">
+				<div class="kiosk_common_prev_text">이전으로</div>
+				<div class="kiosk_common_prev_icon"></div>
+			</div>
+			<div class="kiosk_common_navigation_bar">
+				<div class="kiosk_common_navigation_bar_item">
+					<img alt="" src="/resources/ict/img/notice.svg" />
+					<div class="kiosk_common_navi_kr">공지사항</div>
+					<div class="kiosk_common_navi_en">NOTICE</div>
+				</div>
+				<div class="kiosk_common_navigation_bar_item">
+					<img alt="" src="/resources/ict/img/information.svg" />
+					<div class="kiosk_common_navi_kr">이용안내</div>
+					<div class="kiosk_common_navi_en">INFORMATION</div>
+				</div>
+				<div class="kiosk_common_navigation_bar_item">
+					<img alt="" src="/resources/ict/img/facility.svg" />
+					<div class="kiosk_common_navi_kr">시설안내</div>
+					<div class="kiosk_common_navi_en">FACILITY</div>
+				</div>
+				<div class="kiosk_common_navigation_bar_item">
+					<img alt="" src="/resources/ict/img/newBook.svg" />
+					<div class="kiosk_common_navi_kr">신착도서</div>
+					<div class="kiosk_common_navi_en">NEW BOOK</div>
+				</div>
+				<div class="kiosk_common_navigation_bar_item">
+					<img alt="" src="/resources/ict/img/bestBook.svg" />
+					<div class="kiosk_common_navi_kr">대출베스트</div>
+					<div class="kiosk_common_navi_en">BEST BOOK</div>
+				</div>
+				<div class="kiosk_common_navigation_bar_item">
+					<img alt="" src="/resources/ict/img/course.svg" />
+					<div class="kiosk_common_navi_kr">강좌안내</div>
+					<div class="kiosk_common_navi_en">COURSE</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
