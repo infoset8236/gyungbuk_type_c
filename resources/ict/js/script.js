@@ -316,6 +316,16 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
+	const items = $('.kiosk_common_navigation_bar_item_x');
+	items.first().addClass('active_x');
+
+	items.click(function () {
+		items.removeClass('active_x');
+		$(this).addClass('active_x');
+	});
+});
+
+$(document).ready(function () {
 	$('.kiosk_filtering_btn:first').addClass('active');
 	$('.kiosk_filtering_btn').on('click', function () {
 		$('.kiosk_filtering_btn').removeClass('active');
@@ -376,6 +386,22 @@ $(function () {
 		pagination: {
 			el: '.swiper-pagination',
 			type: 'bullets',
+		},
+	});
+});
+
+$(function () {
+	const kioskNoticeXSwiper = new Swiper('.kiosk_notice_swiper_x', {
+		speed: 600,
+		loop: true,
+		slidesPerView: 1,
+		// autoplay: {
+		// 	delay: 10000,
+		// 	disableOnInteraction: false,
+		// },
+		navigation: {
+			nextEl: '.kiosk_notice_swiper_x .swiper-button-next',
+			prevEl: '.kiosk_notice_swiper_x .swiper-button-prev',
 		},
 	});
 });
