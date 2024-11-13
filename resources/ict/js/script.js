@@ -306,40 +306,40 @@ $(function () {
 });
 
 $(document).ready(function () {
-	const items = $('.kiosk_common_navigation_bar_item');
-	items.first().addClass('active');
+	function setupNavigationBar(itemClass, activeClass) {
+		const items = $(`.${itemClass}`);
+		items.first().addClass(activeClass);
 
-	items.click(function () {
-		items.removeClass('active');
-		$(this).addClass('active');
-	});
+		items.click(function () {
+			items.removeClass(activeClass);
+			$(this).addClass(activeClass);
+		});
+	}
+
+	setupNavigationBar('kiosk_common_navigation_bar_item', 'active');
+	setupNavigationBar('kiosk_common_navigation_bar_item_x', 'active_x');
 });
 
 $(document).ready(function () {
-	const items = $('.kiosk_common_navigation_bar_item_x');
-	items.first().addClass('active_x');
+	function setupFiltering(buttonClass, wrapperClass, floorNameClass) {
+		$(`.${buttonClass}:first`).addClass('active');
+		$(`.${buttonClass}`).on('click', function () {
+			$(`.${buttonClass}`).removeClass('active');
+			$(this).addClass('active');
 
-	items.click(function () {
-		items.removeClass('active_x');
-		$(this).addClass('active_x');
-	});
-});
+			const floor = $(this).text();
 
-$(document).ready(function () {
-	$('.kiosk_filtering_btn:first').addClass('active');
-	$('.kiosk_filtering_btn').on('click', function () {
-		$('.kiosk_filtering_btn').removeClass('active');
-		$(this).addClass('active');
+			$(`.${wrapperClass} .${floorNameClass}`).css('animation', 'none');
+			$(`.${wrapperClass} img`).attr('src', `/resources/ict/img/map${floor}.svg`);
 
-		const floor = $(this).text();
+			setTimeout(function () {
+				$(`.${wrapperClass} .${floorNameClass}`).text(floor).css('animation', 'moveUp 0.5s ease-out forwards');
+			}, 10);
+		});
+	}
 
-		$('.kiosk_facility_map_wrapper .floor_name').css('animation', 'none');
-		$('.kiosk_facility_map_wrapper img').attr('src', '/resources/ict/img/map' + floor + '.svg');
-
-		setTimeout(function () {
-			$('.kiosk_facility_map_wrapper .floor_name').text(floor).css('animation', 'moveUp 0.5s ease-out forwards');
-		}, 10);
-	});
+	setupFiltering('kiosk_filtering_btn', 'kiosk_facility_map_wrapper', 'floor_name');
+	setupFiltering('kiosk_filtering_btn_x', 'kiosk_facility_map_wrapper_x', 'floor_name_x');
 });
 
 $(function () {
@@ -358,8 +358,24 @@ $(function () {
 	});
 });
 
+$(function () {
+	const kioskFacilityXSwiper = new Swiper('.kiosk_facility_swiper_x', {
+		speed: 600,
+		loop: true,
+		autoplay: {
+			delay: 10000,
+			disableOnInteraction: false,
+		},
+		slidesPerView: 1,
+		navigation: {
+			nextEl: '.kiosk_facility_swiper_x .swiper-button-next',
+			prevEl: '.kiosk_facility_swiper_x .swiper-button-prev',
+		},
+	});
+});
+
 $(document).ready(function () {
-	$('.swiper-item').click(function () {
+	$('.kiosk_facility_swiper .swiper-item').click(function () {
 		$('.kiosk_facility_popup').fadeIn();
 	});
 
@@ -369,6 +385,22 @@ $(document).ready(function () {
 
 	$('.kiosk_facility_popup').click(function (e) {
 		if ($(e.target).hasClass('kiosk_facility_popup')) {
+			$(this).fadeOut();
+		}
+	});
+});
+
+$(document).ready(function () {
+	$('.kiosk_facility_swiper_x .swiper-item').click(function () {
+		$('.kiosk_facility_popup_x').fadeIn();
+	});
+
+	$('.kiosk_facility_popup_close_x').click(function () {
+		$('.kiosk_facility_popup_x').fadeOut();
+	});
+
+	$('.kiosk_facility_popup_x').click(function (e) {
+		if ($(e.target).hasClass('kiosk_facility_popup_x')) {
 			$(this).fadeOut();
 		}
 	});
@@ -395,10 +427,10 @@ $(function () {
 		speed: 600,
 		loop: true,
 		slidesPerView: 1,
-		// autoplay: {
-		// 	delay: 10000,
-		// 	disableOnInteraction: false,
-		// },
+		autoplay: {
+			delay: 10000,
+			disableOnInteraction: false,
+		},
 		navigation: {
 			nextEl: '.kiosk_notice_swiper_x .swiper-button-next',
 			prevEl: '.kiosk_notice_swiper_x .swiper-button-prev',
