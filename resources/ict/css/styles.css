@@ -3591,7 +3591,438 @@
   }
 }
 
-/* 키오스크 이용안내 */
+/* 키오스크 이용안내 (가로형) */
+.kiosk_information_container_x {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/kioskInformationXBg.svg) no-repeat top center;
+  background-size: cover;
+}
+
+.kiosk_information_content_x {
+  margin: 0 153px 200px 260px;
+}
+
+.kiosk_information_content_scroll_x {
+  display: flex;
+  overflow-y: scroll;
+  flex-direction: column;
+  height: 1640px;
+  padding-top: 30px;
+  padding-right: 99px;
+  gap: 110px;
+}
+
+.kiosk_information_content_scroll_x::-webkit-scrollbar {
+  width: 8px;
+}
+
+.kiosk_information_content_scroll_x::-webkit-scrollbar-track {
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.20);
+}
+
+.kiosk_information_content_scroll_x::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background-color: #FFFFFF;
+}
+
+.kiosk_information_content_scroll_x::-webkit-scrollbar-thumb:hover {
+  background-color: #FFFFFF;
+}
+
+.kiosk_information_index_wrapper_x {
+  display: flex;
+  align-items: center;
+  margin-bottom: 26px;
+  gap: 24px;
+}
+
+.kiosk_information_index_x {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #191F28;
+}
+
+.kiosk_information_index_icon_x {
+  position: absolute;
+  bottom: 69px;
+  left: 0;
+  width: 137px;
+  height: 61px;
+  background: url(../img/rightWhale.svg) no-repeat top center;
+  background-size: cover;
+}
+
+.kiosk_information_index_text_x {
+  font-family: "Pretendard", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: normal;
+  text-align: center;
+  letter-spacing: -1px;
+  color: #FFF;
+}
+
+.kiosk_information_index_title_x {
+  font-family: "Pretendard", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -1.5px;
+  color: #309BDF;
+}
+
+.kiosk_information_content_wrapper_x {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.kiosk_information_title_x {
+  font-family: "Pretendard", sans-serif;
+  font-size: 60px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -1.5px;
+  color: #191F28;
+}
+
+.kiosk_information_first_table_x, .kiosk_information_second_table_x {
+  border-collapse: collapse;
+}
+
+.kiosk_information_first_table_x thead tr th, .kiosk_information_second_table_x thead tr th {
+  font-family: "Pretendard",sans-serif;
+  font-size: 44px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 44px;
+  width: 600px;
+  padding: 33px 0 33px 0;
+  text-align: center;
+  color: #FFF;
+}
+
+.kiosk_information_second_table_x thead tr th:first-child {
+  width: 600px;
+}
+
+.kiosk_information_second_table_x thead tr th:nth-child(2) {
+  width: 1200px;
+}
+
+.kiosk_information_first_table_x thead tr th:first-child,
+.kiosk_information_second_table_x thead tr th:first-child {
+  border-radius: 20px 0 0 0;
+  background: #4E5968;
+}
+
+.kiosk_information_first_table_x thead tr th:nth-child(3),
+.kiosk_information_second_table_x thead tr th:nth-child(2) {
+  border-radius: 0 20px 0 0;
+}
+
+.kiosk_information_first_table_x thead tr th:not(:first-child),
+.kiosk_information_second_table_x thead tr th:not(:first-child) {
+  background: #ADB5BD;
+}
+
+.kiosk_information_first_table_x tbody tr td {
+  font-family: "Pretendard", sans-serif;
+  font-size: 44px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 120%;
+  padding: 29px 0 28px 0;
+  text-align: center;
+  color: #191F28;
+  border: 1px solid #C1D2EF;
+  background-color: #FFFFFF;
+}
+
+.kiosk_information_second_table_x tbody tr td:nth-child(1) {
+  text-align: center;
+}
+
+.kiosk_information_second_table_x tbody tr td {
+  font-family: "Pretendard", sans-serif;
+  font-size: 44px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 120%;
+  padding: 29px 53px 28px 53px;
+  color: #191F28;
+  border: 1px solid #C1D2EF;
+  background-color: #FFFFFF;
+}
+
+.kiosk_information_first_table_x tbody tr:nth-child(3) td:first-child,
+.kiosk_information_second_table_x tbody tr:nth-child(4) td:first-child{
+  border-radius: 0 0 0 20px;
+}
+
+.kiosk_information_first_table_x tbody tr:nth-child(3) td:nth-child(2),
+.kiosk_information_second_table_x tbody tr:nth-child(4) td:nth-child(2){
+  border-radius: 0 0 20px 0;
+}
+
+.kiosk_information_list_x {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.kiosk_information_list_item_x {
+  display: flex;
+  gap: 20px;
+}
+
+.kiosk_information_list_item_icon_x {
+  width: 52px;
+  height: 52px;
+  margin-top: 10.5px;
+  background: url(../img/check.svg) no-repeat top center;
+  background-size: cover;
+}
+
+.kiosk_information_list_item_text_x {
+  font-family: "Pretendard", sans-serif;
+  font-size: 52px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 140%;
+  width: 1728px;
+  letter-spacing: -1.3px;
+  color: #191F28;
+}
+
+@media (width: 1920px) {
+  .kiosk_information_container_x {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/kioskInformationXBg.svg) no-repeat top center;
+    background-size: cover;
+  }
+
+  .kiosk_information_content_x {
+    margin: 0 76.5px 100px 130px;
+  }
+
+  .kiosk_information_content_scroll_x {
+    display: flex;
+    overflow-y: scroll;
+    flex-direction: column;
+    height: 820px;
+    padding-top: 15px;
+    padding-right: 33px;
+    gap: 55px;
+  }
+
+  .kiosk_information_content_scroll_x::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .kiosk_information_content_scroll_x::-webkit-scrollbar-track {
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.20);
+  }
+
+  .kiosk_information_content_scroll_x::-webkit-scrollbar-thumb {
+    border-radius: 25px;
+    background-color: #FFFFFF;
+  }
+
+  .kiosk_information_content_scroll_x::-webkit-scrollbar-thumb:hover {
+    background-color: #FFFFFF;
+  }
+
+  .kiosk_information_index_wrapper_x {
+    display: flex;
+    align-items: center;
+    margin-bottom: 13px;
+    gap: 12px;
+  }
+
+  .kiosk_information_index_x {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #191F28;
+  }
+
+  .kiosk_information_index_icon_x {
+    position: absolute;
+    bottom: 34.5px;
+    left: 0;
+    width: 68.5px;
+    height: 30.5px;
+    background: url(../img/rightWhale.svg) no-repeat top center;
+    background-size: cover;
+  }
+
+  .kiosk_information_index_text_x {
+    font-family: "Pretendard", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal;
+    text-align: center;
+    letter-spacing: -1px;
+    color: #FFF;
+  }
+
+  .kiosk_information_index_title_x {
+    font-family: "Pretendard", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -1.5px;
+    color: #309BDF;
+  }
+
+  .kiosk_information_content_wrapper_x {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .kiosk_information_title_x {
+    font-family: "Pretendard", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -1.5px;
+    color: #191F28;
+  }
+
+  .kiosk_information_first_table_x, .kiosk_information_second_table_x {
+    border-collapse: collapse;
+  }
+
+  .kiosk_information_first_table_x thead tr th, .kiosk_information_second_table_x thead tr th {
+    font-family: "Pretendard",sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 44px;
+    width: 300px;
+    padding: 16.5px 0 16.5px 0;
+    text-align: center;
+    color: #FFF;
+  }
+
+  .kiosk_information_second_table_x thead tr th:first-child {
+    width: 300px;
+  }
+
+  .kiosk_information_second_table_x thead tr th:nth-child(2) {
+    width: 600px;
+  }
+
+  .kiosk_information_first_table_x thead tr th:first-child,
+  .kiosk_information_second_table_x thead tr th:first-child {
+    border-radius: 10px 0 0 0;
+    background: #4E5968;
+  }
+
+  .kiosk_information_first_table_x thead tr th:nth-child(3),
+  .kiosk_information_second_table_x thead tr th:nth-child(2) {
+    border-radius: 0 10px 0 0;
+  }
+
+  .kiosk_information_first_table_x thead tr th:not(:first-child),
+  .kiosk_information_second_table_x thead tr th:not(:first-child) {
+    background: #ADB5BD;
+  }
+
+  .kiosk_information_first_table_x tbody tr td {
+    font-family: "Pretendard", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 120%;
+    padding: 14.5px 0 14px 0;
+    text-align: center;
+    color: #191F28;
+    border: 0.5px solid #C1D2EF;
+    background-color: #FFFFFF;
+  }
+
+  .kiosk_information_second_table_x tbody tr td:nth-child(1) {
+    text-align: center;
+  }
+
+  .kiosk_information_second_table_x tbody tr td {
+    font-family: "Pretendard", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 120%;
+    padding: 14.5px 26.5px 14px 26.5px;
+    color: #191F28;
+    border: 0.5px solid #C1D2EF;
+    background-color: #FFFFFF;
+  }
+
+  .kiosk_information_first_table_x tbody tr:nth-child(3) td:first-child,
+  .kiosk_information_second_table_x tbody tr:nth-child(4) td:first-child{
+    border-radius: 0 0 0 10px;
+  }
+
+  .kiosk_information_first_table_x tbody tr:nth-child(3) td:nth-child(2),
+  .kiosk_information_second_table_x tbody tr:nth-child(4) td:nth-child(2){
+    border-radius: 0 0 10px 0;
+  }
+
+  .kiosk_information_list_x {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .kiosk_information_list_item_x {
+    display: flex;
+    gap: 10px;
+  }
+
+  .kiosk_information_list_item_icon_x {
+    width: 26px;
+    height: 26px;
+    margin-top: 5.25px;
+    background: url(../img/check.svg) no-repeat top center;
+    background-size: cover;
+  }
+
+  .kiosk_information_list_item_text_x {
+    font-family: "Pretendard", sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 140%;
+    width: 864px;
+    letter-spacing: -1.3px;
+    color: #191F28;
+  }
+}
+
+/* 키오스크 시설안내 */
 .kiosk_facility_container {
   position: relative;
   width: 100%;
@@ -4672,7 +5103,7 @@
   }
 }
 
-/* 키오스크 대출도서 */
+/* 키오스크 도서정보 */
 .kiosk_book_information_container {
   position: relative;
   width: 100%;
@@ -5693,7 +6124,7 @@
   }
 }
 
-/* 키오스크 강좌정보 */
+/* 키오스크 강좌상세 */
 .kiosk_course_detail_container {
   position: relative;
   width: 100%;
@@ -6185,6 +6616,8 @@
     background: #2E80EE;
   }
 }
+
+/* 키오스크 강좌등록 */
 
 .kiosk_course_registration_container {
   position: relative;
