@@ -20,6 +20,8 @@ $(document).ready(function () {
 		$('.media_promotion_time').text(formattedTime);
 		$('.kiosk_main_time').text(formattedTime);
 		$('.kiosk_main_date').text(formattedDate + '요일');
+		$('.kiosk_main_time_x').text(formattedTime);
+		$('.kiosk_main_date_x').text(formattedDate + '요일');
 	}
 
 	updateDateTime();

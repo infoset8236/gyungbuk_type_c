@@ -2545,6 +2545,200 @@
   }
 }
 
+/* 키오스크 메인 (가로형) */
+
+.kiosk_main_container_x {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/kioskMainXBg.svg) no-repeat top center;
+  background-size: cover;
+}
+
+.kiosk_main_time_x {
+  font-family: "Spoqa Han Sans Neo", sans-serif;
+  font-size: 136px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: normal;
+  margin-left: 275px;
+  padding-top: 259px;
+  color: #FFF;
+}
+
+.kiosk_main_date_x {
+  font-family: "Pretendard", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  margin-bottom: 188.48px;
+  margin-left: 276px;
+  color: #FFF;
+}
+
+.kiosk_main_message_x {
+  font-family: "Pretendard", sans-serif;
+  font-size: 160px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: normal;
+  margin-bottom: 60px;
+  margin-left: 268px;
+  animation: slideUp_x 0.8s ease-out forwards;
+  letter-spacing: -4px;
+  color: #191F28;
+}
+
+.kiosk_main_message_x span {
+  font-family: "Pretendard", sans-serif;
+  font-size: 160px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -4px;
+  color: #191F28;
+}
+
+.kiosk_main_caption_x {
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 120%;
+  margin-bottom: 120px;
+  margin-left: 268px;
+  animation: slideUp_x 0.8s ease-out forwards;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #FFF;
+}
+
+@keyframes slideUp_x {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.kiosk_main_arrow_x {
+  width: 240px;
+  height: 240px;
+  margin-left: 275px;
+  animation: bounceHorizontal_x 1s ease-in-out infinite;
+  background: url(../img/kioskMainArrow.svg) no-repeat top center;
+  background-size: cover;
+}
+
+@keyframes bounceHorizontal_x {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+}
+
+@media (width: 1920px) {
+  .kiosk_main_container_x {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/kioskMainXBg.svg) no-repeat top center;
+    background-size: cover;
+  }
+
+  .kiosk_main_time_x {
+    font-family: "Spoqa Han Sans Neo", sans-serif;
+    font-size: 68px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: normal;
+    margin-left: 137.5px;
+    padding-top: 129.5px;
+    color: #FFF;
+  }
+
+  .kiosk_main_date_x {
+    font-family: "Pretendard", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    margin-bottom: 94.24px;
+    margin-left: 138px;
+    color: #FFF;
+  }
+
+  .kiosk_main_message_x {
+    font-family: "Pretendard", sans-serif;
+    font-size: 80px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: normal;
+    margin-bottom: 30px;
+    margin-left: 134px;
+    animation: slideUp_x 0.8s ease-out forwards;
+    letter-spacing: -4px;
+    color: #191F28;
+  }
+
+  .kiosk_main_message_x span {
+    font-family: "Pretendard", sans-serif;
+    font-size: 80px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -4px;
+    color: #191F28;
+  }
+
+  .kiosk_main_caption_x {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 120%;
+    margin-bottom: 120px;
+    margin-left: 134px;
+    animation: slideUp_x 0.8s ease-out forwards;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #FFF;
+  }
+
+  @keyframes slideUp_x {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .kiosk_main_arrow_x {
+    width: 120px;
+    height: 120px;
+    margin-left: 137.5px;
+    animation: bounceHorizontal_x 1s ease-in-out infinite;
+    background: url(../img/kioskMainArrow.svg) no-repeat top center;
+    background-size: cover;
+  }
+
+  @keyframes bounceHorizontal_x {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(10px);
+    }
+  }
+}
+
 /* 키오스크 공지사항 */
 .kiosk_notice_container {
   position: relative;
