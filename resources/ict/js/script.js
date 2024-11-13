@@ -455,6 +455,22 @@ $(function () {
 });
 
 $(function () {
+	const kioskNewBookXSwiper = new Swiper('.kiosk_new_book_swiper_x', {
+		speed: 600,
+		loop: true,
+		autoplay: {
+			delay: 10000,
+			disableOnInteraction: false,
+		},
+		slidesPerView: 1,
+		navigation: {
+			nextEl: '.kiosk_new_book_swiper_x .swiper-button-next',
+			prevEl: '.kiosk_new_book_swiper_x .swiper-button-prev',
+		},
+	});
+});
+
+$(function () {
 	const kioskBookInformationSwiper = new Swiper('.kiosk_book_information_swiper', {
 		speed: 600,
 		loop: true,

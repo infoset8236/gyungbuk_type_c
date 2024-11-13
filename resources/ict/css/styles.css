@@ -5520,6 +5520,211 @@
   }
 }
 
+/* 키오스크 신착도서 (가로형) */
+.kiosk_new_book_container_x {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/kioskNewBookXBg.svg) no-repeat top center;
+  background-size: cover;
+}
+
+.kiosk_new_book_swiper_x {
+  width: 3520px;
+  padding-left: 250px !important;
+}
+
+.kiosk_new_book_swiper_x .swiper-slide {
+  display: grid;
+  padding-bottom: 140px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-row-gap: 60px;
+}
+
+.kiosk_new_book_swiper_x .swiper-item {
+  display: flex;
+  flex-direction: column;
+  width: 400px !important;
+}
+
+.kiosk_new_book_swiper_x .swiper-item img {
+  width: 400px;
+  height: 579px;
+  margin-bottom: 28px;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px 0 rgba(25, 33, 61, 0.20);
+  object-fit: cover;
+}
+
+.kiosk_new_book_title_x {
+  font-family: "Pretendard", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 140%;
+  overflow: hidden;
+  width: 400px;
+  margin-bottom: 8px;
+  white-space: nowrap;
+  letter-spacing: -1.2px;
+  text-overflow: ellipsis;
+  color: #191F28;
+}
+
+.kiosk_new_book_writer_x {
+  font-family: "Pretendard", sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+  overflow: hidden;
+  width: 400px;
+  padding: 0 8px 0 8px;
+  white-space: nowrap;
+  letter-spacing: -0.9px;
+  text-overflow: ellipsis;
+  color: #4E5968;
+}
+
+.kiosk_new_book_year_x {
+  font-family: "Pretendard", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  padding: 0 8px 0 8px;
+  letter-spacing: -0.9px;
+  color: #4E5968;
+}
+
+.kiosk_new_book_swiper_x .swiper-button-next::after,
+.kiosk_new_book_swiper_x .swiper-button-prev::after {
+  display: none;
+}
+
+.kiosk_new_book_swiper_x .swiper-button-next {
+  top: 718px;
+  right: 60px;
+  width: 160px;
+  height: 160px;
+  transform: rotate(180deg);
+  background: url(../img/arrowX.svg) no-repeat top center;
+  background-size: cover;
+}
+
+.kiosk_new_book_swiper_x .swiper-button-prev {
+  top: 718px;
+  left: 60px;
+  width: 160px;
+  height: 160px;
+  background: url(../img/arrowX.svg) no-repeat top center;
+  background-size: cover;
+}
+
+@media (width: 1920px) {
+  .kiosk_new_book_container_x {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/kioskNewBookXBg.svg) no-repeat top center;
+    background-size: cover;
+  }
+
+  .kiosk_new_book_swiper_x {
+    width: 1760px;
+    padding-left: 125px !important;
+  }
+
+  .kiosk_new_book_swiper_x .swiper-slide {
+    display: grid;
+    padding-bottom: 70px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 30px;
+  }
+
+  .kiosk_new_book_swiper_x .swiper-item {
+    display: flex;
+    flex-direction: column;
+    width: 200px !important;
+  }
+
+  .kiosk_new_book_swiper_x .swiper-item img {
+    width: 200px;
+    height: 289.5px;
+    margin-bottom: 14px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px 0 rgba(25, 33, 61, 0.20);
+    object-fit: cover;
+  }
+
+  .kiosk_new_book_title_x {
+    font-family: "Pretendard", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 140%;
+    overflow: hidden;
+    width: 200px;
+    margin-bottom: 4px;
+    white-space: nowrap;
+    letter-spacing: -1.2px;
+    text-overflow: ellipsis;
+    color: #191F28;
+  }
+
+  .kiosk_new_book_writer_x {
+    font-family: "Pretendard", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    overflow: hidden;
+    width: 200px;
+    padding: 0 4px 0 4px;
+    white-space: nowrap;
+    letter-spacing: -0.9px;
+    text-overflow: ellipsis;
+    color: #4E5968;
+  }
+
+  .kiosk_new_book_year_x {
+    font-family: "Pretendard", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    padding: 0 4px 0 4px;
+    letter-spacing: -0.9px;
+    color: #4E5968;
+  }
+
+  .kiosk_new_book_swiper_x .swiper-button-next::after,
+  .kiosk_new_book_swiper_x .swiper-button-prev::after {
+    display: none;
+  }
+
+  .kiosk_new_book_swiper_x .swiper-button-next {
+    top: 359px;
+    right: 30px;
+    width: 80px;
+    height: 80px;
+    transform: rotate(180deg);
+    background: url(../img/arrowX.svg) no-repeat top center;
+    background-size: cover;
+  }
+
+  .kiosk_new_book_swiper_x .swiper-button-prev {
+    top: 359px;
+    left: 30px;
+    width: 80px;
+    height: 80px;
+    background: url(../img/arrowX.svg) no-repeat top center;
+    background-size: cover;
+  }
+}
+
 /* 키오스크 대출도서 */
 .kiosk_best_book_container {
   position: relative;
