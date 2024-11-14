@@ -592,3 +592,25 @@ $(document).ready(function () {
 		$('#photo-agree .kiosk_course_registration_check_radio').removeClass('checked').addClass('unchecked');
 	});
 });
+
+$(document).ready(function () {
+	$('#sms-agree').click(function () {
+		$('#sms-agree .kiosk_course_registration_check_radio_x').removeClass('unchecked').addClass('checked');
+		$('#sms-disagree .kiosk_course_registration_check_radio_x').removeClass('checked').addClass('unchecked');
+	});
+
+	$('#sms-disagree').click(function () {
+		$('#sms-disagree .kiosk_course_registration_check_radio_x').removeClass('unchecked').addClass('checked');
+		$('#sms-agree .kiosk_course_registration_check_radio_x').removeClass('checked').addClass('unchecked');
+	});
+
+	$('#photo-agree').click(function () {
+		$('#photo-agree .kiosk_course_registration_check_radio_x').removeClass('unchecked').addClass('checked');
+		$('#photo-disagree .kiosk_course_registration_check_radio_x').removeClass('checked').addClass('unchecked');
+	});
+
+	$('#photo-disagree').click(function () {
+		$('#photo-disagree .kiosk_course_registration_check_radio_x').removeClass('unchecked').addClass('checked');
+		$('#photo-agree .kiosk_course_registration_check_radio_x').removeClass('checked').addClass('unchecked');
+	});
+});
