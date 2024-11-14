@@ -4581,7 +4581,7 @@
     font-size: 50px;
     font-weight: 300;
     font-style: normal;
-    line-height: 60%;
+    line-height: 60px;
     height: 60px;
     color: #8B95A1;
   }
@@ -4606,7 +4606,7 @@
     color: #6B7684;
   }
 
-  .swiper-item img {
+  .kiosk_facility_swiper .swiper-item img {
     width: 392px;
     height: 151.5px;
     border-radius: 4px;
@@ -5959,7 +5959,8 @@
   font-style: normal;
   line-height: normal;
   margin-bottom: 48px;
-  letter-spacing: -1.2px
+  letter-spacing: -1.2px;
+  color: #4E5968;
 }
 
 .kiosk_best_book_info {
