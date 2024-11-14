@@ -528,6 +528,22 @@ $(function () {
 	});
 });
 
+$(function () {
+	const kioskCourseInformationXSwiper = new Swiper('.kiosk_course_information_swiper_x', {
+		speed: 600,
+		loop: true,
+		slidesPerView: 1,
+		autoplay: {
+			delay: 10000,
+			disableOnInteraction: false,
+		},
+		navigation: {
+			nextEl: '.kiosk_course_information_swiper_x .swiper-button-next',
+			prevEl: '.kiosk_course_information_swiper_x .swiper-button-prev',
+		},
+	});
+});
+
 $(document).ready(function () {
 	$('.kiosk_course_registration_gender_btn').on('click', function () {
 		$('.kiosk_course_registration_gender_btn').removeClass('active');
