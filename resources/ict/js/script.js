@@ -375,35 +375,24 @@ $(function () {
 });
 
 $(document).ready(function () {
-	$('.kiosk_facility_swiper .swiper-item').click(function () {
-		$('.kiosk_facility_popup').fadeIn();
-	});
+	function setupPopup(swiperClass, popupClass, closeClass) {
+		$(`.${swiperClass} .swiper-item`).click(function () {
+			$(`.${popupClass}`).fadeIn();
+		});
 
-	$('.kiosk_facility_popup_close').click(function () {
-		$('.kiosk_facility_popup').fadeOut();
-	});
+		$(`.${closeClass}`).click(function () {
+			$(`.${popupClass}`).fadeOut();
+		});
 
-	$('.kiosk_facility_popup').click(function (e) {
-		if ($(e.target).hasClass('kiosk_facility_popup')) {
-			$(this).fadeOut();
-		}
-	});
-});
+		$(`.${popupClass}`).click(function (e) {
+			if ($(e.target).hasClass(popupClass)) {
+				$(this).fadeOut();
+			}
+		});
+	}
 
-$(document).ready(function () {
-	$('.kiosk_facility_swiper_x .swiper-item').click(function () {
-		$('.kiosk_facility_popup_x').fadeIn();
-	});
-
-	$('.kiosk_facility_popup_close_x').click(function () {
-		$('.kiosk_facility_popup_x').fadeOut();
-	});
-
-	$('.kiosk_facility_popup_x').click(function (e) {
-		if ($(e.target).hasClass('kiosk_facility_popup_x')) {
-			$(this).fadeOut();
-		}
-	});
+	setupPopup('kiosk_facility_swiper', 'kiosk_facility_popup', 'kiosk_facility_popup_close');
+	setupPopup('kiosk_facility_swiper_x', 'kiosk_facility_popup_x', 'kiosk_facility_popup_close_x');
 });
 
 $(function () {
@@ -486,20 +475,41 @@ $(function () {
 	});
 });
 
+$(function () {
+	const kioskBookInformationXSwiper = new Swiper('.kiosk_book_information_swiper_x', {
+		speed: 600,
+		loop: true,
+		autoplay: {
+			delay: 10000,
+			disableOnInteraction: false,
+		},
+		slidesPerView: 1,
+		navigation: {
+			nextEl: '.kiosk_book_information_swiper_x .swiper-button-next',
+			prevEl: '.kiosk_book_information_swiper_x .swiper-button-prev',
+		},
+	});
+});
+
 $(document).ready(function () {
-	$('.kiosk_book_information_popup_trigger').click(function () {
-		$('.kiosk_book_information_popup').fadeIn();
-	});
+	function setupPopup(triggerClass, popupClass, closeClass) {
+		$(`.${triggerClass}`).click(function () {
+			$(`.${popupClass}`).fadeIn();
+		});
 
-	$('.kiosk_book_information_popup_close').click(function () {
-		$('.kiosk_book_information_popup').fadeOut();
-	});
+		$(`.${closeClass}`).click(function () {
+			$(`.${popupClass}`).fadeOut();
+		});
 
-	$('.kiosk_book_information_popup').click(function (e) {
-		if ($(e.target).hasClass('kiosk_book_information_popup')) {
-			$(this).fadeOut();
-		}
-	});
+		$(`.${popupClass}`).click(function (e) {
+			if ($(e.target).hasClass(popupClass)) {
+				$(this).fadeOut();
+			}
+		});
+	}
+
+	setupPopup('kiosk_book_information_popup_trigger', 'kiosk_book_information_popup', 'kiosk_book_information_popup_close');
+	setupPopup('kiosk_book_information_popup_trigger_x', 'kiosk_book_information_popup_x', 'kiosk_book_information_popup_close_x');
 });
 
 $(function () {

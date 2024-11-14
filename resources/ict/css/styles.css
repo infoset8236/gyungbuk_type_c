@@ -2454,6 +2454,37 @@
   height: 96px;
 }
 
+.kiosk_common_prev_wrapper_x {
+  font-family: "Pretendard", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 140%;
+  position: fixed;
+  bottom: 71px;
+  left: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 220px;
+  height: 120px;
+  letter-spacing: -1px;
+  color: #191F28;
+  border: 2px solid #191F28;
+  border-radius: 100px;
+  background: #FFF;
+}
+
+.kiosk_common_prev_icon_x {
+  position: absolute;
+  top: 80px;
+  left: 41px;
+  width: 137px;
+  height: 61px;
+  background: url(../img/leftWhale.svg) no-repeat top center;
+  background-size: cover;
+}
+
 @media (width: 1920px) {
   .kiosk_common_content_x {
     width: calc(100% - 160px);
@@ -2546,6 +2577,37 @@
   .kiosk_common_navigation_bar_item_x img {
     width: 48px;
     height: 48px;
+  }
+
+  .kiosk_common_prev_wrapper_x {
+    font-family: "Pretendard", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 140%;
+    position: fixed;
+    bottom: 35.5px;
+    left: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    height: 60px;
+    letter-spacing: -1px;
+    color: #191F28;
+    border: 1px solid #191F28;
+    border-radius: 100px;
+    background: #FFF;
+  }
+
+  .kiosk_common_prev_icon_x {
+    position: absolute;
+    top: 40px;
+    left: 20.5px;
+    width: 68.5px;
+    height: 30.5px;
+    background: url(../img/leftWhale.svg) no-repeat top center;
+    background-size: cover;
   }
 }
 
@@ -6843,6 +6905,740 @@
   }
 
   .kiosk_book_information_popup_print_text {
+    font-family: "Pretendard", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #191F28;
+  }
+}
+
+/* 키오스크 도서정보 (가로형) */
+.kiosk_book_information_container_x {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/kioskBookInformationXBg.svg) no-repeat top center;
+  background-size: cover;
+}
+
+.kiosk_book_information_content_wrapper_x {
+  display: flex;
+  margin-left: 319px;
+  gap: 282px;
+}
+
+.kiosk_book_information_thumbnail_wrapper_x {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.kiosk_book_information_thumbnail_wrapper_x img {
+  width: 760px;
+  height: 1100px;
+  border-radius: 24px;
+  box-shadow: 0 10px 80px 0 rgba(0, 0, 0, 0.20);
+  object-fit: cover;
+}
+
+.kiosk_book_information_thumbnail_wrapper_x div:not(:last-child) {
+  font-family: "Pretendard", sans-serif;
+  font-size: 50px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+  position: absolute;
+  top: 794px;
+  right: -106px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  justify-content: center;
+  width: 211.999px;
+  height: 212px;
+  padding: 76px 28px;
+  letter-spacing: -1.25px;
+  color: #FFF;
+  border-radius: 50%;
+  background: #113B9E;
+  gap: 20px;
+}
+
+.kiosk_book_information_thumbnail_title_x {
+  font-family: "Pretendard", sans-serif;
+  font-size: 80px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: normal;
+  display: flex;
+  display: -webkit-box;
+  overflow: hidden;
+  justify-content: center;
+  width: 760px;
+  text-align: center;
+  letter-spacing: -2px;
+  text-overflow: ellipsis;
+  color: #191F28;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.kiosk_book_information_detail_wrapper_x {
+  display: flex;
+  gap: 92.18px
+}
+
+.kiosk_book_information_detail_left_x,
+.kiosk_book_information_detail_right_x {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.kiosk_book_information_detail_item_x {
+  display: flex;
+}
+
+.kiosk_book_information_detail_left_x .kiosk_book_information_detail_label_x {
+  font-family: "Pretendard", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  width: 168px;
+  letter-spacing: -1.2px;
+  color: #4E5968;
+}
+
+.kiosk_book_information_detail_right_x .kiosk_book_information_detail_label_x {
+  font-family: "Pretendard", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  width: 204px;
+  letter-spacing: -1.2px;
+  color: #4E5968;
+}
+
+
+.kiosk_book_information_detail_left_x .kiosk_book_information_detail_value_x {
+  font-family: "Pretendard", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+  overflow: hidden;
+  width: 749.78px;
+  white-space: nowrap;
+  letter-spacing: -1.2px;
+  text-overflow: ellipsis;
+  color: #191F28;
+}
+
+.kiosk_book_information_detail_right_x .kiosk_book_information_detail_value_x {
+  font-family: "Pretendard", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+  overflow: hidden;
+  width: 486px;
+  white-space: nowrap;
+  letter-spacing: -1.2px;
+  text-overflow: ellipsis;
+  color: #191F28;
+}
+
+.kiosk_book_information_popup_trigger_x {
+  font-size: 48px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1840px;
+  height: 113px;
+  margin: 80px 0;
+  cursor: pointer;
+  color: #FFF;
+  border-radius: 10px;
+  background: #ADB5BD;
+}
+
+.kiosk_book_information_summary_title_x {
+  font-family: "Pretendard", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: normal;
+  margin-bottom: 20px;
+  letter-spacing: -1.2px;
+  color: #4E5968;
+}
+
+.kiosk_book_information_summary_x {
+  font-family: "Pretendard", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 160%;
+  display: -webkit-box;
+  overflow: hidden;
+  width: 1840px;
+  margin-bottom: 140px;
+  text-align: justify;
+  letter-spacing: -1.2px;
+  text-overflow: ellipsis;
+  color: #333D4B;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+}
+
+.kiosk_book_information_swiper_x {
+  display: flex !important;
+  width: 1840px;
+}
+
+.kiosk_book_information_swiper_x .swiper-slide {
+  display: flex;
+  justify-content: center;
+  gap: 92px;
+}
+
+.kiosk_book_information_swiper_x .swiper-item {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  gap: 28px;
+}
+
+.kiosk_book_information_swiper_x .swiper-item img {
+  width: 240px;
+  height: 340px;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px 0 rgba(25, 33, 61, 0.20);
+  object-fit: cover;
+}
+
+.kiosk_book_information_swiper_x .swiper-item div {
+  font-family: "Pretendard", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+  display: -webkit-box;
+  overflow: hidden;
+  width: 240px;
+  padding: 0 8px 0 8px;
+  letter-spacing: -0.8px;
+  text-overflow: ellipsis;
+  color: #6B7684;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.kiosk_book_information_swiper_x .swiper-button-next::after,
+.kiosk_book_information_swiper_x .swiper-button-prev::after {
+  display: none;
+}
+
+.kiosk_book_information_swiper_x .swiper-button-next {
+  right: 1px;
+  width: 96px;
+  height: 96px;
+  transform: rotate(180deg);
+  background: url(../img/arrowX.svg) no-repeat top center;
+  background-size: cover;
+}
+
+.kiosk_book_information_swiper_x .swiper-button-prev {
+  left: 1px;
+  width: 96px;
+  height: 96px;
+  background: url(../img/arrowX.svg) no-repeat top center;
+  background-size: cover;
+}
+
+.kiosk_book_information_popup_x {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.70);
+}
+
+.kiosk_book_information_popup_x .popup_content_x {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 1800px;
+  height: 1470px;
+  margin-top: 345px;
+  margin-left: 1180px;
+  border-radius: 60px;
+  background-color: white;
+}
+
+.kiosk_book_information_popup_header_x {
+  font-family: "Pretendard", sans-serif;
+  font-size: 72px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: normal;
+  width: 100%;
+  height: 233px;
+  padding: 108px 0 39px 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #242424;
+}
+
+.kiosk_book_information_popup_img_x {
+  width: 1620px;
+  height: 981px;
+  margin-left: 90px;
+  object-fit: cover;
+}
+
+.kiosk_book_information_popup_action_wrapper_x {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 54px;
+  border-top: 2px solid #E5E8EB;
+}
+
+.kiosk_book_information_popup_close_x {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 200px;
+  gap: 20px;
+}
+
+.kiosk_book_information_popup_close_x::after {
+  position: absolute;
+  top: 65px;
+  right: 0;
+  display: inline-block;
+  width: 2px;
+  height: 70px;
+  content: "";
+  background-color: #A2A2A2;
+}
+
+.kiosk_book_information_popup_close_icon_x {
+  width: 76.267px;
+  height: 76.267px;
+  background: url(../img/close.svg) no-repeat top center;
+  background-size: cover;
+}
+
+.kiosk_book_information_popup_close_text_x {
+  font-family: "Pretendard", sans-serif;
+  font-size: 60px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+  text-transform: uppercase;
+  color: #191F28;
+}
+
+.kiosk_book_information_popup_print_x {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 200px;
+  gap: 20px;
+}
+
+.kiosk_book_information_popup_print_icon_x {
+  width: 76.267px;
+  height: 76.267px;
+  background: url(../img/print.svg) no-repeat top center;
+  background-size: cover;
+}
+
+.kiosk_book_information_popup_print_text_x {
+  font-family: "Pretendard", sans-serif;
+  font-size: 60px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+  text-transform: uppercase;
+  color: #191F28;
+}
+
+@media (width: 1920px) {
+  .kiosk_book_information_container_x {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/kioskBookInformationXBg.svg) no-repeat top center;
+    background-size: cover;
+  }
+
+  .kiosk_book_information_content_wrapper_x {
+    display: flex;
+    margin-left: 159.5px;
+    gap: 141px;
+  }
+
+  .kiosk_book_information_thumbnail_wrapper_x {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .kiosk_book_information_thumbnail_wrapper_x img {
+    width: 380px;
+    height: 550px;
+    border-radius: 12px;
+    box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.20);
+    object-fit: cover;
+  }
+
+  .kiosk_book_information_thumbnail_wrapper_x div:not(:last-child) {
+    font-family: "Pretendard", sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    position: absolute;
+    top: 397px;
+    right: -53px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    justify-content: center;
+    width: 106px;
+    height: 106px;
+    padding: 38px 14px;
+    letter-spacing: -1.25px;
+    color: #FFF;
+    border-radius: 50%;
+    background: #113B9E;
+  }
+
+  .kiosk_book_information_thumbnail_title_x {
+    font-family: "Pretendard", sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
+    display: flex;
+    display: -webkit-box;
+    overflow: hidden;
+    justify-content: center;
+    width: 380px;
+    text-align: center;
+    letter-spacing: -2px;
+    text-overflow: ellipsis;
+    color: #191F28;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  .kiosk_book_information_detail_wrapper_x {
+    display: flex;
+    gap: 46.098px
+  }
+
+  .kiosk_book_information_detail_left_x,
+  .kiosk_book_information_detail_right_x {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .kiosk_book_information_detail_item_x {
+    display: flex;
+  }
+
+  .kiosk_book_information_detail_left_x .kiosk_book_information_detail_label_x {
+    font-family: "Pretendard", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    width: 84px;
+    letter-spacing: -1.2px;
+    color: #4E5968;
+  }
+
+  .kiosk_book_information_detail_right_x .kiosk_book_information_detail_label_x {
+    font-family: "Pretendard", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    width: 102px;
+    letter-spacing: -1.2px;
+    color: #4E5968;
+  }
+
+
+  .kiosk_book_information_detail_left_x .kiosk_book_information_detail_value_x {
+    font-family: "Pretendard", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    overflow: hidden;
+    width: 374.89px;
+    white-space: nowrap;
+    letter-spacing: -1.2px;
+    text-overflow: ellipsis;
+    color: #191F28;
+  }
+
+  .kiosk_book_information_detail_right_x .kiosk_book_information_detail_value_x {
+    font-family: "Pretendard", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    overflow: hidden;
+    width: 243px;
+    white-space: nowrap;
+    letter-spacing: -1.2px;
+    text-overflow: ellipsis;
+    color: #191F28;
+  }
+
+  .kiosk_book_information_popup_trigger_x {
+    font-size: 24px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 920px;
+    height: 56.5px;
+    margin: 40px 0;
+    cursor: pointer;
+    color: #FFF;
+    border-radius: 5px;
+    background: #ADB5BD;
+  }
+
+  .kiosk_book_information_summary_title_x {
+    font-family: "Pretendard", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
+    margin-bottom: 10px;
+    letter-spacing: -1.2px;
+    color: #4E5968;
+  }
+
+  .kiosk_book_information_summary_x {
+    font-family: "Pretendard", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 160%;
+    display: -webkit-box;
+    overflow: hidden;
+    width: 920px;
+    margin-bottom: 70px;
+    text-align: justify;
+    letter-spacing: -1.2px;
+    text-overflow: ellipsis;
+    color: #333D4B;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+  }
+
+  .kiosk_book_information_swiper_x {
+    display: flex !important;
+    width: 920px;
+  }
+
+  .kiosk_book_information_swiper_x .swiper-slide {
+    display: flex;
+    justify-content: center;
+    gap: 46px;
+  }
+
+  .kiosk_book_information_swiper_x .swiper-item {
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    gap: 14px;
+  }
+
+  .kiosk_book_information_swiper_x .swiper-item img {
+    width: 120px;
+    height: 170px;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px 0 rgba(25, 33, 61, 0.20);
+    object-fit: cover;
+  }
+
+  .kiosk_book_information_swiper_x .swiper-item div {
+    font-family: "Pretendard", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    display: -webkit-box;
+    overflow: hidden;
+    width: 120px;
+    padding: 0 4px 0 4px;
+    letter-spacing: -0.8px;
+    text-overflow: ellipsis;
+    color: #6B7684;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  .kiosk_book_information_swiper_x .swiper-button-next::after,
+  .kiosk_book_information_swiper_x .swiper-button-prev::after {
+    display: none;
+  }
+
+  .kiosk_book_information_swiper_x .swiper-button-next {
+    right: 0.5px;
+    width: 48px;
+    height: 48px;
+    transform: rotate(180deg);
+    background: url(../img/arrowX.svg) no-repeat top center;
+    background-size: cover;
+  }
+
+  .kiosk_book_information_swiper_x .swiper-button-prev {
+    left: 0.5px;
+    width: 48px;
+    height: 48px;
+    background: url(../img/arrowX.svg) no-repeat top center;
+    background-size: cover;
+  }
+
+  .kiosk_book_information_popup_x {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.70);
+  }
+
+  .kiosk_book_information_popup_x .popup_content_x {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    height: 735px;
+    margin-top: 172.5px;
+    margin-left: 590px;
+    border-radius: 30px;
+    background-color: white;
+  }
+
+  .kiosk_book_information_popup_header_x {
+    font-family: "Pretendard", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
+    width: 100%;
+    height: 116.5px;
+    padding: 54px 0 19.5px 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: #242424;
+  }
+
+  .kiosk_book_information_popup_img_x {
+    width: 810px;
+    height: 490.5px;
+    margin-left: 45px;
+    object-fit: cover;
+  }
+
+  .kiosk_book_information_popup_action_wrapper_x {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 27px;
+    border-top: 1px solid #E5E8EB;
+  }
+
+  .kiosk_book_information_popup_close_x {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100px;
+    gap: 10px;
+  }
+
+  .kiosk_book_information_popup_close_x::after {
+    position: absolute;
+    top: 32.5px;
+    right: 0;
+    display: inline-block;
+    width: 1px;
+    height: 35px;
+    content: "";
+    background-color: #A2A2A2;
+  }
+
+  .kiosk_book_information_popup_close_icon_x {
+    width: 38.1335px;
+    height: 38.1335px;
+    background: url(../img/close.svg) no-repeat top center;
+    background-size: cover;
+  }
+
+  .kiosk_book_information_popup_close_text_x {
+    font-family: "Pretendard", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #191F28;
+  }
+
+  .kiosk_book_information_popup_print_x {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100px;
+    gap: 10px;
+  }
+
+  .kiosk_book_information_popup_print_icon_x {
+    width: 38.1335px;
+    height: 38.1335px;
+    background: url(../img/print.svg) no-repeat top center;
+    background-size: cover;
+  }
+
+  .kiosk_book_information_popup_print_text_x {
     font-family: "Pretendard", sans-serif;
     font-size: 30px;
     font-weight: 500;
