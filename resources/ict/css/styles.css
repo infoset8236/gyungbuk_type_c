@@ -8805,8 +8805,566 @@
   }
 }
 
-/* 키오스크 강좌등록 */
+/* 키오스크 강좌상세 (가로형) */
+.kiosk_course_detail_container_x {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/kioskCourseDetailXBg.svg) no-repeat top center;
+  background-size: cover;
+}
 
+.kiosk_course_detail_content_x {
+  width: 3060px;
+  height: 700px;
+  margin-left: 230px;
+  border-radius: 60px;
+  box-shadow: 0 10px 80px 0 rgba(0, 0, 0, 0.20);
+}
+
+.kiosk_course_detail_title_x {
+  display: flex;
+  height: 240px;
+  border-radius: 60px 60px 0 0;
+  background: #4480F3;
+}
+
+.kiosk_course_detail_badge_x {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 140px;
+  margin-top: 50px;
+  margin-left: 100px;
+  border-radius: 50%;
+  background-color: #ADB5BD;
+}
+
+.pencil {
+  width: 72.8px;
+  height: 72.8px;
+  background: url(../img/pencil.svg) no-repeat top center;
+  background-size: cover;
+}
+
+.kiosk_course_detail_title_label_x {
+  font-family: "Pretendard", sans-serif;
+  font-size: 44px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  margin-top: 42.5px;
+  margin-bottom: 12px;
+  margin-left: 48px;
+  color: #191F28;
+}
+
+.kiosk_course_detail_title_value_x {
+  font-family: "Pretendard", sans-serif;
+  font-size: 64px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 140%;
+  display: -webkit-box;
+  overflow: hidden;
+  width: 2660px;
+  margin-left: 48px;
+  letter-spacing: -1.9px;
+  text-overflow: ellipsis;
+  color: #FFF;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.kiosk_course_detail_date_time_wrapper_x {
+  display: flex;
+  width: 100%;
+}
+
+.kiosk_course_detail_date_x {
+  display: flex;
+  width: 50%;
+  height: 240px;
+  border-right: 1px solid #6B7684;
+  background: #FFFFFF;
+}
+
+.kiosk_course_detail_time_x {
+  display: flex;
+  width: 50%;
+  height: 240px;
+  background: #FFFFFF;
+}
+
+.calendar {
+  width: 72.8px;
+  height: 72.8px;
+  background: url(../img/calendar.svg) no-repeat top center;
+  background-size: cover;
+}
+
+.kiosk_course_detail_date_label_x,
+.kiosk_course_detail_time_label_x {
+  font-family: "Pretendard", sans-serif;
+  font-size: 44px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+  margin-top: 49.5px;
+  margin-bottom: 12px;
+  margin-left: 48px;
+  color: #6B7684;
+}
+
+.kiosk_course_detail_date_value_x {
+  font-family: "Pretendard", sans-serif;
+  font-size: 64px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 140%;
+  display: -webkit-box;
+  overflow: hidden;
+  width: 764px;
+  margin-left: 48px;
+  letter-spacing: -1.6px;
+  text-overflow: ellipsis;
+  color: #191F28;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.mouses {
+  width: 72.8px;
+  height: 72.8px;
+  background: url(../img/mouse.svg) no-repeat top center;
+  background-size: cover;
+}
+
+.kiosk_course_detail_time_value_x {
+  font-family: "Pretendard", sans-serif;
+  font-size: 64px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 140%;
+  display: -webkit-box;
+  overflow: hidden;
+  width: 764px;
+  margin-left: 48px;
+  letter-spacing: -1.6px;
+  text-overflow: ellipsis;
+  color: #F1B55C;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.kiosk_course_detail_counter_wrapper_x {
+  display: flex;
+  width: 100%;
+  height: 240px;
+}
+
+.kiosk_course_detail_counter_x {
+  font-family: "Century Gothic", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  height: 220px;
+  padding: 72px 100px;
+  border-radius: 0 0 0 60px;
+  background: #1C1C1C;
+}
+
+.kiosk_course_detail_counter_x:nth-child(2) {
+  border-radius: 0 0 60px 0;
+  background: #888;
+}
+
+.kiosk_course_detail_counter_label_x {
+  font-family: "Pretendard", sans-serif;
+  font-size: 44px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+  color: #FFF;
+}
+
+.kiosk_course_detail_counter_value_x {
+  font-family: "Century Gothic", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: normal;
+  color: #FFF;
+}
+
+.kiosk_course_detail_counter_value_x span:first-child {
+  color: #00F6FF;
+}
+
+.kiosk_course_detail_counter_value_x span:nth-child(2) {
+  color: #ADB5BD;
+}
+
+.kiosk_course_detail_list_x {
+  margin-top: 10px;
+  margin-bottom: 120px;
+  margin-left: 230px;
+}
+
+.kiosk_course_detail_list_item_wrapper_X {
+  display: flex;
+  width: 3060px;
+  padding: 0 60px 0 60px;
+}
+
+.kiosk_course_detail_list_item_x {
+  display: flex;
+  width: 50%;
+  padding: 39px 0 39px 0;
+  border-bottom: 1px solid #6B7684;
+}
+
+.kiosk_course_detail_list_item_label_x {
+  font-family: "Pretendard", sans-serif;
+  font-size: 52px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  width: 304px;
+  margin-right: 24px;
+  color: #6B7684;
+}
+
+.kiosk_course_detail_list_item_value_x {
+  font-family: "Pretendard", sans-serif;
+  font-size: 52px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+  color: #191F28;
+}
+
+.kiosk_course_detail_list_scroll_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 2940px;
+  margin-left: 60px;
+  border-bottom: 1px solid #6B7684;
+}
+
+.kiosk_course_detail_list_scroll_wrapper .kiosk_course_detail_list_item_label_x {
+  display: flex;
+  align-items: center;
+  height: 140px;
+}
+
+.kiosk_course_detail_list_scroll_wrapper .kiosk_course_detail_list_item_value_x {
+  overflow-y: scroll;
+  height: 220px;
+  padding: 0 44px 20px 44px;
+}
+
+.kiosk_course_detail_apply_x {
+  font-family: "Pretendard", sans-serif;
+  font-size: 60px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1200px;
+  height: 140px;
+  margin-left: 1160px;
+  cursor: pointer;
+  color: #FFF;
+  border-radius: 40px;
+  background: #2E80EE;
+}
+
+@media (width: 1920px) {
+  .kiosk_course_detail_container_x {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/kioskCourseDetailXBg.svg) no-repeat top center;
+    background-size: cover;
+  }
+
+  .kiosk_course_detail_content_x {
+    width: 1530px;
+    height: 350px;
+    margin-left: 115px;
+    border-radius: 30px;
+    box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.20);
+  }
+
+  .kiosk_course_detail_title_x {
+    display: flex;
+    height: 120px;
+    border-radius: 30px 30px 0 0;
+    background: #4480F3;
+  }
+
+  .kiosk_course_detail_badge_x {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    margin-top: 25px;
+    margin-left: 50px;
+    border-radius: 50%;
+    background-color: #ADB5BD;
+  }
+
+  .pencil {
+    width: 36.4px;
+    height: 36.4px;
+    background: url(../img/pencil.svg) no-repeat top center;
+    background-size: cover;
+  }
+
+  .kiosk_course_detail_title_label_x {
+    font-family: "Pretendard", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    margin-top: 21.25px;
+    margin-bottom: 6px;
+    margin-left: 24px;
+    color: #191F28;
+  }
+
+  .kiosk_course_detail_title_value_x {
+    font-family: "Pretendard", sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 140%;
+    display: -webkit-box;
+    overflow: hidden;
+    width: 1330px;
+    margin-left: 24px;
+    letter-spacing: -1.9px;
+    text-overflow: ellipsis;
+    color: #FFF;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+
+  .kiosk_course_detail_date_time_wrapper_x {
+    display: flex;
+    width: 100%;
+  }
+
+  .kiosk_course_detail_date_x {
+    display: flex;
+    width: 50%;
+    height: 120px;
+    border-right: 0.5px solid #6B7684;
+    background: #FFFFFF;
+  }
+
+  .kiosk_course_detail_time_x {
+    display: flex;
+    width: 50%;
+    height: 120px;
+    background: #FFFFFF;
+  }
+
+  .calendar {
+    width: 36.4px;
+    height: 36.4px;
+    background: url(../img/calendar.svg) no-repeat top center;
+    background-size: cover;
+  }
+
+  .kiosk_course_detail_date_label_x,
+  .kiosk_course_detail_time_label_x {
+    font-family: "Pretendard", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    margin-top: 24.75px;
+    margin-bottom: 6px;
+    margin-left: 24px;
+    color: #6B7684;
+  }
+
+  .kiosk_course_detail_date_value_x {
+    font-family: "Pretendard", sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 140%;
+    display: -webkit-box;
+    overflow: hidden;
+    width: 382px;
+    margin-left: 24px;
+    letter-spacing: -1.6px;
+    text-overflow: ellipsis;
+    color: #191F28;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+
+  .mouses {
+    width: 36.4px;
+    height: 36.4px;
+    background: url(../img/mouse.svg) no-repeat top center;
+    background-size: cover;
+  }
+
+  .kiosk_course_detail_time_value_x {
+    font-family: "Pretendard", sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 140%;
+    display: -webkit-box;
+    overflow: hidden;
+    width: 382px;
+    margin-left: 24px;
+    letter-spacing: -1.6px;
+    text-overflow: ellipsis;
+    color: #F1B55C;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+
+  .kiosk_course_detail_counter_wrapper_x {
+    display: flex;
+    width: 100%;
+    height: 120px;
+  }
+
+  .kiosk_course_detail_counter_x {
+    font-family: "Century Gothic", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    height: 110px;
+    padding: 36px 50px;
+    border-radius: 0 0 0 30px;
+    background: #1C1C1C;
+  }
+
+  .kiosk_course_detail_counter_x:nth-child(2) {
+    border-radius: 0 0 30px 0;
+    background: #888;
+  }
+
+  .kiosk_course_detail_counter_label_x {
+    font-family: "Pretendard", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    color: #FFF;
+  }
+
+  .kiosk_course_detail_counter_value_x {
+    font-family: "Century Gothic", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal;
+    color: #FFF;
+  }
+
+  .kiosk_course_detail_counter_value_x span:first-child {
+    color: #00F6FF;
+  }
+
+  .kiosk_course_detail_counter_value_x span:nth-child(2) {
+    color: #ADB5BD;
+  }
+
+  .kiosk_course_detail_list_x {
+    margin-top: 5px;
+    margin-bottom: 60px;
+    margin-left: 115px;
+  }
+
+  .kiosk_course_detail_list_item_wrapper_X {
+    display: flex;
+    width: 1530px;
+    padding: 0 30px 0 30px;
+  }
+
+  .kiosk_course_detail_list_item_x {
+    display: flex;
+    width: 50%;
+    padding: 19.5px 0 19.59px 0;
+    border-bottom: 0.5px solid #6B7684;
+  }
+
+  .kiosk_course_detail_list_item_label_x {
+    font-family: "Pretendard", sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    width: 152px;
+    margin-right: 12px;
+    color: #6B7684;
+  }
+
+  .kiosk_course_detail_list_item_value_x {
+    font-family: "Pretendard", sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    color: #191F28;
+  }
+
+  .kiosk_course_detail_list_scroll_wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 1470px;
+    margin-left: 30px;
+    border-bottom: 0.5px solid #6B7684;
+  }
+
+  .kiosk_course_detail_list_scroll_wrapper .kiosk_course_detail_list_item_label_x {
+    display: flex;
+    align-items: center;
+    height: 70px;
+  }
+
+  .kiosk_course_detail_list_scroll_wrapper .kiosk_course_detail_list_item_value_x {
+    overflow-y: scroll;
+    height: 110px;
+    padding: 0 22px 10px 22px;
+  }
+
+  .kiosk_course_detail_apply_x {
+    font-family: "Pretendard", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 70px;
+    margin-left: 580px;
+    cursor: pointer;
+    color: #FFF;
+    border-radius: 20px;
+    background: #2E80EE;
+  }
+}
+
+/* 키오스크 강좌등록 */
 .kiosk_course_registration_container {
   position: relative;
   width: 100%;
