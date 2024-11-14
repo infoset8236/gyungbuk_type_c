@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport" />
+		<meta content="ie=edge" http-equiv="X-UA-Compatible" />
+		<link href="../../../../resources/ict/css/font.css" rel="stylesheet" type="text/css" />
+		<link href="../../../../resources/ict/css/reset.css" rel="stylesheet" type="text/css" />
+		<link href="../../../../resources/ict/css/styles.css" rel="stylesheet" type="text/css" />
+		<link href="../../../../resources/ict/css/swiper-bundle.min.css" rel="stylesheet" type="text/css " />
+		<script src="../../../../resources/ict/plugin/jquery-3.7.1.min.js" type="text/javascript"></script>
+		<script src="../../../../resources/ict/plugin/swiper-bundle.min.js" type="text/javascript"></script>
+		<script src="../../../../resources/ict/js/script.js" type="text/javascript"></script>
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="kiosk_course_registration_container_x">
+			<div class="kiosk_common_content_x">
+				<div class="kiosk_common_header_wrapper_x">
+					<div class="kiosk_common_header_kr_x">강좌신청</div>
+					<div class="kiosk_common_header_en_x">COURSE REGISTRATION</div>
+				</div>
+				<div class="kiosk_course_registration_form_x">
+					<div class="kiosk_course_registration_form_title_x">신청자정보</div>
+					<div class="kiosk_course_registration_form_content_x">
+						<div class="kiosk_course_registration_form_scroll_x">
+							<div class="kiosk_course_registration_form_wrapper_x">
+								<!--	 성명		-->
+								<div class="kiosk_course_registration_wrapper_x">
+									<div class="kiosk_course_registration_form_label_x">성명</div>
+									<input class="kiosk_course_registration_form_input_x" placeholder="성명을 입력해주세요" type="text" />
+								</div>
+								<!--	 성별		-->
+								<div class="kiosk_course_registration_wrapper_x">
+									<div class="kiosk_course_registration_form_label_x">성별</div>
+									<div class="kiosk_course_registration_gender_wrapper_x">
+										<div class="kiosk_course_registration_gender_btn_x active">남</div>
+										<div class="kiosk_course_registration_gender_btn_x">여</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="kiosk_course_registration_form_wrapper_x">
+								<!--	 생년월일		-->
+								<div class="kiosk_course_registration_wrapper_x">
+									<div class="kiosk_course_registration_form_label_x">생년월일</div>
+									<div class="kiosk_course_registration_select_wrapper_x">
+										<div><select class="birth_year"></select></div>
+										<div><select class="birth_month"></select></div>
+										<div><select class="birth_month"></select></div>
+									</div>
+								</div>
+								<!--	 휴대전화번호		-->
+								<div class="kiosk_course_registration_wrapper_x">
+									<div class="kiosk_course_registration_form_label_x">휴대전화번호</div>
+									<div class="kiosk_course_registration_input_wrapper_x">
+										<div><input placeholder="010" type="text" /></div>
+										<div><input placeholder="0000" type="text" /></div>
+										<div><input placeholder="0000" type="text" /></div>
+									</div>
+								</div>
+							</div>
+
+							<!--	 SMS 수신 동의 여부		-->
+							<div class="kiosk_course_registration_wrapper_x">
+								<div class="kiosk_course_registration_form_label_x">SMS 수신 동의 여부</div>
+								<div class="kiosk_course_registration_radio_wrapper_x" id="sms-agree">
+									<div class="kiosk_course_registration_check_radio_x checked"></div>
+									<div>동의</div>
+								</div>
+								<div class="kiosk_course_registration_radio_wrapper_x" id="sms-disagree">
+									<div class="kiosk_course_registration_check_radio_x unchecked"></div>
+									<div>미동의</div>
+								</div>
+							</div>
+							<div class="kiosk_course_registration_caption_x">
+								• 활용목적 : 도서관 강좌 및 각종행사 안내<br />
+								• 미동의 하여도 수강신청에 제한이 없음(단, 미동의할 경우 해당 강좌에 대<br />&nbsp &nbsp한 안내를 받을 수 없음)
+							</div>
+							<!--	 사진촬영 동의 여부		-->
+							<div class="kiosk_course_registration_wrapper_x">
+								<div class="kiosk_course_registration_form_label_x">사진촬영 동의 여부</div>
+								<div class="kiosk_course_registration_radio_wrapper_x" id="photo-agree">
+									<div class="kiosk_course_registration_check_radio_x checked"></div>
+									<div>동의</div>
+								</div>
+								<div class="kiosk_course_registration_radio_wrapper_x" id="photo-disagree">
+									<div class="kiosk_course_registration_check_radio_x unchecked"></div>
+									<div>미동의</div>
+								</div>
+							</div>
+							<div class="kiosk_course_registration_caption_x">
+								• 활용목적 : 도서관 프로그램 홍보<br />
+								• 프로그램 진행 시간 동안 참여자 대상 사진 및 사진 촬영, 인터뷰 요청 등<br />
+								• 모든 촬영은 프로그램 진행이나 활동에 전혀 영향을 주지 않는 선에서 진행
+							</div>
+							<!--	 비밀번호		-->
+							<div class="kiosk_course_registration_wrapper_x">
+								<div class="kiosk_course_registration_form_label_x">비밀번호</div>
+								<input class="kiosk_course_registration_form_input_x" placeholder="비밀번호를 입력해주세요" type="password" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="kiosk_course_registration_apply_x">확인</div>
+			</div>
+			<div class="kiosk_common_prev_wrapper_x">
+				<div class="kiosk_common_prev_text_x">이전으로</div>
+				<div class="kiosk_common_prev_icon_x"></div>
+			</div>
+			<div class="kiosk_common_navigation_bar_x">
+				<div class="kiosk_common_navigation_bar_item_x">
+					<img alt="" src="/resources/ict/img/notice.svg" />
+					<div class="kiosk_common_navi_kr_x">공지사항</div>
+					<div class="kiosk_common_navi_en_x">NOTICE</div>
+				</div>
+				<div class="kiosk_common_navigation_bar_item_x">
+					<img alt="" src="/resources/ict/img/information.svg" />
+					<div class="kiosk_common_navi_kr_x">이용안내</div>
+					<div class="kiosk_common_navi_en_x">INFORMATION</div>
+				</div>
+				<div class="kiosk_common_navigation_bar_item_x">
+					<img alt="" src="/resources/ict/img/facility.svg" />
+					<div class="kiosk_common_navi_kr_x">시설안내</div>
+					<div class="kiosk_common_navi_en_x">FACILITY</div>
+				</div>
+				<div class="kiosk_common_navigation_bar_item_x">
+					<img alt="" src="/resources/ict/img/newBook.svg" />
+					<div class="kiosk_common_navi_kr_x">신착도서</div>
+					<div class="kiosk_common_navi_en_x">NEW BOOK</div>
+				</div>
+				<div class="kiosk_common_navigation_bar_item_x">
+					<img alt="" src="/resources/ict/img/bestBook.svg" />
+					<div class="kiosk_common_navi_kr_x">대출베스트</div>
+					<div class="kiosk_common_navi_en_x">BEST BOOK</div>
+				</div>
+				<div class="kiosk_common_navigation_bar_item_x">
+					<img alt="" src="/resources/ict/img/course.svg" />
+					<div class="kiosk_common_navi_kr_x">강좌안내</div>
+					<div class="kiosk_common_navi_en_x">COURSE</div>
+				</div>
+				<div class="kiosk_common_navigation_bar_item_x">
+					<img alt="" src="/resources/ict/img/girl.svg" />
+					<div class="kiosk_common_user_name_x"><span>남여울</span>님</div>
+					<div class="kiosk_common_user_caption_x">자리를 떠나실땐 <br />클릭해서 로그아웃 해주세요</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
