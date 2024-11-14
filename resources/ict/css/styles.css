@@ -3031,7 +3031,7 @@
     font-weight: 500;
     font-style: normal;
     line-height: 120%;
-    margin-bottom: 120px;
+    margin-bottom: 60px;
     margin-left: 134px;
     animation: slideUp_x 0.8s ease-out forwards;
     letter-spacing: 4px;
@@ -3966,7 +3966,7 @@
     flex-direction: column;
     height: 820px;
     padding-top: 15px;
-    padding-right: 33px;
+    padding-right: 49.5px;
     gap: 55px;
   }
 
@@ -4062,7 +4062,7 @@
     font-size: 22px;
     font-weight: 500;
     font-style: normal;
-    line-height: 44px;
+    line-height: 22px;
     width: 300px;
     padding: 16.5px 0 16.5px 0;
     text-align: center;
