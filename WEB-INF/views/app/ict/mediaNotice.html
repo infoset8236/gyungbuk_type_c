@@ -31,10 +31,24 @@
 			<div class="media_notice_start_3"></div>
 			<div class="media_notice_start_4"></div>
 			<div class="media_notice_content_wrapper">
+				<!--		10초에 한번씩 리스트 변경 / 페이지 렌더링 후 10초에 한번씩 console 찍어놨어용		-->
 				<img alt="" class="media_notice_selected_book" src="/resources/ict/img/dummy.svg" />
 				<div class="media_notice_content">
 					<div class="media_notice_selected_book_title"><span>01</span><br />도서관의 비밀을 찾아라 QR코드!</div>
+					<!--		셀렉티드 북 ( 큰 이미지 ) 다음 인덱스 4개 나열			-->
 					<div class="media_notice_list">
+						<div class="media_notice_list_item">
+							<div>02</div>
+							<img alt="" src="/resources/ict/img/dummy.svg" />
+						</div>
+						<div class="media_notice_list_item">
+							<div>02</div>
+							<img alt="" src="/resources/ict/img/dummy.svg" />
+						</div>
+						<div class="media_notice_list_item">
+							<div>02</div>
+							<img alt="" src="/resources/ict/img/dummy.svg" />
+						</div>
 						<div class="media_notice_list_item">
 							<div>02</div>
 							<img alt="" src="/resources/ict/img/dummy.svg" />
@@ -44,7 +58,7 @@
 			</div>
 		</div>
 		<script>
-			<!--	 렌더링 후 10초에 한번씩 trigger		-->
+			<!--	 렌더링 후 10초에 한번씩 trigger / 나중에 지워주세요		-->
 			$(function () {
 				setInterval(function () {
 					console.log('대리님 얍!!!!!!!!!!!!!!!!!');
