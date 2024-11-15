@@ -292,16 +292,59 @@ $(function () {
 $(function () {
 	const kioskNoticeSwiper = new Swiper('.kiosk_notice_swiper', {
 		speed: 600,
-		loop: true,
-		slidesPerView: 1,
-		autoplay: {
-			delay: 10000,
-			disableOnInteraction: false,
+		slidesPerGroup: 5,
+		slidesPerView: 5,
+		spaceBetween: 45,
+		breakpoints: {
+			1080: {
+				spaceBetween: 22.5,
+			},
 		},
 		pagination: {
 			el: '.swiper-pagination',
 			type: 'bullets',
 		},
+		autoplay: {
+			delay: 10000,
+			disableOnInteraction: false,
+		},
+		loop: true,
+	});
+});
+
+$(function () {
+	const kioskNoticeXSwiper = new Swiper('.kiosk_notice_swiper_x', {
+		speed: 600,
+		loop: true,
+		slidesPerGroup: 3,
+		slidesPerView: 3,
+		autoplay: {
+			delay: 10000,
+			disableOnInteraction: false,
+		},
+		navigation: {
+			nextEl: '.kiosk_notice_swiper_x .swiper-button-next',
+			prevEl: '.kiosk_notice_swiper_x .swiper-button-prev',
+		},
+	});
+});
+
+$(document).ready(function () {
+	const $slideImages = $('.kiosk_notice_swiper .swiper-slide img');
+
+	function updateSelectedImage($selectedImg) {
+		const selectedImgSrc = $selectedImg.attr('src');
+
+		$('.kiosk_notice_selected_item').attr('src', selectedImgSrc);
+
+		$slideImages.css('border', 'none');
+		$selectedImg.css('border', '3px solid #000');
+	}
+
+	updateSelectedImage($slideImages.first());
+
+	$slideImages.on('click', function () {
+		updateSelectedImage($(this));
 	});
 });
 
@@ -393,38 +436,6 @@ $(document).ready(function () {
 
 	setupPopup('kiosk_facility_swiper', 'kiosk_facility_popup', 'kiosk_facility_popup_close');
 	setupPopup('kiosk_facility_swiper_x', 'kiosk_facility_popup_x', 'kiosk_facility_popup_close_x');
-});
-
-$(function () {
-	const kioskNoticeSwiper = new Swiper('.kiosk_notice_swiper', {
-		speed: 600,
-		loop: true,
-		slidesPerView: 1,
-		autoplay: {
-			delay: 10000,
-			disableOnInteraction: false,
-		},
-		pagination: {
-			el: '.swiper-pagination',
-			type: 'bullets',
-		},
-	});
-});
-
-$(function () {
-	const kioskNoticeXSwiper = new Swiper('.kiosk_notice_swiper_x', {
-		speed: 600,
-		loop: true,
-		slidesPerView: 1,
-		autoplay: {
-			delay: 10000,
-			disableOnInteraction: false,
-		},
-		navigation: {
-			nextEl: '.kiosk_notice_swiper_x .swiper-button-next',
-			prevEl: '.kiosk_notice_swiper_x .swiper-button-prev',
-		},
-	});
 });
 
 $(function () {

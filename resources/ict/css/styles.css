@@ -3095,29 +3095,21 @@
 }
 
 .kiosk_notice_swiper {
-  width: 2160px;
-  padding-left: 280px !important;
+  width: 1690px;
+  padding-left: 40px !important;
 }
 
 .kiosk_notice_swiper .swiper-slide {
-  display: flex;
-  width: 240px;
-  height: 480px;
+  padding-bottom: 124px;
   border-radius: 8px;
-  gap: 100px;
 }
 
 .kiosk_notice_swiper .swiper-slide img {
   width: 240px;
   height: 340px;
-  border: 3px solid transparent;
   border-radius: 8px;
   box-shadow: 20px 20px 40px 0 rgba(0, 0, 0, 0.20);
   object-fit: cover;
-}
-
-.kiosk_notice_swiper .swiper-slide img:hover {
-  border: 3px solid #000000;
 }
 
 .kiosk_notice_swiper .swiper-pagination {
@@ -3156,29 +3148,21 @@
   }
 
   .kiosk_notice_swiper {
-    width: 1080px;
-    padding-left: 140px !important;
+    width: 845px;
+    padding-left: 20px !important;
   }
 
   .kiosk_notice_swiper .swiper-slide {
-    display: flex;
-    width: 120px;
-    height: 240px;
+    padding-bottom: 62px;
     border-radius: 4px;
-    gap: 50px;
   }
 
   .kiosk_notice_swiper .swiper-slide img {
     width: 120px;
     height: 170px;
-    border: 1px solid transparent;
     border-radius: 4px;
     box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.20);
     object-fit: cover;
-  }
-
-  .kiosk_notice_swiper .swiper-slide img:hover {
-    border: 1.5px solid #000000;
   }
 
   .kiosk_notice_swiper .swiper-pagination {
@@ -3210,16 +3194,17 @@
 }
 
 .kiosk_notice_swiper_x {
-  width: 3520px;
-  margin-top: 81.44px;
-  padding-left: 260px !important;
+  width: 100%;
+  padding-left: 200px !important;
+}
+
+.kiosk_notice_swiper_x .swiper-wrapper {
+  gap: 60px;
 }
 
 .kiosk_notice_swiper_x .swiper-slide {
-  display: flex;
+  width: 960px !important;
   height: 1500px;
-  border-radius: 24px;
-  gap: 60px;
 }
 
 .kiosk_notice_swiper_x .swiper-slide img {
@@ -3237,7 +3222,6 @@
 
 .kiosk_notice_swiper_x .swiper-button-next {
   top: 598.59px;
-  right: 59px;
   width: 160px;
   height: 160px;
   transform: rotate(180deg);
@@ -3247,7 +3231,6 @@
 
 .kiosk_notice_swiper_x .swiper-button-prev {
   top: 598.59px;
-  left: 60px;
   width: 160px;
   height: 160px;
   background: url(../img/arrowX.svg) no-repeat top center;
