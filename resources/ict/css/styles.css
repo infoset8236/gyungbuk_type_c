@@ -5523,24 +5523,26 @@
   background-size: cover;
 }
 
+.kiosk_new_book_swiper .swiper {
+  width: 1700px;
+  height: 2900px;
+  padding-bottom: 200px !important;
+}
+
+.kiosk_new_book_swiper .swiper-button-prev,
+.kiosk_new_book_swiper .swiper-button-next {
+  position:static;
+  margin-top:0;
+}
+
 .kiosk_new_book_swiper {
-  width: 2200px;
+  position:relative;
   margin-top: 96px;
-  padding-left: 200px !important;
 }
 
-.kiosk_new_book_swiper .swiper-slide {
-  display: grid;
-  padding-bottom: 140px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-row-gap: 120px;
-}
-
-.kiosk_new_book_swiper .swiper-item {
-  display: flex;
-  flex-direction: column;
-  width: 440px !important;
+.kiosk_new_book_swiper .swiper-pagination {
+  position: absolute;
+  bottom: -100px;
 }
 
 .kiosk_new_book_swiper .swiper-item img {
@@ -5614,24 +5616,26 @@
 }
 
 @media (width: 1080px) {
+  .kiosk_new_book_swiper .swiper {
+    width: 850px;
+    height: 1450px;
+    padding-bottom: 100px !important;
+  }
+
+  .kiosk_new_book_swiper .swiper-button-prev,
+  .kiosk_new_book_swiper .swiper-button-next {
+    position:static;
+    margin-top:0;
+  }
+
   .kiosk_new_book_swiper {
-    width: 1100px;
+    position:relative;
     margin-top: 48px;
-    padding-left: 100px !important;
   }
 
-  .kiosk_new_book_swiper .swiper-slide {
-    display: grid;
-    padding-bottom: 70px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-row-gap: 60px;
-  }
-
-  .kiosk_new_book_swiper .swiper-item {
-    display: flex;
-    flex-direction: column;
-    width: 220px !important;
+  .kiosk_new_book_swiper .swiper-pagination {
+    position: absolute;
+    bottom: -50px;
   }
 
   .kiosk_new_book_swiper .swiper-item img {
@@ -5714,17 +5718,32 @@
   background-size: cover;
 }
 
-.kiosk_new_book_swiper_x {
-  width: 3520px;
-  padding-left: 250px !important;
+.kiosk_new_book_swiper_x .swiper {
+  width: 3000px;
+  height: 1596px;
 }
 
-.kiosk_new_book_swiper_x .swiper-slide {
-  display: grid;
-  padding-bottom: 140px;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-row-gap: 60px;
+.kiosk_new_book_swiper_x .swiper-button-prev,
+.kiosk_new_book_swiper_x .swiper-button-next {
+  position:static;
+  margin-top:0;
+}
+
+.kiosk_new_book_swiper_x {
+  position:relative;
+  width: 3520px;
+  height: 1596px;
+}
+
+.kiosk_new_book_swiper_x .navigation-wrapper {
+  position:absolute;
+  top:50%;
+  left:50%;
+  display:flex;
+  justify-content:space-between;
+  width: 3400px;
+  margin:0 auto;
+  transform:translate(-50%,-50%);
 }
 
 .kiosk_new_book_swiper_x .swiper-item {
@@ -5740,6 +5759,30 @@
   border-radius: 24px;
   box-shadow: 0 10px 30px 0 rgba(25, 33, 61, 0.20);
   object-fit: cover;
+}
+
+.kiosk_new_book_swiper_x .swiper-button-next::after,
+.kiosk_new_book_swiper_x .swiper-button-prev::after {
+  display: none;
+}
+
+.kiosk_new_book_swiper_x .swiper-button-next {
+  top: 718px;
+  right: 60px;
+  width: 160px;
+  height: 160px;
+  transform: rotate(180deg);
+  background: url(../img/arrowX.svg) no-repeat top center;
+  background-size: cover;
+}
+
+.kiosk_new_book_swiper_x .swiper-button-prev {
+  top: 718px;
+  left: 60px;
+  width: 160px;
+  height: 160px;
+  background: url(../img/arrowX.svg) no-repeat top center;
+  background-size: cover;
 }
 
 .kiosk_new_book_title_x {
@@ -5784,30 +5827,6 @@
   color: #4E5968;
 }
 
-.kiosk_new_book_swiper_x .swiper-button-next::after,
-.kiosk_new_book_swiper_x .swiper-button-prev::after {
-  display: none;
-}
-
-.kiosk_new_book_swiper_x .swiper-button-next {
-  top: 718px;
-  right: 60px;
-  width: 160px;
-  height: 160px;
-  transform: rotate(180deg);
-  background: url(../img/arrowX.svg) no-repeat top center;
-  background-size: cover;
-}
-
-.kiosk_new_book_swiper_x .swiper-button-prev {
-  top: 718px;
-  left: 60px;
-  width: 160px;
-  height: 160px;
-  background: url(../img/arrowX.svg) no-repeat top center;
-  background-size: cover;
-}
-
 @media (width: 1920px) {
   .kiosk_new_book_container_x {
     position: relative;
@@ -5817,17 +5836,32 @@
     background-size: cover;
   }
 
-  .kiosk_new_book_swiper_x {
-    width: 1760px;
-    padding-left: 125px !important;
+  .kiosk_new_book_swiper_x .swiper {
+    width: 1500px;
+    height: 798px;
   }
 
-  .kiosk_new_book_swiper_x .swiper-slide {
-    display: grid;
-    padding-bottom: 70px;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-row-gap: 30px;
+  .kiosk_new_book_swiper_x .swiper-button-prev,
+  .kiosk_new_book_swiper_x .swiper-button-next {
+    position:static;
+    margin-top:0;
+  }
+
+  .kiosk_new_book_swiper_x {
+    position:relative;
+    width: 1760px;
+    height: 798px;
+  }
+
+  .kiosk_new_book_swiper_x .navigation-wrapper {
+    position:absolute;
+    top:50%;
+    left:50%;
+    display:flex;
+    justify-content:space-between;
+    width: 1700px;
+    margin:0 auto;
+    transform:translate(-50%,-50%);
   }
 
   .kiosk_new_book_swiper_x .swiper-item {

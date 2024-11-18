@@ -446,22 +446,6 @@ $(document).ready(function () {
 	facilitySwiper();
 });
 
-$(function () {
-	const kioskFacilityXSwiper = new Swiper('.kiosk_facility_swiper_x', {
-		speed: 600,
-		loop: true,
-		autoplay: {
-			delay: 10000,
-			disableOnInteraction: false,
-		},
-		slidesPerView: 1,
-		navigation: {
-			nextEl: '.kiosk_facility_swiper_x .swiper-button-next',
-			prevEl: '.kiosk_facility_swiper_x .swiper-button-prev',
-		},
-	});
-});
-
 $(document).ready(function () {
 	function setupPopup(swiperClass, popupClass, closeClass) {
 		$(`.${swiperClass} .swiper-item`).click(function () {
@@ -483,36 +467,60 @@ $(document).ready(function () {
 	setupPopup('kiosk_facility_swiper_wrapper', 'kiosk_facility_popup_x', 'kiosk_facility_popup_close_x');
 });
 
-$(function () {
-	const kioskNewBookSwiper = new Swiper('.kiosk_best_book_swiper', {
-		speed: 600,
-		loop: true,
-		slidesPerView: 1,
-		autoplay: {
-			delay: 10000,
-			disableOnInteraction: false,
-		},
-		pagination: {
-			el: '.swiper-pagination',
-			type: 'bullets',
-		},
-	});
-});
+$(document).ready(function () {
+	function kioskNewBookSwiper() {
+		const swiper = new Swiper('.kiosk_new_book_swiper .swiper', {
+			loop: true,
+			slidesPerView: 3,
+			slidesPerColumn: 3,
+			grid: {
+				rows: 3,
+			},
+			breakpoints: {
+				3840: {
+					spaceBetween: 190,
+				},
+				1080: {
+					spaceBetween: 95,
+				},
+			},
+			slidesPerGroup: 3,
+			pagination: {
+				el: '.kiosk_new_book_swiper .swiper-pagination',
+			},
+		});
+	}
 
-$(function () {
-	const kioskNewBookXSwiper = new Swiper('.kiosk_new_book_swiper_x', {
-		speed: 600,
-		loop: true,
-		autoplay: {
-			delay: 10000,
-			disableOnInteraction: false,
-		},
-		slidesPerView: 1,
-		navigation: {
-			nextEl: '.kiosk_new_book_swiper_x .swiper-button-next',
-			prevEl: '.kiosk_new_book_swiper_x .swiper-button-prev',
-		},
-	});
+	kioskNewBookSwiper();
+
+	function kioskNewBookXSwiper() {
+		const swiper = new Swiper('.kiosk_new_book_swiper_x .swiper', {
+			loop: true,
+			autoplay: {
+				delay: 10000,
+				disableOnInteraction: false,
+			},
+			slidesPerView: 5,
+			slidesPerColumn: 5,
+			grid: {
+				rows: 2,
+			},
+			breakpoints: {
+				3840: {
+					spaceBetween: 250,
+				},
+				1080: {
+					spaceBetween: 125,
+				},
+			},
+			navigation: {
+				nextEl: '.kiosk_new_book_swiper_x .swiper-button-next',
+				prevEl: '.kiosk_new_book_swiper_x .swiper-button-prev',
+			},
+		});
+	}
+
+	kioskNewBookXSwiper();
 });
 
 $(function () {
