@@ -3457,10 +3457,14 @@
   background: #ADB5BD;
 }
 
+.bold {
+  font-weight: 500 !important;
+}
+
 .kiosk_information_first_table tbody tr td {
   font-family: "Pretendard", sans-serif;
   font-size: 44px;
-  font-weight: 500;
+  font-weight: 400;
   font-style: normal;
   line-height: 120%;
   padding: 29px 0 28px 0;
@@ -3477,7 +3481,7 @@
 .kiosk_information_second_table tbody tr td {
   font-family: "Pretendard", sans-serif;
   font-size: 44px;
-  font-weight: 500;
+  font-weight: 400;
   font-style: normal;
   line-height: 120%;
   padding: 29px 53px 28px 53px;
@@ -3529,6 +3533,10 @@
 @media (width: 1080px) {
   .kiosk_information_content {
     margin: 0 56px 92px 90px;
+  }
+
+  .bold {
+    font-weight: 500 !important;
   }
 
   .kiosk_information_content_scroll {
@@ -3667,7 +3675,7 @@
   .kiosk_information_first_table tbody tr td {
     font-family: "Pretendard", sans-serif;
     font-size: 22px;
-    font-weight: 500;
+    font-weight: 400;
     font-style: normal;
     line-height: 120%;
     padding: 14px 0 14px 0;
@@ -3684,7 +3692,7 @@
   .kiosk_information_second_table tbody tr td {
     font-family: "Pretendard", sans-serif;
     font-size: 22px;
-    font-weight: 500;
+    font-weight: 400;
     font-style: normal;
     line-height: 120%;
     padding: 14px 27px 14px 27px;
@@ -3883,7 +3891,7 @@
 .kiosk_information_first_table_x tbody tr td {
   font-family: "Pretendard", sans-serif;
   font-size: 44px;
-  font-weight: 500;
+  font-weight: 400;
   font-style: normal;
   line-height: 120%;
   padding: 29px 0 28px 0;
@@ -3900,7 +3908,7 @@
 .kiosk_information_second_table_x tbody tr td {
   font-family: "Pretendard", sans-serif;
   font-size: 44px;
-  font-weight: 500;
+  font-weight: 400;
   font-style: normal;
   line-height: 120%;
   padding: 29px 53px 28px 53px;
@@ -4098,7 +4106,7 @@
   .kiosk_information_first_table_x tbody tr td {
     font-family: "Pretendard", sans-serif;
     font-size: 22px;
-    font-weight: 500;
+    font-weight: 400;
     font-style: normal;
     line-height: 120%;
     padding: 14.5px 0 14px 0;
@@ -4115,7 +4123,7 @@
   .kiosk_information_second_table_x tbody tr td {
     font-family: "Pretendard", sans-serif;
     font-size: 22px;
-    font-weight: 500;
+    font-weight: 400;
     font-style: normal;
     line-height: 120%;
     padding: 14.5px 26.5px 14px 26.5px;
