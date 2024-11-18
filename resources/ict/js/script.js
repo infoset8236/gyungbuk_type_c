@@ -312,23 +312,6 @@ $(function () {
 	});
 });
 
-$(function () {
-	const kioskNoticeXSwiper = new Swiper('.kiosk_notice_swiper_x', {
-		speed: 600,
-		loop: true,
-		slidesPerGroup: 3,
-		slidesPerView: 3,
-		autoplay: {
-			delay: 10000,
-			disableOnInteraction: false,
-		},
-		navigation: {
-			nextEl: '.kiosk_notice_swiper_x .swiper-button-next',
-			prevEl: '.kiosk_notice_swiper_x .swiper-button-prev',
-		},
-	});
-});
-
 $(document).ready(function () {
 	const $slideImages = $('.kiosk_notice_swiper .swiper-slide img');
 
@@ -346,6 +329,30 @@ $(document).ready(function () {
 	$slideImages.on('click', function () {
 		updateSelectedImage($(this));
 	});
+
+	function KioskNoticeXSwiper() {
+		const swiper = new Swiper('.kiosk_notice_swiper_box .swiper', {
+			slidesPerGroup: 3,
+			slidesPerView: 3,
+			spaceBetween: 60,
+			breakpoints: {
+				1920: {
+					spaceBetween: 30,
+				},
+			},
+			autoplay: {
+				delay: 10000,
+				disableOnInteraction: false,
+			},
+			loop: true,
+			navigation: {
+				nextEl: '.kiosk_notice_swiper_box .swiper-button-next',
+				prevEl: '.kiosk_notice_swiper_box .swiper-button-prev',
+			},
+		});
+	}
+
+	KioskNoticeXSwiper();
 });
 
 $(document).ready(function () {
