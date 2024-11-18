@@ -380,7 +380,7 @@ $(document).ready(function () {
 			const floor = $(this).text();
 
 			$(`.${wrapperClass} .${floorNameClass}`).css('animation', 'none');
-			$(`.${wrapperClass} img`).attr('src', `/resources/ict/img/map${floor}.svg`);
+			$(`.${wrapperClass} img`).attr('src', `/resources/ict/img/map${floor}.png`);
 
 			setTimeout(function () {
 				$(`.${wrapperClass} .${floorNameClass}`).text(floor).css('animation', 'moveUp 0.5s ease-out forwards');
@@ -390,22 +390,60 @@ $(document).ready(function () {
 
 	setupFiltering('kiosk_filtering_btn', 'kiosk_facility_map_wrapper', 'floor_name');
 	setupFiltering('kiosk_filtering_btn_x', 'kiosk_facility_map_wrapper_x', 'floor_name_x');
-});
 
-$(function () {
-	const kioskFacilitySwiper = new Swiper('.kiosk_facility_swiper', {
-		speed: 600,
-		loop: true,
-		autoplay: {
-			delay: 10000,
-			disableOnInteraction: false,
-		},
-		slidesPerView: 1,
-		navigation: {
-			nextEl: '.kiosk_facility_swiper .swiper-button-next',
-			prevEl: '.kiosk_facility_swiper .swiper-button-prev',
-		},
-	});
+	function facilityXSwiper() {
+		const swiper = new Swiper('.kiosk_facility_swiper_wrapper .swiper', {
+			loop: true,
+			slidesPerView: 2,
+			slidesPerColumn: 3,
+			grid: {
+				rows: 3,
+			},
+			slidesPerGroup: 2,
+			spaceBetween: 40,
+			breakpoints: {
+				1920: {
+					spaceBetween: 20,
+				},
+			},
+			autoplay: {
+				delay: 10000,
+				disableOnInteraction: false,
+			},
+			pagination: {
+				el: '.kiosk_facility_swiper_wrapper .swiper-pagination',
+			},
+			navigation: {
+				nextEl: '.kiosk_facility_swiper_wrapper .swiper-button-next',
+				prevEl: '.kiosk_facility_swiper_wrapper .swiper-button-prev',
+			},
+		});
+	}
+
+	facilityXSwiper();
+
+	function facilitySwiper() {
+		const swiper = new Swiper('.kiosk_facility_swiper .swiper', {
+			loop: true,
+			slidesPerView: 2,
+			slidesPerColumn: 3,
+			grid: {
+				rows: 3,
+			},
+			slidesPerGroup: 2,
+			spaceBetween: 60,
+			autoplay: {
+				delay: 10000,
+				disableOnInteraction: false,
+			},
+			navigation: {
+				nextEl: '.kiosk_facility_swiper .swiper-button-next',
+				prevEl: '.kiosk_facility_swiper .swiper-button-prev',
+			},
+		});
+	}
+
+	facilitySwiper();
 });
 
 $(function () {
@@ -442,7 +480,7 @@ $(document).ready(function () {
 	}
 
 	setupPopup('kiosk_facility_swiper', 'kiosk_facility_popup', 'kiosk_facility_popup_close');
-	setupPopup('kiosk_facility_swiper_x', 'kiosk_facility_popup_x', 'kiosk_facility_popup_close_x');
+	setupPopup('kiosk_facility_swiper_wrapper', 'kiosk_facility_popup_x', 'kiosk_facility_popup_close_x');
 });
 
 $(function () {

@@ -24,33 +24,38 @@
 				<div class="kiosk_facility_wrapper_x">
 					<div class="kiosk_facility_map_x">
 						<div class="kiosk_facility_map_wrapper_x">
-							<img alt="" src="/resources/ict/img/map1F.svg" />
+							<img alt="" src="/resources/ict/img/map1F.png" />
 							<div class="floor_name_x">1F</div>
 						</div>
 						<div class="kiosk_filtering_list_x">
+							<!--				클릭시 지도 변경 기능 구현 완료				-->
 							<div class="kiosk_filtering_btn_x">1F</div>
 							<div class="kiosk_filtering_btn_x">2F</div>
 							<div class="kiosk_filtering_btn_x">3F</div>
 						</div>
 					</div>
-					<!--		2중 for문 필요 /  1개의 swiper-slide 안  swiper-item 6개	-->
-					<div class="swiper kiosk_facility_swiper_x">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide">
-								<div class="swiper-item">
-									<div class="kiosk_facility_title_wrapper_x">
-										<div class="kiosk_facility_title_index_x">01</div>
-										<div>
-											<div class="kiosk_facility_title_kr_x">독도교육체험관</div>
-											<div class="kiosk_facility_title_en_x">Dokdo Education Experience Center</div>
+					<div class="kiosk_facility_swiper_wrapper">
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								<!--				슬라이드 아이템				-->
+								<div class="swiper-slide">
+									<div class="swiper-item">
+										<div class="kiosk_facility_title_wrapper_x">
+											<div class="kiosk_facility_title_index_x">01</div>
+											<div>
+												<div class="kiosk_facility_title_kr_x">독도교육체험관</div>
+												<div class="kiosk_facility_title_en_x">Dokdo Education Experience Center</div>
+											</div>
 										</div>
+										<img alt="" src="/resources/ict/img/dummyFacility.svg" />
 									</div>
-									<img alt="" src="/resources/ict/img/dummyFacility.svg" />
 								</div>
 							</div>
 						</div>
-						<div class="swiper-button-next"></div>
-						<div class="swiper-button-prev"></div>
+						<div class="navigation-wrapper">
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+						</div>
 					</div>
 				</div>
 				<!--	팝업		-->

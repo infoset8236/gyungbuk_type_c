@@ -19,38 +19,41 @@
 				<div class="kiosk_common_header_kr">시설안내</div>
 				<div class="kiosk_common_header_en">FACILITY INFORMATION</div>
 			</div>
-
 			<!--	 필터링 버튼 클릭시 상단 이미지 및 텍스트 변경 기능 추가 완료 및 필터링 버튼 액티브 로직 추가		-->
 			<div class="kiosk_facility_map_wrapper">
-				<img alt="" src="/resources/ict/img/map1F.svg" />
-				<div class="floor_name">1F</div>
+				<img alt="" src="/resources/ict/img/map1F.png" />
+				<div class="floor_name">B1</div>
 			</div>
 			<div class="kiosk_filtering_list">
+				<div class="kiosk_filtering_btn">B1</div>
 				<div class="kiosk_filtering_btn">1F</div>
 				<div class="kiosk_filtering_btn">2F</div>
 				<div class="kiosk_filtering_btn">3F</div>
+				<div class="kiosk_filtering_btn">4F</div>
 			</div>
-
-			<!--		2중 for문 필요 /  1개의 swiper-slide 안  swiper-item 6개	-->
-			<div class="swiper kiosk_facility_swiper">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<div class="swiper-item">
-							<div class="kiosk_facility_title_wrapper">
-								<div class="kiosk_facility_title_index">01</div>
-								<div>
-									<div class="kiosk_facility_title_kr">독도교육체험관</div>
-									<div class="kiosk_facility_title_en">Dokdo Education Experience Center</div>
+			<div class="kiosk_facility_swiper">
+				<div class="swiper">
+					<div class="swiper-wrapper">
+						<!-- 슬라이드 아이템 -->
+						<div class="swiper-slide">
+							<div class="swiper-item">
+								<div class="kiosk_facility_title_wrapper">
+									<div class="kiosk_facility_title_index">01</div>
+									<div>
+										<div class="kiosk_facility_title_kr">독도교육체험관</div>
+										<div class="kiosk_facility_title_en">Dokdo Education Experience Center</div>
+									</div>
 								</div>
+								<img alt="" src="/resources/ict/img/dummyFacility.svg" />
 							</div>
-							<img alt="" src="/resources/ict/img/dummyFacility.svg" />
 						</div>
 					</div>
 				</div>
-				<div class="swiper-button-next"></div>
-				<div class="swiper-button-prev"></div>
+				<div class="navigation-wrapper">
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+				</div>
 			</div>
-
 			<!--	팝업		-->
 			<div class="kiosk_facility_popup" style="display: none">
 				<div class="popup_content">

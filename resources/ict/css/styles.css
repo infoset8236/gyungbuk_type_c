@@ -4123,7 +4123,7 @@
   .kiosk_information_second_table_x tbody tr td {
     font-family: "Pretendard", sans-serif;
     font-size: 22px;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
     line-height: 120%;
     padding: 14.5px 26.5px 14px 26.5px;
@@ -4251,24 +4251,53 @@
   }
 }
 
+.kiosk_facility_swiper .swiper {
+  width: 1700px;
+  height: 1379px;
+}
+
+.kiosk_facility_swiper .swiper-button-prev,
+.kiosk_facility_swiper .swiper-button-next {
+  position:static;
+  margin-top:0;
+}
+
 .kiosk_facility_swiper {
-  width: 2030px;
-  margin-top: 60px !important;
-  padding-left: 150px !important;
+  position:relative;
+  width: 2160px;
+  height: 1379px;
+  margin-top: 60px;
 }
 
-.kiosk_facility_swiper .swiper-slide {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-row-gap: 50px;
+.kiosk_facility_swiper .navigation-wrapper {
+  position:absolute;
+  top:50%;
+  left:49%;
+  display:flex;
+  justify-content:space-between;
+  width:2020px;
+  margin:0 auto;
+  transform:translate(-50%,-50%);
 }
 
-.kiosk_facility_swiper .swiper-item {
-  display: flex;
-  flex-direction: column;
-  width: 784px !important;
-  gap: 10px;
+.kiosk_facility_swiper .swiper-button-next::after,
+.kiosk_facility_swiper .swiper-button-prev::after {
+  display: none;
+}
+
+.kiosk_facility_swiper .swiper-button-next {
+  width: 160px;
+  height: 160px;
+  transform: rotate(180deg);
+  background: url(../img/arrow.svg) no-repeat top center;
+  background-size: cover;
+}
+
+.kiosk_facility_swiper .swiper-button-prev {
+  width: 160px;
+  height: 160px;
+  background: url(../img/arrow.svg) no-repeat top center;
+  background-size: cover;
 }
 
 .kiosk_facility_title_wrapper {
@@ -4312,27 +4341,6 @@
   height: 303px;
   border-radius: 8px;
   object-fit: cover;
-}
-
-.kiosk_facility_swiper .swiper-button-next::after,
-.kiosk_facility_swiper .swiper-button-prev::after {
-  display: none;
-}
-
-.kiosk_facility_swiper .swiper-button-next {
-  width: 160px;
-  height: 160px;
-  transform: rotate(180deg);
-  background: url(../img/arrow.svg) no-repeat top center;
-  background-size: cover;
-}
-
-.kiosk_facility_swiper .swiper-button-prev {
-  left: 0;
-  width: 160px;
-  height: 160px;
-  background: url(../img/arrow.svg) no-repeat top center;
-  background-size: cover;
 }
 
 .kiosk_facility_popup {
@@ -4560,24 +4568,53 @@
     }
   }
 
+  .kiosk_facility_swiper .swiper {
+    width: 850px;
+    height: 685px;
+  }
+
+  .kiosk_facility_swiper .swiper-button-prev,
+  .kiosk_facility_swiper .swiper-button-next {
+    position:static;
+    margin-top:0;
+  }
+
   .kiosk_facility_swiper {
-    width: 1015px;
-    margin-top: 30px !important;
-    padding-left: 75px !important;
+    position:relative;
+    width: 1080px;
+    height: 685px;
+    margin-top: 30px;
   }
 
-  .kiosk_facility_swiper .swiper-slide {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-row-gap: 25px;
+  .kiosk_facility_swiper .navigation-wrapper {
+    position:absolute;
+    top:50%;
+    left:50%;
+    display:flex;
+    justify-content:space-between;
+    width:1010px;
+    margin:0 auto;
+    transform:translate(-50%,-50%);
   }
 
-  .kiosk_facility_swiper .swiper-item {
-    display: flex;
-    flex-direction: column;
-    width: 392px !important;
-    gap: 5px;
+  .kiosk_facility_swiper .swiper-button-next::after,
+  .kiosk_facility_swiper .swiper-button-prev::after {
+    display: none;
+  }
+
+  .kiosk_facility_swiper .swiper-button-next {
+    width: 80px;
+    height: 80px;
+    transform: rotate(180deg);
+    background: url(../img/arrow.svg) no-repeat top center;
+    background-size: cover;
+  }
+
+  .kiosk_facility_swiper .swiper-button-prev {
+    width: 80px;
+    height: 80px;
+    background: url(../img/arrow.svg) no-repeat top center;
+    background-size: cover;
   }
 
   .kiosk_facility_title_wrapper {
@@ -4591,7 +4628,7 @@
     font-size: 50px;
     font-weight: 300;
     font-style: normal;
-    line-height: 60px;
+    line-height: 120%;
     height: 60px;
     color: #8B95A1;
   }
@@ -4611,7 +4648,7 @@
     font-size: 13px;
     font-weight: 400;
     font-style: normal;
-    line-height: 70%;
+    line-height: 140%;
     text-transform: uppercase;
     color: #6B7684;
   }
@@ -4621,27 +4658,6 @@
     height: 151.5px;
     border-radius: 4px;
     object-fit: cover;
-  }
-
-  .kiosk_facility_swiper .swiper-button-next::after,
-  .kiosk_facility_swiper .swiper-button-prev::after {
-    display: none;
-  }
-
-  .kiosk_facility_swiper .swiper-button-next {
-    width: 80px;
-    height: 80px;
-    transform: rotate(180deg);
-    background: url(../img/arrow.svg) no-repeat top center;
-    background-size: cover;
-  }
-
-  .kiosk_facility_swiper .swiper-button-prev {
-    left: 0;
-    width: 80px;
-    height: 80px;
-    background: url(../img/arrow.svg) no-repeat top center;
-    background-size: cover;
   }
 
   .kiosk_facility_popup {
@@ -4885,26 +4901,56 @@
   }
 }
 
-.kiosk_facility_swiper_x {
+
+.kiosk_facility_swiper_wrapper .swiper {
+  width: 1200px;
+  height: 1530px;
+}
+
+.kiosk_facility_swiper_wrapper .swiper-button-prev,
+.kiosk_facility_swiper_wrapper .swiper-button-next {
+  position:static;
+  margin-top:0;
+}
+
+.kiosk_facility_swiper_wrapper {
+  position:relative;
   width: 1520px;
-  padding-left: 160px !important;
+  height: 1530px;
 }
 
-.kiosk_facility_swiper_x .swiper-wrapper {
-  display: flex;
-  gap: 160px;
+.kiosk_facility_swiper_wrapper .navigation-wrapper {
+  position:absolute;
+  top:50%;
+  left:50%;
+  display:flex;
+  justify-content:space-between;
+  width: 1520px;
+  margin: 0 auto;
+  transform:translate(-50%,-50%);
 }
 
-.kiosk_facility_swiper_x .swiper-slide {
-  display: grid;
-  width: 1200px !important;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-row-gap: 100px;
-  grid-column-gap: 40px;
+.kiosk_facility_swiper_wrapper .swiper-button-next::after,
+.kiosk_facility_swiper_wrapper .swiper-button-prev::after {
+  display: none;
 }
 
-.kiosk_facility_swiper_x .swiper-item {
+.kiosk_facility_swiper_wrapper .swiper-button-next {
+  width: 160px;
+  height: 160px;
+  transform: rotate(180deg);
+  background: url(../img/arrowX.svg) no-repeat top center;
+  background-size: cover;
+}
+
+.kiosk_facility_swiper_wrapper .swiper-button-prev {
+  width: 160px;
+  height: 160px;
+  background: url(../img/arrowX.svg) no-repeat top center;
+  background-size: cover;
+}
+
+.kiosk_facility_swiper_wrapper .swiper-item {
   display: flex;
   flex-direction: column;
   width: 580px;
@@ -4949,31 +4995,11 @@
   color: #6B7684;
 }
 
-.kiosk_facility_swiper_x .swiper-item img {
+.kiosk_facility_swiper_wrapper .swiper-item img {
   width: 580px;
   height: 303px;
   border-radius: 8px;
   object-fit: cover;
-}
-
-.kiosk_facility_swiper_x .swiper-button-next::after,
-.kiosk_facility_swiper_x .swiper-button-prev::after {
-  display: none;
-}
-
-.kiosk_facility_swiper_x .swiper-button-next {
-  width: 160px;
-  height: 160px;
-  transform: rotate(180deg);
-  background: url(../img/arrowX.svg) no-repeat top center;
-  background-size: cover;
-}
-
-.kiosk_facility_swiper_x .swiper-button-prev {
-  width: 160px;
-  height: 160px;
-  background: url(../img/arrowX.svg) no-repeat top center;
-  background-size: cover;
 }
 
 .kiosk_facility_popup_x {
@@ -5165,21 +5191,21 @@
   }
 
   .kiosk_facility_map_wrapper_x img {
-    width: 800.0005px;
-    height: 575.1345px;
+    width: 800px;
+    height: 575px;
     object-fit: contain;
   }
 
   .floor_name_x {
     font-family: "Pretendard", sans-serif;
-    font-size: 146.3135px;
+    font-size: 131px;
     font-weight: 300;
     font-style: normal;
-    line-height: 103.5px;
+    line-height: 104px;
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 103.5px;
+    height: 104px;
     animation: moveUp_x 0.5s ease-out forwards;
     text-align: center;
     color: #191F28;
@@ -5224,26 +5250,55 @@
     }
   }
 
-  .kiosk_facility_swiper_x {
+  .kiosk_facility_swiper_wrapper .swiper {
+    width: 600px;
+    height: 765px;
+  }
+
+  .kiosk_facility_swiper_wrapper .swiper-button-prev,
+  .kiosk_facility_swiper_wrapper .swiper-button-next {
+    position:static;
+    margin-top:0;
+  }
+
+  .kiosk_facility_swiper_wrapper {
+    position:relative;
     width: 760px;
-    padding-left: 80px !important;
+    height: 765px;
   }
 
-  .kiosk_facility_swiper_x .swiper-wrapper {
-    display: flex;
-    gap: 80px;
+  .kiosk_facility_swiper_wrapper .navigation-wrapper {
+    position:absolute;
+    top:50%;
+    left:50%;
+    display:flex;
+    justify-content:space-between;
+    width: 760px;
+    margin: 0 auto;
+    transform:translate(-50%,-50%);
   }
 
-  .kiosk_facility_swiper_x .swiper-slide {
-    display: grid;
-    width: 600px !important;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-row-gap: 50px;
-    grid-column-gap: 20px;
+  .kiosk_facility_swiper_wrapper .swiper-button-next::after,
+  .kiosk_facility_swiper_wrapper .swiper-button-prev::after {
+    display: none;
   }
 
-  .kiosk_facility_swiper_x .swiper-item {
+  .kiosk_facility_swiper_wrapper .swiper-button-next {
+    width: 80px;
+    height: 80px;
+    transform: rotate(180deg);
+    background: url(../img/arrowX.svg) no-repeat top center;
+    background-size: cover;
+  }
+
+  .kiosk_facility_swiper_wrapper .swiper-button-prev {
+    width: 80px;
+    height: 80px;
+    background: url(../img/arrowX.svg) no-repeat top center;
+    background-size: cover;
+  }
+
+  .kiosk_facility_swiper_wrapper .swiper-item {
     display: flex;
     flex-direction: column;
     width: 290px;
@@ -5288,31 +5343,11 @@
     color: #6B7684;
   }
 
-  .kiosk_facility_swiper_x .swiper-item img {
+  .kiosk_facility_swiper_wrapper .swiper-item img {
     width: 290px;
     height: 151.5px;
-    border-radius: 4px;
+    border-radius: 8px;
     object-fit: cover;
-  }
-
-  .kiosk_facility_swiper_x .swiper-button-next::after,
-  .kiosk_facility_swiper_x .swiper-button-prev::after {
-    display: none;
-  }
-
-  .kiosk_facility_swiper_x .swiper-button-next {
-    width: 80px;
-    height: 80px;
-    transform: rotate(180deg);
-    background: url(../img/arrowX.svg) no-repeat top center;
-    background-size: cover;
-  }
-
-  .kiosk_facility_swiper_x .swiper-button-prev {
-    width: 80px;
-    height: 80px;
-    background: url(../img/arrowX.svg) no-repeat top center;
-    background-size: cover;
   }
 
   .kiosk_facility_popup_x {
@@ -5381,7 +5416,7 @@
   .kiosk_facility_popup_header_img_x {
     position: absolute;
     top: 23.355px;
-    right: 53.65px;
+    right: 54.65px;
     width: 220.0015px;
     height: 154.5px;
     background: url(../img/popupMap.svg) no-repeat top center;
@@ -5426,7 +5461,7 @@
 
   .kiosk_facility_popup_content_list_item_text_x {
     font-family: "Pretendard", sans-serif;
-    font-size: 26px;
+    font-size: 28px;
     font-weight: 500;
     font-style: normal;
     line-height: 140%;
