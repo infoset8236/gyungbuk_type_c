@@ -16,15 +16,15 @@
 }
 
 .loading img {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
 }
 
 
 @media (min-width: 1080px) and (max-width: 1920px) {
   .loading img {
-    width: 125px;
-    height: 125px;
+    width: 100px;
+    height: 100px;
   }
 }
 
@@ -10553,8 +10553,8 @@
   background: #EBEBEB;
 }
 
-.kiosk_course_registration_wrapper_x:nth-child(3),
-.kiosk_course_registration_wrapper_x:nth-child(5) {
+.kiosk_course_registration_wrapper_x:nth-child(4),
+.kiosk_course_registration_wrapper_x:nth-child(6) {
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -10620,6 +10620,65 @@
   color: #FFF;
   border-radius: 40px;
   background: #2E80EE;
+}
+
+.kiosk_course_registration_address_wrapper_x {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.kiosk_course_registration_post_wrapper_x {
+  display: flex;
+  gap: 20px;
+}
+
+.kiosk_course_registration_post_wrapper_x input {
+  font-family: "Pretendard", sans-serif;
+  font-size: 44px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  width: 2300px;
+  height: 140px;
+  padding: 48px 40px;
+  color: #191F28;
+  border-radius: 20px;
+  background: #EBEBEB;
+}
+
+.kiosk_course_registration_post_wrapper_x div {
+  font-family: "Pretendard", sans-serif;
+  font-size: 52px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  height: 140px;
+  color: #FFF;
+  border-radius: 20px;
+  background: #8B95A1;
+}
+
+.kiosk_course_registration_detail_address_x {
+  font-family: "Pretendard", sans-serif;
+  font-size: 44px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  height: 140px;
+  margin-bottom: 40px;
+  padding: 48px 40px;
+  color: #191F28;
+  border-radius: 20px;
+  background: #EBEBEB;
+}
+
+.kiosk_course_registration_address_wrapper_x input, .kiosk_course_registration_detail_address_x:focus {
+  outline: none;
 }
 
 @media (width: 1920px) {
@@ -10830,6 +10889,16 @@
     gap: 20px;
   }
 
+  .kiosk_course_registration_wrapper_x:nth-child(4),
+  .kiosk_course_registration_wrapper_x:nth-child(6) {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 11.5px;
+    gap: 20px;
+  }
+
+
   .kiosk_course_registration_radio_wrapper_x {
     font-family: "Pretendard", sans-serif;
     font-size: 22px;
@@ -10888,5 +10957,64 @@
     color: #FFF;
     border-radius: 20px;
     background: #2E80EE;
+  }
+
+  .kiosk_course_registration_address_wrapper_x {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .kiosk_course_registration_post_wrapper_x {
+    display: flex;
+    gap: 10px;
+  }
+
+  .kiosk_course_registration_post_wrapper_x input {
+    font-family: "Pretendard", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    width: 1150px;
+    height: 70px;
+    padding: 24px 20px;
+    color: #191F28;
+    border-radius: 10px;
+    background: #EBEBEB;
+  }
+
+  .kiosk_course_registration_post_wrapper_x div {
+    font-family: "Pretendard", sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 70px;
+    color: #FFF;
+    border-radius: 10px;
+    background: #8B95A1;
+  }
+
+  .kiosk_course_registration_detail_address_x {
+    font-family: "Pretendard", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    height: 70px;
+    margin-bottom: 20px;
+    padding: 24px 20px;
+    color: #191F28;
+    border-radius: 10px;
+    background: #EBEBEB;
+  }
+
+  .kiosk_course_registration_address_wrapper_x input, .kiosk_course_registration_detail_address_x:focus {
+    outline: none;
   }
 }

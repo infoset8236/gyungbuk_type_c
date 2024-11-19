@@ -68,5 +68,16 @@
 				</div>
 			</div>
 		</div>
+		<!--  로딩  -->
+		<div class="loading">
+			<img alt="" src="/resources/ict/img/loading.gif" />
+		</div>
+		<script>
+			$(document).ready(function () {
+				setTimeout(function () {
+					$('.loading').fadeOut('slow');
+				}, 5000);
+			});
+		</script>
 	</body>
 </html>
