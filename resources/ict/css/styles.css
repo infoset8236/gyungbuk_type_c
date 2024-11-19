@@ -9793,8 +9793,11 @@
 
 .kiosk_course_registration_form_content {
   display: flex;
+  overflow-y: scroll;
   flex-direction: column;
-  padding: 0 150px 0 150px;
+  width: 1700px;
+  height: 2144px;
+  padding: 0 40px 0 150px;
 }
 
 .kiosk_course_registration_wrapper {
@@ -9941,8 +9944,8 @@
   background: #EBEBEB;
 }
 
-.kiosk_course_registration_wrapper:nth-child(5),
-.kiosk_course_registration_wrapper:nth-child(7) {
+.kiosk_course_registration_wrapper:nth-child(6),
+.kiosk_course_registration_wrapper:nth-child(8) {
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -10009,6 +10012,65 @@
   background: #2E80EE;
 }
 
+.kiosk_course_registration_address_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.kiosk_course_registration_post_wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.kiosk_course_registration_post_wrapper input {
+  font-family: "Pretendard", sans-serif;
+  font-size: 52px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  width: 890px;
+  height: 152px;
+  padding: 48px 40px;
+  color: #191F28;
+  border-radius: 20px;
+  background: #EBEBEB;
+}
+
+.kiosk_course_registration_post_wrapper div {
+  font-family: "Pretendard", sans-serif;
+  font-size: 52px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  height: 152px;
+  color: #FFF;
+  border-radius: 20px;
+  background: #8B95A1;
+}
+
+.kiosk_course_registration_detail_address {
+  font-family: "Pretendard", sans-serif;
+  font-size: 52px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  height: 152px;
+  margin-bottom: 40px;
+  padding: 48px 40px;
+  color: #191F28;
+  border-radius: 20px;
+  background: #EBEBEB;
+}
+
+.kiosk_course_registration_post_wrapper input, .kiosk_course_registration_detail_address:focus {
+  outline: none;
+}
+
 @media (width: 1080px) {
   .kiosk_course_registration_container {
     position: relative;
@@ -10045,8 +10107,11 @@
 
   .kiosk_course_registration_form_content {
     display: flex;
+    overflow-y: scroll;
     flex-direction: column;
-    padding: 0 75px;
+    width: 850px;
+    height: 1072px;
+    padding: 0 20px 0 75px;
   }
 
   .kiosk_course_registration_wrapper {
@@ -10172,8 +10237,8 @@
     background: #EBEBEB;
   }
 
-  .kiosk_course_registration_wrapper:nth-child(5),
-  .kiosk_course_registration_wrapper:nth-child(7) {
+  .kiosk_course_registration_wrapper:nth-child(6),
+  .kiosk_course_registration_wrapper:nth-child(8) {
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -10231,6 +10296,61 @@
     color: #FFF;
     border-radius: 20px;
     background: #2E80EE;
+  }
+
+  .kiosk_course_registration_address_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .kiosk_course_registration_post_wrapper {
+    display: flex;
+    gap: 10px;
+  }
+
+  .kiosk_course_registration_post_wrapper input {
+    font-family: "Pretendard", sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    width: 445px;
+    height: 76px;
+    padding: 24px 20px;
+    color: #191F28;
+    border-radius: 10px;
+    background: #EBEBEB;
+  }
+
+  .kiosk_course_registration_post_wrapper div {
+    font-family: "Pretendard", sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 76px;
+    color: #FFF;
+    border-radius: 10px;
+    background: #8B95A1;
+  }
+
+  .kiosk_course_registration_detail_address {
+    font-family: "Pretendard", sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    height: 76px;
+    margin-bottom: 20px;
+    padding: 24px 20px;
+    color: #191F28;
+    border-radius: 10px;
+    background: #EBEBEB;
   }
 }
 
