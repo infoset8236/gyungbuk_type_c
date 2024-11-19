@@ -514,7 +514,7 @@ $(document).ready(function () {
 				rows: 3,
 			},
 			breakpoints: {
-				3840: {
+				2160: {
 					spaceBetween: 190,
 				},
 				1080: {
