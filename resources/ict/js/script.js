@@ -521,6 +521,10 @@ $(document).ready(function () {
 					spaceBetween: 95,
 				},
 			},
+			autoplay: {
+				delay: 10000,
+				disableOnInteraction: false,
+			},
 			slidesPerGroup: 3,
 			pagination: {
 				el: '.kiosk_new_book_swiper .swiper-pagination',
@@ -601,6 +605,10 @@ $(document).ready(function () {
 					spaceBetween: 50,
 				},
 			},
+			autoplay: {
+				delay: 10000,
+				disableOnInteraction: false,
+			},
 			navigation: {
 				nextEl: '.kiosk_book_information_swiper .swiper-button-next',
 				prevEl: '.kiosk_book_information_swiper .swiper-button-prev',
@@ -622,6 +630,10 @@ $(document).ready(function () {
 				1080: {
 					spaceBetween: 50,
 				},
+			},
+			autoplay: {
+				delay: 10000,
+				disableOnInteraction: false,
 			},
 			navigation: {
 				nextEl: '.kiosk_book_information_swiper_x .swiper-button-next',
