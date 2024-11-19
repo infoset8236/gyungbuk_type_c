@@ -599,13 +599,17 @@ $(document).ready(function () {
 	kioskBookInformationXWSwiper();
 
 	function kioskCourseInformationSwiper() {
-		const swiper = new Swiper('.kiosk_course_information_swiper', {
-			speed: 600,
+		const swiper = new Swiper('.kiosk_course_information_swiper .swiper', {
 			loop: true,
-			slidesPerView: 1,
 			autoplay: {
 				delay: 10000,
 				disableOnInteraction: false,
+			},
+			spaceBetween: 10,
+			slidesPerView: 1,
+			slidesPerColumn: 1,
+			grid: {
+				rows: 7,
 			},
 			pagination: {
 				el: '.swiper-pagination',
@@ -617,13 +621,25 @@ $(document).ready(function () {
 	kioskCourseInformationSwiper();
 
 	function kioskCourseInformationXSwiper() {
-		const kioskCourseInformationXSwiper = new Swiper('.kiosk_course_information_swiper_x', {
+		const kioskCourseInformationXSwiper = new Swiper('.kiosk_course_information_swiper_x .swiper', {
 			speed: 600,
 			loop: true,
 			slidesPerView: 1,
 			autoplay: {
 				delay: 10000,
 				disableOnInteraction: false,
+			},
+			slidesPerColumn: 1,
+			grid: {
+				rows: 5,
+			},
+			breakpoints: {
+				2160: {
+					spaceBetween: 24,
+				},
+				1080: {
+					spaceBetween: 12,
+				},
 			},
 			navigation: {
 				nextEl: '.kiosk_course_information_swiper_x .swiper-button-next',

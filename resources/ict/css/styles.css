@@ -7873,19 +7873,20 @@
 }
 
 /* 키오스크 강좌안내 */
-.kiosk_course_information_swiper {
-  width: 2160px;
-  margin-top: 96px;
-  padding-left: 180px !important;
+.kiosk_course_information_swiper .swiper {
+  width: 1800px;
+  height:2840px;
+  padding-bottom: 100px !important;
 }
 
-.kiosk_course_information_swiper .swiper-slide {
-  display: flex;
-  flex-direction: column;
+
+.kiosk_course_information_swiper {
+  position:relative;
   width: 1800px;
-  padding-bottom: 120px;
-  gap: 60px;
+  margin-top: 96px;
+  margin-left: 180px;
 }
+
 
 .kiosk_course_information_swiper .swiper-item {
   display: flex;
@@ -7909,25 +7910,51 @@
   margin-top: 70px;
   margin-right: 48px;
   margin-left: 70px;
-  padding: 52px 48px;
+  padding: 30px;
   text-align: center;
   border-radius: 50%;
 }
 
-.progress {
+.status_0 {
   color: #029951;
-  background-color: #0299511A;
+  background-color: #E6F5EE ;
 }
 
-.apply {
-  color: #2F65CD;
-  background-color: #2F65CD1A;
+.status_1 {
+  color: #029951;
+  background-color: #E6F5EE ;
 }
 
-.pending {
+.status_2, .status_10  {
+  color: #0969DA;
+  background-color: #DDF4FF ;
+}
+
+.status_3 {
+  color: #0969DA;
+  background-color: #DDF4FF ;
+}
+
+.status_4, .status_44 {
+  color: #6B7684;
+  background-color: #EFF1F3 ;
+}
+
+.status_5 {
+  color: #6B7684;
+  background-color: #EFF1F3 ;
+}
+
+.status_6 {
   color: #F1B55C;
-  background-color: #F1B55C1A;
+  background-color: #FEF8EF ;
 }
+
+.status_9 {
+  color: #6B7684;
+  background-color: #EFF1F3 ;
+}
+
 
 .kiosk_course_information_title {
   font-family: "Pretendard", sans-serif;
@@ -8032,18 +8059,18 @@
 }
 
 @media (width: 1080px) {
-  .kiosk_course_information_swiper {
-    width: 1080px;
-    margin-top: 48px;
-    padding-left: 90px !important;
+  .kiosk_course_information_swiper .swiper {
+    width: 900px;
+    height:1420px;
+    padding-bottom: 50px !important;
   }
 
-  .kiosk_course_information_swiper .swiper-slide {
-    display: flex;
-    flex-direction: column;
+
+  .kiosk_course_information_swiper {
+    position:relative;
     width: 900px;
-    padding-bottom: 60px;
-    gap: 30px;
+    margin-top: 48px;
+    margin-left: 90px;
   }
 
   .kiosk_course_information_swiper .swiper-item {
@@ -8068,24 +8095,49 @@
     margin-top: 35px;
     margin-right: 24px;
     margin-left: 35px;
-    padding: 26px 24px;
+    padding: 15px;
     text-align: center;
     border-radius: 50%;
   }
 
-  .progress {
+  .status_0 {
     color: #029951;
-    background-color: #0299511A;
+    background-color: #E6F5EE ;
   }
 
-  .apply {
-    color: #2F65CD;
-    background-color: #2F65CD1A;
+  .status_1 {
+    color: #029951;
+    background-color: #E6F5EE ;
   }
 
-  .pending {
+  .status_2, .status_10  {
+    color: #0969DA;
+    background-color: #DDF4FF ;
+  }
+
+  .status_3 {
+    color: #0969DA;
+    background-color: #DDF4FF ;
+  }
+
+  .status_4, .status_44 {
+    color: #6B7684;
+    background-color: #EFF1F3 ;
+  }
+
+  .status_5 {
+    color: #6B7684;
+    background-color: #EFF1F3 ;
+  }
+
+  .status_6 {
     color: #F1B55C;
-    background-color: #F1B55C1A;
+    background-color: #FEF8EF ;
+  }
+
+  .status_9 {
+    color: #6B7684;
+    background-color: #EFF1F3 ;
   }
 
   .kiosk_course_information_title {
@@ -8200,16 +8252,30 @@
   background-size: cover;
 }
 
-.kiosk_course_information_swiper_x {
-  width: 3520px;
-  padding-left: 230px !important;
+.kiosk_course_information_swiper_x .swiper {
+  width: 3060px;
+  height:1496px;
 }
 
-.kiosk_course_information_swiper_x .swiper-slide {
-  display: flex;
-  flex-direction: column;
-  width: 3060px;
-  gap: 24px;
+.kiosk_course_information_swiper_x .swiper-button-prev,
+.kiosk_course_information_swiper_x .swiper-button-next {
+  position:static;
+  margin-top:0;
+}
+
+.kiosk_course_information_swiper_x {
+  position:relative;
+}
+
+.kiosk_course_information_swiper_x .navigation-wrapper {
+  position:absolute;
+  top:50%;
+  left:50%;
+  display:flex;
+  justify-content:space-between;
+  width:3400px;
+  margin:0 auto;
+  transform:translate(-50%,-50%);
 }
 
 .kiosk_course_information_swiper_x .swiper-item {
@@ -8226,7 +8292,6 @@
 }
 
 .kiosk_course_information_swiper_x .swiper-button-next {
-  right: 67px;
   width: 160px;
   height: 160px;
   transform: rotate(180deg);
@@ -8235,7 +8300,6 @@
 }
 
 .kiosk_course_information_swiper_x .swiper-button-prev {
-  left: 65px;
   width: 160px;
   height: 160px;
   background: url(../img/arrowX.svg) no-repeat top center;
@@ -8256,24 +8320,49 @@
   margin-top: 40px;
   margin-right: 48px;
   margin-left: 70px;
-  padding: 52px 48px;
+  padding: 30px;
   text-align: center;
   border-radius: 50%;
 }
 
-.progress {
+.status_0 {
   color: #029951;
-  background-color: #0299511A;
+  background-color: #E6F5EE ;
 }
 
-.apply {
-  color: #2F65CD;
-  background-color: #2F65CD1A;
+.status_1 {
+  color: #029951;
+  background-color: #E6F5EE ;
 }
 
-.pending {
+.status_2, .status_10  {
+  color: #0969DA;
+  background-color: #DDF4FF ;
+}
+
+.status_3 {
+  color: #0969DA;
+  background-color: #DDF4FF ;
+}
+
+.status_4, .status_44 {
+  color: #6B7684;
+  background-color: #EFF1F3 ;
+}
+
+.status_5 {
+  color: #6B7684;
+  background-color: #EFF1F3 ;
+}
+
+.status_6 {
   color: #F1B55C;
-  background-color: #F1B55C1A;
+  background-color: #FEF8EF ;
+}
+
+.status_9 {
+  color: #6B7684;
+  background-color: #EFF1F3 ;
 }
 
 .kiosk_course_information_title_x {
@@ -8372,17 +8461,33 @@
     background-size: cover;
   }
 
-  .kiosk_course_information_swiper_x {
-    width: 1760px;
-    padding-left: 115px !important;
+
+  .kiosk_course_information_swiper_x .swiper {
+    width: 1530px;
+    height:784px;
   }
 
-  .kiosk_course_information_swiper_x .swiper-slide {
-    display: flex;
-    flex-direction: column;
-    width: 1530px;
-    gap: 12px;
+  .kiosk_course_information_swiper_x .swiper-button-prev,
+  .kiosk_course_information_swiper_x .swiper-button-next {
+    position:static;
+    margin-top:0;
   }
+
+  .kiosk_course_information_swiper_x {
+    position:relative;
+  }
+
+  .kiosk_course_information_swiper_x .navigation-wrapper {
+    position:absolute;
+    top:50%;
+    left:50%;
+    display:flex;
+    justify-content:space-between;
+    width:1700px;
+    margin:0 auto;
+    transform:translate(-50%,-50%);
+  }
+
 
   .kiosk_course_information_swiper_x .swiper-item {
     display: flex;
@@ -8428,24 +8533,49 @@
     margin-top: 20px;
     margin-right: 24px;
     margin-left: 35px;
-    padding: 26px 24px;
+    padding: 15px;
     text-align: center;
     border-radius: 50%;
   }
 
-  .progress {
+  .status_0 {
     color: #029951;
-    background-color: #0299511A;
+    background-color: #E6F5EE ;
   }
 
-  .apply {
-    color: #2F65CD;
-    background-color: #2F65CD1A;
+  .status_1 {
+    color: #029951;
+    background-color: #E6F5EE ;
   }
 
-  .pending {
+  .status_2, .status_10  {
+    color: #0969DA;
+    background-color: #DDF4FF ;
+  }
+
+  .status_3 {
+    color: #0969DA;
+    background-color: #DDF4FF ;
+  }
+
+  .status_4, .status_44 {
+    color: #6B7684;
+    background-color: #EFF1F3 ;
+  }
+
+  .status_5 {
+    color: #6B7684;
+    background-color: #EFF1F3 ;
+  }
+
+  .status_6 {
     color: #F1B55C;
-    background-color: #F1B55C1A;
+    background-color: #FEF8EF ;
+  }
+
+  .status_9 {
+    color: #6B7684;
+    background-color: #EFF1F3 ;
   }
 
   .kiosk_course_information_title_x {
