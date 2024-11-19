@@ -3602,7 +3602,7 @@
     font-weight: 700;
     font-style: normal;
     line-height: normal;
-    letter-spacing: -1.5px;
+    letter-spacing: -0.75px;
     color: #309BDF;
   }
 
@@ -3618,7 +3618,7 @@
     font-weight: 500;
     font-style: normal;
     line-height: normal;
-    letter-spacing: -1.5px;
+    letter-spacing: -0.75px;
     color: #191F28;
   }
 
@@ -3727,7 +3727,7 @@
     font-style: normal;
     line-height: 140%;
     width: 864px;
-    letter-spacing: -1.3px;
+    letter-spacing: -0.65px;
     color: #191F28;
   }
 }
@@ -3808,7 +3808,7 @@
   font-style: normal;
   line-height: normal;
   text-align: center;
-  letter-spacing: -1px;
+  letter-spacing: -0.5px;
   color: #FFF;
 }
 
