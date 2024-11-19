@@ -6565,15 +6565,31 @@
   -webkit-line-clamp: 4;
 }
 
-.kiosk_book_information_swiper {
-  width: 2160px;
-  margin-top: 181px;
-  padding-left: 280px !important;
+.kiosk_book_information_swiper .swiper {
+  width:1600px;
+  height: 444px;
 }
 
-.kiosk_book_information_swiper .swiper-slide {
-  display: flex;
-  gap: 100px;
+.kiosk_book_information_swiper .swiper-button-prev,
+.kiosk_book_information_swiper .swiper-button-next {
+  position:static;
+  margin-top:0;
+}
+
+.kiosk_book_information_swiper {
+  position:relative;
+  margin-top: 181px;
+}
+
+.kiosk_book_information_swiper .navigation-wrapper {
+  position:absolute;
+  top:50%;
+  left:50%;
+  display:flex;
+  justify-content:space-between;
+  width:1872px;
+  margin:0 auto;
+  transform:translate(-50%,-50%);
 }
 
 .kiosk_book_information_swiper .swiper-item {
@@ -6614,7 +6630,6 @@
 }
 
 .kiosk_book_information_swiper .swiper-button-next {
-  right: 150px;
   width: 96px;
   height: 96px;
   transform: rotate(180deg);
@@ -6623,7 +6638,6 @@
 }
 
 .kiosk_book_information_swiper .swiper-button-prev {
-  left: 150px;
   width: 96px;
   height: 96px;
   background: url(../img/arrow.svg) no-repeat top center;
@@ -6902,19 +6916,36 @@
     text-overflow: ellipsis;
     color: #191F28;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 4;
+  }
+
+  .kiosk_book_information_swiper .swiper {
+    width:800px;
+    height: 222px;
+  }
+
+  .kiosk_book_information_swiper .swiper-button-prev,
+  .kiosk_book_information_swiper .swiper-button-next {
+    position:static;
+    margin-top:0;
   }
 
   .kiosk_book_information_swiper {
-    width: 1080px;
+    position:relative;
     margin-top: 90.5px;
-    padding-left: 140px !important;
   }
 
-  .kiosk_book_information_swiper .swiper-slide {
-    display: flex;
-    gap: 50px;
+  .kiosk_book_information_swiper .navigation-wrapper {
+    position:absolute;
+    top:50%;
+    left:50%;
+    display:flex;
+    justify-content:space-between;
+    width:936px;
+    margin:0 auto;
+    transform:translate(-50%,-50%);
   }
+
 
   .kiosk_book_information_swiper .swiper-item {
     display: flex;
@@ -6946,8 +6977,12 @@
     -webkit-line-clamp: 1;
   }
 
+  .kiosk_book_information_swiper .swiper-button-next::after,
+  .kiosk_book_information_swiper .swiper-button-prev::after {
+    display: none;
+  }
+
   .kiosk_book_information_swiper .swiper-button-next {
-    right: 75px;
     width: 48px;
     height: 48px;
     transform: rotate(180deg);
@@ -6956,7 +6991,6 @@
   }
 
   .kiosk_book_information_swiper .swiper-button-prev {
-    left: 75px;
     width: 48px;
     height: 48px;
     background: url(../img/arrow.svg) no-repeat top center;

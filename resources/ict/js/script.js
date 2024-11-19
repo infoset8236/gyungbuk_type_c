@@ -550,22 +550,28 @@ $(document).ready(function () {
 	}
 
 	kioskBestBookSwiper();
-});
 
-$(function () {
-	const kioskBookInformationSwiper = new Swiper('.kiosk_book_information_swiper', {
-		speed: 600,
-		loop: true,
-		autoplay: {
-			delay: 10000,
-			disableOnInteraction: false,
-		},
-		slidesPerView: 1,
-		navigation: {
-			nextEl: '.kiosk_book_information_swiper .swiper-button-next',
-			prevEl: '.kiosk_book_information_swiper .swiper-button-prev',
-		},
-	});
+	function SliderBox1__init() {
+		const swiper = new Swiper('.kiosk_book_information_swiper .swiper', {
+			loop: true,
+			slidesPerView: 5,
+			slidesPerGroup: 5,
+			breakpoints: {
+				2160: {
+					spaceBetween: 100,
+				},
+				1080: {
+					spaceBetween: 50,
+				},
+			},
+			navigation: {
+				nextEl: '.kiosk_book_information_swiper .swiper-button-next',
+				prevEl: '.kiosk_book_information_swiper .swiper-button-prev',
+			},
+		});
+	}
+
+	SliderBox1__init();
 });
 
 $(function () {
