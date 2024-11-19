@@ -289,29 +289,6 @@ $(function () {
 	});
 });
 
-$(function () {
-	const kioskNoticeSwiper = new Swiper('.kiosk_notice_swiper', {
-		speed: 600,
-		slidesPerGroup: 5,
-		slidesPerView: 5,
-		spaceBetween: 45,
-		breakpoints: {
-			1080: {
-				spaceBetween: 22.5,
-			},
-		},
-		pagination: {
-			el: '.swiper-pagination',
-			type: 'bullets',
-		},
-		autoplay: {
-			delay: 10000,
-			disableOnInteraction: false,
-		},
-		loop: true,
-	});
-});
-
 $(document).ready(function () {
 	const $slideImages = $('.kiosk_notice_swiper .swiper-slide img');
 
@@ -329,30 +306,6 @@ $(document).ready(function () {
 	$slideImages.on('click', function () {
 		updateSelectedImage($(this));
 	});
-
-	function KioskNoticeXSwiper() {
-		const swiper = new Swiper('.kiosk_notice_swiper_box .swiper', {
-			slidesPerGroup: 3,
-			slidesPerView: 3,
-			spaceBetween: 60,
-			breakpoints: {
-				1920: {
-					spaceBetween: 30,
-				},
-			},
-			autoplay: {
-				delay: 10000,
-				disableOnInteraction: false,
-			},
-			loop: true,
-			navigation: {
-				nextEl: '.kiosk_notice_swiper_box .swiper-button-next',
-				prevEl: '.kiosk_notice_swiper_box .swiper-button-prev',
-			},
-		});
-	}
-
-	KioskNoticeXSwiper();
 });
 
 $(document).ready(function () {
@@ -390,6 +343,79 @@ $(document).ready(function () {
 
 	setupFiltering('kiosk_filtering_btn', 'kiosk_facility_map_wrapper', 'floor_name');
 	setupFiltering('kiosk_filtering_btn_x', 'kiosk_facility_map_wrapper_x', 'floor_name_x');
+});
+
+$(document).ready(function () {
+	function setupPopup(swiperClass, popupClass, closeClass) {
+		$(`.${swiperClass} .swiper-item`).click(function () {
+			$(`.${popupClass}`).fadeIn();
+		});
+
+		$(`.${closeClass}`).click(function () {
+			$(`.${popupClass}`).fadeOut();
+		});
+
+		$(`.${popupClass}`).click(function (e) {
+			if ($(e.target).hasClass(popupClass)) {
+				$(this).fadeOut();
+			}
+		});
+	}
+
+	setupPopup('kiosk_facility_swiper', 'kiosk_facility_popup', 'kiosk_facility_popup_close');
+	setupPopup('kiosk_facility_swiper_wrapper', 'kiosk_facility_popup_x', 'kiosk_facility_popup_close_x');
+});
+
+// 키오스크 슬라이드
+$(document).ready(function () {
+	function kioskNoticeSwiper() {
+		const kioskNoticeSwiper = new Swiper('.kiosk_notice_swiper', {
+			speed: 600,
+			slidesPerGroup: 5,
+			slidesPerView: 5,
+			spaceBetween: 45,
+			breakpoints: {
+				1080: {
+					spaceBetween: 22.5,
+				},
+			},
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+			},
+			autoplay: {
+				delay: 10000,
+				disableOnInteraction: false,
+			},
+			loop: true,
+		});
+	}
+
+	kioskNoticeSwiper();
+
+	function KioskNoticeXSwiper() {
+		const swiper = new Swiper('.kiosk_notice_swiper_box .swiper', {
+			slidesPerGroup: 3,
+			slidesPerView: 3,
+			spaceBetween: 60,
+			breakpoints: {
+				1920: {
+					spaceBetween: 30,
+				},
+			},
+			autoplay: {
+				delay: 10000,
+				disableOnInteraction: false,
+			},
+			loop: true,
+			navigation: {
+				nextEl: '.kiosk_notice_swiper_box .swiper-button-next',
+				prevEl: '.kiosk_notice_swiper_box .swiper-button-prev',
+			},
+		});
+	}
+
+	KioskNoticeXSwiper();
 
 	function facilityXSwiper() {
 		const swiper = new Swiper('.kiosk_facility_swiper_wrapper .swiper', {
@@ -444,30 +470,7 @@ $(document).ready(function () {
 	}
 
 	facilitySwiper();
-});
 
-$(document).ready(function () {
-	function setupPopup(swiperClass, popupClass, closeClass) {
-		$(`.${swiperClass} .swiper-item`).click(function () {
-			$(`.${popupClass}`).fadeIn();
-		});
-
-		$(`.${closeClass}`).click(function () {
-			$(`.${popupClass}`).fadeOut();
-		});
-
-		$(`.${popupClass}`).click(function (e) {
-			if ($(e.target).hasClass(popupClass)) {
-				$(this).fadeOut();
-			}
-		});
-	}
-
-	setupPopup('kiosk_facility_swiper', 'kiosk_facility_popup', 'kiosk_facility_popup_close');
-	setupPopup('kiosk_facility_swiper_wrapper', 'kiosk_facility_popup_x', 'kiosk_facility_popup_close_x');
-});
-
-$(document).ready(function () {
 	function kioskNewBookSwiper() {
 		const swiper = new Swiper('.kiosk_new_book_swiper .swiper', {
 			loop: true,
@@ -594,22 +597,42 @@ $(document).ready(function () {
 	}
 
 	kioskBookInformationXWSwiper();
-});
 
-$(function () {
-	const kioskBookInformationXSwiper = new Swiper('.kiosk_book_information_swiper_x', {
-		speed: 600,
-		loop: true,
-		autoplay: {
-			delay: 10000,
-			disableOnInteraction: false,
-		},
-		slidesPerView: 1,
-		navigation: {
-			nextEl: '.kiosk_book_information_swiper_x .swiper-button-next',
-			prevEl: '.kiosk_book_information_swiper_x .swiper-button-prev',
-		},
-	});
+	function kioskCourseInformationSwiper() {
+		const swiper = new Swiper('.kiosk_course_information_swiper', {
+			speed: 600,
+			loop: true,
+			slidesPerView: 1,
+			autoplay: {
+				delay: 10000,
+				disableOnInteraction: false,
+			},
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+			},
+		});
+	}
+
+	kioskCourseInformationSwiper();
+
+	function kioskCourseInformationXSwiper() {
+		const kioskCourseInformationXSwiper = new Swiper('.kiosk_course_information_swiper_x', {
+			speed: 600,
+			loop: true,
+			slidesPerView: 1,
+			autoplay: {
+				delay: 10000,
+				disableOnInteraction: false,
+			},
+			navigation: {
+				nextEl: '.kiosk_course_information_swiper_x .swiper-button-next',
+				prevEl: '.kiosk_course_information_swiper_x .swiper-button-prev',
+			},
+		});
+	}
+
+	kioskCourseInformationXSwiper();
 });
 
 $(document).ready(function () {
@@ -631,38 +654,6 @@ $(document).ready(function () {
 
 	setupPopup('kiosk_book_information_popup_trigger', 'kiosk_book_information_popup', 'kiosk_book_information_popup_close');
 	setupPopup('kiosk_book_information_popup_trigger_x', 'kiosk_book_information_popup_x', 'kiosk_book_information_popup_close_x');
-});
-
-$(function () {
-	const kioskCourseInformationSwiper = new Swiper('.kiosk_course_information_swiper', {
-		speed: 600,
-		loop: true,
-		slidesPerView: 1,
-		autoplay: {
-			delay: 10000,
-			disableOnInteraction: false,
-		},
-		pagination: {
-			el: '.swiper-pagination',
-			type: 'bullets',
-		},
-	});
-});
-
-$(function () {
-	const kioskCourseInformationXSwiper = new Swiper('.kiosk_course_information_swiper_x', {
-		speed: 600,
-		loop: true,
-		slidesPerView: 1,
-		autoplay: {
-			delay: 10000,
-			disableOnInteraction: false,
-		},
-		navigation: {
-			nextEl: '.kiosk_course_information_swiper_x .swiper-button-next',
-			prevEl: '.kiosk_course_information_swiper_x .swiper-button-prev',
-		},
-	});
 });
 
 $(document).ready(function () {
