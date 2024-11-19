@@ -547,11 +547,11 @@ $(document).ready(function () {
 				rows: 2,
 			},
 			breakpoints: {
-				3840: {
-					spaceBetween: 250,
+				2160: {
+					spaceBetween: 140,
 				},
 				1080: {
-					spaceBetween: 125,
+					spaceBetween: 70,
 				},
 			},
 			navigation: {
