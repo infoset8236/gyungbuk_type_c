@@ -9808,6 +9808,7 @@
   font-style: normal;
   line-height: normal;
   width: 465px;
+  padding-left: 40px;
   color: #191F28;
 }
 
@@ -9954,7 +9955,6 @@
   line-height: normal;
   display: flex;
   align-items: center;
-  margin-bottom: 24px;
   cursor: pointer;
   color: #191F28;
   gap: 20px;
@@ -9981,6 +9981,7 @@
   font-weight: 400;
   font-style: normal;
   line-height: 140%;
+  margin-top: 24px;
   margin-bottom: 40px;
   padding: 40px;
   color: #191F28;
@@ -10056,6 +10057,7 @@
     font-family: "Pretendard", sans-serif;
     font-size: 26px;
     width: 232px;
+    padding-left: 20px;
     color: #191F28;
   }
 
@@ -10181,7 +10183,6 @@
     font-size: 26px;
     display: flex;
     align-items: center;
-    margin-bottom: 12px;
     cursor: pointer;
     color: #191F28;
     gap: 10px;
@@ -10206,6 +10207,7 @@
     font-family: "Pretendard", sans-serif;
     font-size: 22px;
     line-height: 140%;
+    margin-top: 12px;
     margin-bottom: 20px;
     padding: 20px;
     color: #191F28;
