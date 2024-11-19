@@ -9229,9 +9229,9 @@
   background-color: #ADB5BD;
 }
 
-.pencil {
-  width: 72.8px;
-  height: 72.8px;
+.kiosk_course_detail_badge_x .pencil {
+  width: 104px;
+  height: 104px;
   background: url(../img/pencil.svg) no-repeat top center;
   background-size: cover;
 }
@@ -9285,9 +9285,9 @@
   background: #FFFFFF;
 }
 
-.calendar {
-  width: 72.8px;
-  height: 72.8px;
+.kiosk_course_detail_badge_x .calendar {
+  width: 104px;
+  height: 104px;
   background: url(../img/calendar.svg) no-repeat top center;
   background-size: cover;
 }
@@ -9322,9 +9322,9 @@
   -webkit-line-clamp: 1;
 }
 
-.mouses {
-  width: 72.8px;
-  height: 72.8px;
+.kiosk_course_detail_badge_x .mouses {
+  width: 104px;
+  height: 104px;
   background: url(../img/mouse.svg) no-repeat top center;
   background-size: cover;
 }
