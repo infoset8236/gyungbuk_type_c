@@ -15,6 +15,20 @@
   background: rgba(0, 0, 0, 0.70);
 }
 
+.loading img {
+  width: 250px;
+  height: 250px;
+}
+
+
+@media (min-width: 1080px) and (max-width: 1920px) {
+  .loading img {
+    width: 125px;
+    height: 125px;
+  }
+}
+
+
 /* 미디어월 공통 */
 .media_common_header_wrapper {
   display: flex;
