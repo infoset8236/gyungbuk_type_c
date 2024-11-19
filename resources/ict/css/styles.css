@@ -7187,7 +7187,7 @@
 .kiosk_book_information_thumbnail_title_x {
   font-family: "Pretendard", sans-serif;
   font-size: 80px;
-  font-weight: 600;
+  font-weight: 500;
   font-style: normal;
   line-height: normal;
   display: flex;
@@ -7565,7 +7565,7 @@
   .kiosk_book_information_thumbnail_title_x {
     font-family: "Pretendard", sans-serif;
     font-size: 40px;
-    font-weight: 600;
+    font-weight: 500;
     font-style: normal;
     line-height: normal;
     display: flex;
