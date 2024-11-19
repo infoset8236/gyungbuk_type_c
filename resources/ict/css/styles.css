@@ -7891,6 +7891,14 @@
 }
 
 /* 키오스크 강좌안내 */
+.kiosk_course_information_container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/kioskCourseInformationBg.svg) no-repeat top center;
+  background-size: cover;
+}
+
 .kiosk_course_information_swiper .swiper {
   width: 1800px;
   height:2840px;
@@ -8077,6 +8085,14 @@
 }
 
 @media (width: 1080px) {
+  .kiosk_course_information_container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/kioskCourseInformationBg.svg) no-repeat top center;
+    background-size: cover;
+  }
+
   .kiosk_course_information_swiper .swiper {
     width: 900px;
     height:1420px;
