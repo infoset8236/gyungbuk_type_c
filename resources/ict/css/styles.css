@@ -9232,8 +9232,8 @@
 }
 
 .kiosk_course_detail_badge_x .pencil {
-  width: 104px;
-  height: 104px;
+  width: 72.8px;
+  height: 72.8px;
   background: url(../img/pencil.svg) no-repeat top center;
   background-size: cover;
 }
@@ -9244,7 +9244,7 @@
   font-weight: 400;
   font-style: normal;
   line-height: normal;
-  margin-top: 42.5px;
+  margin-top: 46px;
   margin-bottom: 12px;
   margin-left: 48px;
   color: #191F28;
@@ -9288,8 +9288,8 @@
 }
 
 .kiosk_course_detail_badge_x .calendar {
-  width: 104px;
-  height: 104px;
+  width: 72.8px;
+  height: 72.8px;
   background: url(../img/calendar.svg) no-repeat top center;
   background-size: cover;
 }
@@ -9325,8 +9325,8 @@
 }
 
 .kiosk_course_detail_badge_x .mouses {
-  width: 104px;
-  height: 104px;
+  width: 72.8px;
+  height: 72.8px;
   background: url(../img/mouse.svg) no-repeat top center;
   background-size: cover;
 }
@@ -9510,7 +9510,7 @@
     background-color: #ADB5BD;
   }
 
-  .pencil {
+  .kiosk_course_detail_badge_x .pencil {
     width: 36.4px;
     height: 36.4px;
     background: url(../img/pencil.svg) no-repeat top center;
@@ -9523,7 +9523,7 @@
     font-weight: 400;
     font-style: normal;
     line-height: normal;
-    margin-top: 21.25px;
+    margin-top: 23px;
     margin-bottom: 6px;
     margin-left: 24px;
     color: #191F28;
@@ -9566,7 +9566,7 @@
     background: #FFFFFF;
   }
 
-  .calendar {
+  .kiosk_course_detail_badge_x .calendar {
     width: 36.4px;
     height: 36.4px;
     background: url(../img/calendar.svg) no-repeat top center;
@@ -9603,7 +9603,7 @@
     -webkit-line-clamp: 1;
   }
 
-  .mouses {
+  .kiosk_course_detail_badge_x .mouses {
     width: 36.4px;
     height: 36.4px;
     background: url(../img/mouse.svg) no-repeat top center;
