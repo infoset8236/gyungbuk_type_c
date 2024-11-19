@@ -4244,6 +4244,7 @@
 .kiosk_facility_swiper .swiper {
   width: 1700px;
   height: 1379px;
+  padding-left: 0 !important;
 }
 
 .kiosk_facility_swiper .swiper-button-prev,
@@ -4262,7 +4263,7 @@
 .kiosk_facility_swiper .navigation-wrapper {
   position:absolute;
   top:50%;
-  left:49%;
+  left:50%;
   display:flex;
   justify-content:space-between;
   width:2020px;
@@ -4559,8 +4560,9 @@
   }
 
   .kiosk_facility_swiper .swiper {
-    width: 850px;
+    width: 900px;
     height: 685px;
+    padding-left: 30px !important;
   }
 
   .kiosk_facility_swiper .swiper-button-prev,

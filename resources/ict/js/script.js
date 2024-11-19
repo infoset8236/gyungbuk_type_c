@@ -351,7 +351,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
 	function setupFiltering(buttonClass, wrapperClass, floorNameClass) {
-		$(`.${buttonClass}:first`).addClass('active');
+		$(`.${buttonClass}:nth-child(2)`).addClass('active');
 		$(`.${buttonClass}`).on('click', function () {
 			$(`.${buttonClass}`).removeClass('active');
 			$(this).addClass('active');
@@ -481,6 +481,14 @@ $(document).ready(function () {
 			slidesPerColumn: 3,
 			grid: {
 				rows: 3,
+			},
+			breakpoints: {
+				1080: {
+					spaceBetween: 30,
+				},
+				2160: {
+					spaceBetween: 140,
+				},
 			},
 			slidesPerGroup: 2,
 			spaceBetween: 60,
