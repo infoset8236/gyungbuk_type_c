@@ -7295,15 +7295,30 @@
   -webkit-line-clamp: 5;
 }
 
-.kiosk_book_information_swiper_x {
-  display: flex !important;
-  width: 1840px;
+.kiosk_book_information_swiper_x .swiper {
+  width: 1568px;
+  height:444px;
 }
 
-.kiosk_book_information_swiper_x .swiper-slide {
-  display: flex;
-  justify-content: center;
-  gap: 92px;
+.kiosk_book_information_swiper_x .swiper-button-prev,
+.kiosk_book_information_swiper_x .swiper-button-next {
+  position:static;
+  margin-top:0;
+}
+
+.kiosk_book_information_swiper_x {
+  position:relative;
+}
+
+.kiosk_book_information_swiper_x .navigation-wrapper {
+  position:absolute;
+  top:50%;
+  left:50%;
+  display:flex;
+  justify-content:space-between;
+  width:1840px;
+  margin:0 auto;
+  transform:translate(-50%,-50%);
 }
 
 .kiosk_book_information_swiper_x .swiper-item {
@@ -7344,7 +7359,6 @@
 }
 
 .kiosk_book_information_swiper_x .swiper-button-next {
-  right: 1px;
   width: 96px;
   height: 96px;
   transform: rotate(180deg);
@@ -7353,7 +7367,6 @@
 }
 
 .kiosk_book_information_swiper_x .swiper-button-prev {
-  left: 1px;
   width: 96px;
   height: 96px;
   background: url(../img/arrowX.svg) no-repeat top center;
@@ -7661,16 +7674,32 @@
     -webkit-line-clamp: 5;
   }
 
-  .kiosk_book_information_swiper_x {
-    display: flex !important;
-    width: 920px;
+  .kiosk_book_information_swiper_x .swiper {
+    width: 784px;
+    height:222px;
   }
 
-  .kiosk_book_information_swiper_x .swiper-slide {
-    display: flex;
-    justify-content: center;
-    gap: 46px;
+  .kiosk_book_information_swiper_x .swiper-button-prev,
+  .kiosk_book_information_swiper_x .swiper-button-next {
+    position:static;
+    margin-top:0;
   }
+
+  .kiosk_book_information_swiper_x {
+    position:relative;
+  }
+
+  .kiosk_book_information_swiper_x .navigation-wrapper {
+    position:absolute;
+    top:50%;
+    left:50%;
+    display:flex;
+    justify-content:space-between;
+    width:920px;
+    margin:0 auto;
+    transform:translate(-50%,-50%);
+  }
+
 
   .kiosk_book_information_swiper_x .swiper-item {
     display: flex;

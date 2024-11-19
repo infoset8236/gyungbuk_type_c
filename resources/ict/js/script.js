@@ -551,7 +551,7 @@ $(document).ready(function () {
 
 	kioskBestBookSwiper();
 
-	function SliderBox1__init() {
+	function kioskBookInformationWSwiper() {
 		const swiper = new Swiper('.kiosk_book_information_swiper .swiper', {
 			loop: true,
 			slidesPerView: 5,
@@ -571,7 +571,29 @@ $(document).ready(function () {
 		});
 	}
 
-	SliderBox1__init();
+	kioskBookInformationWSwiper();
+
+	function kioskBookInformationXWSwiper() {
+		const swiper = new Swiper('.kiosk_book_information_swiper_x .swiper', {
+			loop: true,
+			slidesPerView: 5,
+			slidesPerGroup: 5,
+			breakpoints: {
+				2160: {
+					spaceBetween: 100,
+				},
+				1080: {
+					spaceBetween: 50,
+				},
+			},
+			navigation: {
+				nextEl: '.kiosk_book_information_swiper_x .swiper-button-next',
+				prevEl: '.kiosk_book_information_swiper_x .swiper-button-prev',
+			},
+		});
+	}
+
+	kioskBookInformationXWSwiper();
 });
 
 $(function () {
