@@ -521,6 +521,35 @@ $(document).ready(function () {
 	}
 
 	kioskNewBookXSwiper();
+
+	function kioskBestBookSwiper() {
+		const swiper = new Swiper('.kiosk_best_book_swiper .swiper', {
+			loop: true,
+			autoplay: {
+				delay: 10000,
+				disableOnInteraction: false,
+			},
+			slidesPerView: 1,
+			slidesPerColumn: 1,
+			grid: {
+				rows: 5,
+			},
+			breakpoints: {
+				3840: {
+					spaceBetween: 128,
+				},
+				1080: {
+					spaceBetween: 64,
+				},
+			},
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+			},
+		});
+	}
+
+	kioskBestBookSwiper();
 });
 
 $(function () {
