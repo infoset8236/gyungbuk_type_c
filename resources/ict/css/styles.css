@@ -299,28 +299,23 @@
   background-size: cover;
 }
 
-.media_notice_content_wrapper {
+.media_notice_wrapper {
+  position: relative;
   display: flex;
-  align-items: flex-end;
   margin-top: 139px;
-  margin-left: 513px;
-  gap: 175px;
+  margin-left: 513px !important;
 }
 
-.media_notice_selected_book {
-  z-index: 999;
-  width: 940px;
+.media_notice_slider {
   height: 1330px;
-  animation: fadeAndZoom 10s infinite;
-  border-radius: 24px;
-  object-fit: cover;
+
 }
 
-.media_notice_content {
+.media_notice_slider .swiper-slide {
+  position: relative;
   display: flex;
-  flex-direction: column;
-  gap: 282px;
 }
+
 
 .media_notice_selected_book_title {
   font-family: "Pretendard", sans-serif;
@@ -328,10 +323,12 @@
   font-weight: 500;
   font-style: normal;
   line-height: 140%;
+  position: absolute;
   z-index: 999;
+  top: 0;
+  left: 1121px;
   overflow: hidden;
   width: 1400px;
-  animation: fadeAndZoom 10s infinite;
   white-space: nowrap;
   letter-spacing: -2.5px;
   text-overflow: ellipsis;
@@ -347,34 +344,31 @@
   color: #6B7684;
 }
 
-.media_notice_list {
-  display: flex;
-  animation: fadeAndZoom 10s infinite;
-  gap: 80px;
+.media_notice_selected_book {
+  z-index: 999;
+  width: 940px;
+  height: 1330px;
+  border-radius: 24px;
+  object-fit: cover;
 }
 
-.media_notice_list_item {
+.media_notice_slider_list {
+  position: absolute !important;
+  top: 704px;
+  left: 1115px;
+  width: 1760px;
+  height: 622px;
+}
+
+.media_notice_slider_list .swiper-slide {
   display: flex;
   flex-direction: column;
+  height: 622px;
   gap: 26.37px;
 }
 
-@keyframes fadeAndZoom {
-  0% {
-    opacity: 0;
-    transform: scale(0.9);
-  }
-  10%, 90% {
-    opacity: 1;
-    transform: scale(1);
-  }
-  100% {
-    opacity: 0;
-    transform: scale(0.9);
-  }
-}
 
-.media_notice_list_item div {
+.media_notice_slider_list .swiper-slide div {
   font-family: "Spoqa Han Sans Neo", sans-serif;
   font-size: 48px;
   font-weight: 300;
@@ -383,7 +377,7 @@
   color: #ADB5BD;
 }
 
-.media_notice_list_item img {
+.media_notice_slider_list .swiper-slide img {
   width: 380px;
   height: 538px;
   border-radius: 14.663px;
@@ -458,28 +452,23 @@
     background-size: cover;
   }
 
-  .media_notice_content_wrapper {
+  .media_notice_wrapper {
+    position: relative;
     display: flex;
-    align-items: flex-end;
     margin-top: 69.5px;
-    margin-left: 256.5px;
-    gap: 87.5px;
+    margin-left: 256.5px !important;
   }
 
-  .media_notice_selected_book {
-    z-index: 999;
-    width: 470px;
+  .media_notice_slider {
     height: 665px;
-    animation: fadeAndZoom 10s infinite;
-    border-radius: 12px;
-    object-fit: cover;
+
   }
 
-  .media_notice_content {
+  .media_notice_slider .swiper-slide {
+    position: relative;
     display: flex;
-    flex-direction: column;
-    gap: 141px;
   }
+
 
   .media_notice_selected_book_title {
     font-family: "Pretendard", sans-serif;
@@ -487,12 +476,14 @@
     font-weight: 500;
     font-style: normal;
     line-height: 140%;
+    position: absolute;
     z-index: 999;
+    top: 0;
+    left: 560.5px;
     overflow: hidden;
     width: 700px;
-    animation: fadeAndZoom 10s infinite;
     white-space: nowrap;
-    letter-spacing: -1.25px;
+    letter-spacing: -2.5px;
     text-overflow: ellipsis;
     color: #FFF;
   }
@@ -506,34 +497,31 @@
     color: #6B7684;
   }
 
-  .media_notice_list {
-    display: flex;
-    animation: fadeAndZoom 10s infinite;
-    gap: 40px;
+  .media_notice_selected_book {
+    z-index: 999;
+    width: 470px;
+    height: 665px;
+    border-radius: 12px;
+    object-fit: cover;
   }
 
-  .media_notice_list_item {
+  .media_notice_slider_list {
+    position: absolute !important;
+    top: 352px;
+    left: 557.5px;
+    width: 880px;
+    height: 311px;
+  }
+
+  .media_notice_slider_list .swiper-slide {
     display: flex;
     flex-direction: column;
+    height: 311px;
     gap: 13.185px;
   }
 
-  @keyframes fadeAndZoom {
-    0% {
-      opacity: 0;
-      transform: scale(0.9);
-    }
-    10%, 90% {
-      opacity: 1;
-      transform: scale(1);
-    }
-    100% {
-      opacity: 0;
-      transform: scale(0.9);
-    }
-  }
 
-  .media_notice_list_item div {
+  .media_notice_slider_list .swiper-slide div {
     font-family: "Spoqa Han Sans Neo", sans-serif;
     font-size: 24px;
     font-weight: 300;
@@ -542,7 +530,7 @@
     color: #ADB5BD;
   }
 
-  .media_notice_list_item img {
+  .media_notice_slider_list .swiper-slide img {
     width: 190px;
     height: 269px;
     border-radius: 7.3315px;
@@ -570,7 +558,7 @@
   }
 
   .media_notice_start_2 {
-    top: -150px;
+    top: -1500px;
     left: 1000px;
     width: 70px;
     height: 70px;
@@ -600,11 +588,11 @@
     }
     70% {
       opacity: 1;
-      transform: translate(-400px, 400px) scale(0.5) rotate(45deg);
+      transform: translate(-800px, 800px) scale(0.5) rotate(45deg);
     }
     100% {
       opacity: 0;
-      transform: translate(-400px, 400px) scale(0);
+      transform: translate(-800px, 800px) scale(0);
     }
   }
 }

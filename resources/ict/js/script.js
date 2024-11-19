@@ -270,6 +270,32 @@ $(document).ready(function () {
 });
 
 $(function () {
+	const mediaNoticeSwiper = new Swiper('.media_notice_slider', {
+		speed: 10000,
+		loop: true,
+		slidesPerView: 1,
+		effect: 'fade',
+		fadeEffect: {
+			crossFade: true,
+		},
+		autoplay: {
+			delay: 10000,
+		},
+	});
+});
+
+$(function () {
+	const mediaNoticeListSwiper = new Swiper('.media_notice_slider_list', {
+		speed: 10000,
+		loop: true,
+		slidesPerView: 4,
+		autoplay: {
+			delay: 10000,
+		},
+	});
+});
+
+$(function () {
 	const mediaEventSwiper = new Swiper('.media_event_slider', {
 		speed: 600,
 		loop: true,
